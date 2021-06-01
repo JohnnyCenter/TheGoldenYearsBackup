@@ -9,6 +9,7 @@ TagManager:
   - Pickup
   - PlaceObject
   - Animation
+  - CanBeDistorted
   layers:
   - Default
   - TransparentFX

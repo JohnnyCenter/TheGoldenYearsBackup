@@ -1,108 +1,523 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 16215 MB
+OS: 'Windows 10 Home; OS build 19041.985; Version 2004; 64bit' Language: 'no' Physical Memory: 16347 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Unity.exe
+E:\UnityLibrary(e)\2020.3.8f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/simon/Documents/GitHub/TheGoldenYearsBackup
+E:/UnityProjects (e)/TheGoldenYearsBackup
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50104
-Successfully changed project path to: C:/Users/simon/Documents/GitHub/TheGoldenYearsBackup
-C:/Users/simon/Documents/GitHub/TheGoldenYearsBackup
+52659
+Successfully changed project path to: E:/UnityProjects (e)/TheGoldenYearsBackup
+E:/UnityProjects (e)/TheGoldenYearsBackup
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.55 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 52.82 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/simon/Documents/GitHub/TheGoldenYearsBackup/Assets
+[Subsystems] Discovering subsystems at path E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/UnityProjects (e)/TheGoldenYearsBackup/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2070 with Max-Q Design (ID=0x1f14)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
     Vendor:   
-    VRAM:     8031 MB
-    Driver:   27.21.14.5167
+    VRAM:     5980 MB
+    Driver:   27.21.14.6627
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Mono path[0] = 'E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001583 seconds.
+Register platform support module: E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001207 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 54.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.944 seconds
+- Completed reload, in  0.929 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000730 seconds.
+Registered in 0.000980 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 52.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.861 seconds
+- Completed reload, in  0.880 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1588 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 80.0 MB.
+Unloading 1614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.2 MB.
+System memory in use after: 88.8 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2033.
-Total: 1.680400 ms (FindLiveObjects: 0.175800 ms CreateObjectMapping: 0.066500 ms MarkObjects: 1.384300 ms  DeleteObjects: 0.052900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(0dbe96f03336e43409e841844b8b8313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(0dbe96f03336e43409e841844b8b8313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a83da25cde10f6d3cb30f0dbfb1905') in 0.008715 seconds
-  Import took 0.010883 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2062.
+Total: 2.251600 ms (FindLiveObjects: 0.142200 ms CreateObjectMapping: 0.042300 ms MarkObjects: 1.675600 ms  DeleteObjects: 0.390700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Test
-  artifactKey: Guid(58b36114317fc20429c40364455e05c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test using Guid(58b36114317fc20429c40364455e05c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df47a8d6f73a24e589d51606710cb16b') in 0.004862 seconds
-  Import took 0.007222 seconds .
+  path: Assets/DistortedModels
+  artifactKey: Guid(1b85d39ea2c83264c81b985f4698c3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels using Guid(1b85d39ea2c83264c81b985f4698c3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef11c9340104622502231dc28991bd83') in 0.008571 seconds
+  Import took 0.011455 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Test/Signature.png
-  artifactKey: Guid(5eb0923a5ce66a149a307f1713c4518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test/Signature.png using Guid(5eb0923a5ce66a149a307f1713c4518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc04f0bc91fb1562ed053533e68b676') in 0.079799 seconds
-  Import took 0.082521 seconds .
+  Time since last request: 20.661978 seconds.
+  path: Assets/DistortedModels/BathCurtain_B_Distorted.fbx
+  artifactKey: Guid(851b363036395404cb2f305f7f834ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/BathCurtain_B_Distorted.fbx using Guid(851b363036395404cb2f305f7f834ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96167f99e11b8c1befa471f1d7cbddf') in 0.543524 seconds
+  Import took 0.547344 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Test/ship.FBX
-  artifactKey: Guid(bf31cbeeeed3fd941a087581863b0832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test/ship.FBX using Guid(bf31cbeeeed3fd941a087581863b0832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf0c0c575209feb01ba23d3a52a3135') in 0.277317 seconds
-  Import took 0.279865 seconds .
+  Time since last request: 0.000357 seconds.
+  path: Assets/DistortedModels/CandlestickCandle_A_Distorted.fbx
+  artifactKey: Guid(5f7d57e5c049a3943879c10f7d77aa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/CandlestickCandle_A_Distorted.fbx using Guid(5f7d57e5c049a3943879c10f7d77aa4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13e31a5cca956f994af5ce70dc84fb7b') in 0.030603 seconds
+  Import took 0.033292 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.030187 seconds.
-  path: Assets/Scenes/SimonTest.unity
-  artifactKey: Guid(1e027b002cd8d94478a4f96d8c70af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SimonTest.unity using Guid(1e027b002cd8d94478a4f96d8c70af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e487d1be4dc047ce2a5da3a4e135e211') in 0.006062 seconds
-  Import took 0.008546 seconds .
+  Time since last request: 0.000349 seconds.
+  path: Assets/DistortedModels/Bed_Distorted.fbx
+  artifactKey: Guid(40d9dd2c752d132459c2a34a995498b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Bed_Distorted.fbx using Guid(40d9dd2c752d132459c2a34a995498b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4fa064e0466b1666772d7350571b71e') in 0.029276 seconds
+  Import took 0.031969 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/DistortedModels/Candlestick_Distorted.fbx
+  artifactKey: Guid(8790f8b8deb950142a7003fef9935891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Candlestick_Distorted.fbx using Guid(8790f8b8deb950142a7003fef9935891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e401c7443d3884acce63777bbbd6531') in 0.030552 seconds
+  Import took 0.093835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/DistortedModels/CoffeeTable_A_Distorted.fbx
+  artifactKey: Guid(3fcb5e2d34c8ae040b9f700d5377895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/CoffeeTable_A_Distorted.fbx using Guid(3fcb5e2d34c8ae040b9f700d5377895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0ef930ee257c9e06edab58bc1c89c6') in 0.028409 seconds
+  Import took 0.031457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/DistortedModels/Candle_Bunch_Distorted.fbx
+  artifactKey: Guid(5e11dfcd746b19644aa9b93d8cb885ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Candle_Bunch_Distorted.fbx using Guid(5e11dfcd746b19644aa9b93d8cb885ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4364d0c8aa029a2e082894b5c8ae4060') in 0.041077 seconds
+  Import took 0.045647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/DistortedModels/Sofa_A_Distorted.fbx
+  artifactKey: Guid(db6316af4852d6c4896af36a1bc81d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Sofa_A_Distorted.fbx using Guid(db6316af4852d6c4896af36a1bc81d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa2c75581754cb63176cc45312d4895') in 0.036596 seconds
+  Import took 0.039451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/DistortedModels/CandlestickCandle_B_Distorted.fbx
+  artifactKey: Guid(e9fd568a2ab05174c815bdf40120a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/CandlestickCandle_B_Distorted.fbx using Guid(e9fd568a2ab05174c815bdf40120a78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dd2ac28b8ad7f77703ef97a2d99842') in 0.034849 seconds
+  Import took 0.037702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/DistortedModels/Bookcase_Distorted.fbx
+  artifactKey: Guid(eebce9d8874f5204088e2cd8642a381d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Bookcase_Distorted.fbx using Guid(eebce9d8874f5204088e2cd8642a381d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c74845cd9a7c701d385455a7b74037c') in 0.035805 seconds
+  Import took 0.038633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/DistortedModels/Bathtub_B_Distorted.fbx
+  artifactKey: Guid(a6a1de783aa542f4cae4ef4398f8161a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Bathtub_B_Distorted.fbx using Guid(a6a1de783aa542f4cae4ef4398f8161a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13db92b9cde2c18a3756cf60528e0941') in 0.035144 seconds
+  Import took 0.038252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/DistortedModels/ClockTable_Distorted.fbx
+  artifactKey: Guid(8669ee85b3bdc9c46a831d5b58933c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/ClockTable_Distorted.fbx using Guid(8669ee85b3bdc9c46a831d5b58933c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de6823ad24f60ab0f1f1eaaca61d381') in 0.035048 seconds
+  Import took 0.037780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/DistortedModels/ClockWall_Distorted.fbx
+  artifactKey: Guid(350c39e04d6c9824c9bad3343f116db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/ClockWall_Distorted.fbx using Guid(350c39e04d6c9824c9bad3343f116db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba92c37b2c5317ffe8fb5bde94492322') in 0.035450 seconds
+  Import took 0.038061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/DistortedModels/Cupboard_Distorted.fbx
+  artifactKey: Guid(1a85f1637388d724496dab0021b704a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Cupboard_Distorted.fbx using Guid(1a85f1637388d724496dab0021b704a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b60fc196ab5dec4d906d5734f79bbd') in 0.022030 seconds
+  Import took 0.024719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/DistortedModels/Candle_Distorted.fbx
+  artifactKey: Guid(6152aa978b7d2d94b991ba7eb5236ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Candle_Distorted.fbx using Guid(6152aa978b7d2d94b991ba7eb5236ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7b342662ab71bfad782c8678dd47c6') in 0.023471 seconds
+  Import took 0.026104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/DistortedModels/BedsideTable_Distorted.fbx
+  artifactKey: Guid(8f37be5dc1d98f64cb28f75d6f036350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/BedsideTable_Distorted.fbx using Guid(8f37be5dc1d98f64cb28f75d6f036350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e64a6965cf99817edba83e22ac18bd4f') in 0.024556 seconds
+  Import took 0.027253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/DistortedModels/BookcaseBottom_A_Distorted.fbx
+  artifactKey: Guid(311258ebc92011941af12b677c079bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/BookcaseBottom_A_Distorted.fbx using Guid(311258ebc92011941af12b677c079bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd457e07f92b7db9879aa6c435bccf65d') in 0.028479 seconds
+  Import took 0.153778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/DistortedModels/Candlestick_B_Distorted.fbx
+  artifactKey: Guid(0d3d4ff6e07d12248bbe9689fdff043a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Candlestick_B_Distorted.fbx using Guid(0d3d4ff6e07d12248bbe9689fdff043a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472c8414ccc3f02ba2e37deef503dc4f') in 0.035918 seconds
+  Import took 0.039488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.235864 seconds.
+  path: Assets/Scenes/JontTestScene.unity
+  artifactKey: Guid(57991e6fe291ede4e8d988a5e59f0631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/JontTestScene.unity using Guid(57991e6fe291ede4e8d988a5e59f0631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664849338aed9cc3d222c87f4dbdd2ca') in 0.007894 seconds
+  Import took 0.010923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.652199 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(b8a9d6c711904ee4c9a66d88f311a971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(b8a9d6c711904ee4c9a66d88f311a971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf3cc5f7909063835096d533b4b3aa7') in 0.007177 seconds
+  Import took 0.010027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.127250 seconds.
+  path: Assets/Scripts/ObjectDistorter.cs
+  artifactKey: Guid(ee38dec71775203409858d67971b062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ObjectDistorter.cs using Guid(ee38dec71775203409858d67971b062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9e5f10b1d4d268d99f76a84ccc7875') in 0.013911 seconds
+  Import took 0.016966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004265 seconds.
+  path: Assets/Scripts/ObjectDistorter.cs
+  artifactKey: Guid(ee38dec71775203409858d67971b062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ObjectDistorter.cs using Guid(ee38dec71775203409858d67971b062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9e5f10b1d4d268d99f76a84ccc7875') in 0.002526 seconds
+  Import took 0.005803 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000876 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 87.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2109.
+Total: 2.091500 ms (FindLiveObjects: 0.143800 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.512000 ms  DeleteObjects: 0.388500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001149 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.773 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2112.
+Total: 1.965100 ms (FindLiveObjects: 0.155700 ms CreateObjectMapping: 0.051400 ms MarkObjects: 1.365400 ms  DeleteObjects: 0.391700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 174.764972 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc7144914c0bedf7c057eee9e10c117') in 0.025992 seconds
+  Import took 0.028992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013163 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc7144914c0bedf7c057eee9e10c117') in 0.003295 seconds
+  Import took 0.006550 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000976 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2115.
+Total: 2.305300 ms (FindLiveObjects: 0.142100 ms CreateObjectMapping: 0.087400 ms MarkObjects: 1.645000 ms  DeleteObjects: 0.430100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000941 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2118.
+Total: 2.220800 ms (FindLiveObjects: 0.149600 ms CreateObjectMapping: 0.048100 ms MarkObjects: 1.573500 ms  DeleteObjects: 0.448400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001321 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.766 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2121.
+Total: 2.414700 ms (FindLiveObjects: 0.163900 ms CreateObjectMapping: 0.228300 ms MarkObjects: 1.567400 ms  DeleteObjects: 0.454000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000895 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2124.
+Total: 2.126400 ms (FindLiveObjects: 0.164400 ms CreateObjectMapping: 0.052100 ms MarkObjects: 1.486500 ms  DeleteObjects: 0.422300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001166 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.763 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2127.
+Total: 2.030200 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.053400 ms MarkObjects: 1.403400 ms  DeleteObjects: 0.411100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000973 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.789 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2130.
+Total: 2.149800 ms (FindLiveObjects: 0.178500 ms CreateObjectMapping: 0.063400 ms MarkObjects: 1.454100 ms  DeleteObjects: 0.453000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000894 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.775 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2133.
+Total: 2.312500 ms (FindLiveObjects: 0.175500 ms CreateObjectMapping: 0.051300 ms MarkObjects: 1.650200 ms  DeleteObjects: 0.434500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001051 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.772 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2136.
+Total: 2.282700 ms (FindLiveObjects: 0.175300 ms CreateObjectMapping: 0.056300 ms MarkObjects: 1.615300 ms  DeleteObjects: 0.434900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000882 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.764 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2139.
+Total: 2.115300 ms (FindLiveObjects: 0.165800 ms CreateObjectMapping: 0.052900 ms MarkObjects: 1.471200 ms  DeleteObjects: 0.424500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002729 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.144 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 87.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2142.
+Total: 2.541100 ms (FindLiveObjects: 0.172400 ms CreateObjectMapping: 0.098200 ms MarkObjects: 1.817700 ms  DeleteObjects: 0.451500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3591.521325 seconds.
+  path: Assets/Prefabs/ObjectDistorter.prefab
+  artifactKey: Guid(f2a37d9a29312bd429e5f329a8cd190b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ObjectDistorter.prefab using Guid(f2a37d9a29312bd429e5f329a8cd190b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e4084e2c8e4b41279a27e8a3afe768') in 0.114961 seconds
+  Import took 0.162248 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
