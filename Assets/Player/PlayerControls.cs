@@ -194,6 +194,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""07895959-5464-4183-845e-33927ca3e2e9"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""a4c3cc9e-abfe-49d5-8f5f-b6770d29f91d"",
                     ""path"": ""<Mouse>/delta/x"",
                     ""interactions"": """",

@@ -19,8 +19,10 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] Transform cam;
     [SerializeField] Transform rightHand;
     [SerializeField] Transform inspectObjPos;
-    [SerializeField] Transform teleportBedObject;
     [SerializeField] GameObject isLoadingScreen;
+
+    Transform teleportBedObject; 
+    [SerializeField] Vector3 returnToPlayerPos;
 
     [Header("Other References")]
     [SerializeField] Animator blackscreen_anim;
@@ -52,6 +54,7 @@ public class PlayerRaycast : MonoBehaviour
                 if(hit.collider.tag == "Bed")
                 {
                     seesBed = true;
+                    teleportBedObject = hit.transform.GetComponent<BedScript>().bedTransform;
                 }   
                 
                 if(hit.collider.tag == "Door")
@@ -238,9 +241,12 @@ public class PlayerRaycast : MonoBehaviour
         isLoadingScreen.SetActive(false);
 
         
+        yield return new WaitForSeconds(.5f);
+        gameObject.transform.position = returnToPlayerPos;
         yield return new WaitForSeconds(3f);
 
         blackscreen_anim.SetBool("Fade", false);
+        //MAYBE TEMPORARY THIS UNDER:
         EndDay();
 
         playerManager.EnablePlayerAll();
@@ -249,14 +255,9 @@ public class PlayerRaycast : MonoBehaviour
 
     void GoToBed()
     {
+        returnToPlayerPos = gameObject.transform.position;
         transform.position = teleportBedObject.position; 
         transform.rotation = teleportBedObject.rotation; 
-        if (seesBed)
-        {
-            //PLAY ANIM
-            //PLAY SOUND EFFECT
-
-        }
 
         EndDay();
     }
