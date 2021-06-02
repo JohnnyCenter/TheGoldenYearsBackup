@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5317609358970351640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.24, z: 0}
+  m_LocalPosition: {x: 0, y: 1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5317609359654265136}
@@ -59,7 +59,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -197,13 +197,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3
-  m_Radius: 0.6
+  m_Height: 2
+  m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &5317609359105687017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +250,8 @@ MonoBehaviour:
   playerCamera: {fileID: 5317609358970351639}
   xClamp: 85
   isDisabled: 0
+  canInspectObj: 0
+  inspectObj: {fileID: 0}
 --- !u!114 &5317609359447579418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,21 +264,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca837fd944fdc6541a85219131a3e1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerManager: {fileID: 5317609359447579419}
+  p_inventory: {fileID: 5317609359852656250}
+  p_look: {fileID: 0}
+  pickup_obj: {fileID: 0}
   cam: {fileID: 5317609358970351639}
-  raycastLength: 4
+  rightHand: {fileID: 5317609359654265136}
+  inspectObjPos: {fileID: 0}
+  teleportBedObject: {fileID: 0}
+  isLoadingScreen: {fileID: 0}
+  blackscreen_anim: {fileID: 0}
   interactableMask:
     serializedVersion: 2
     m_Bits: 128
-  playerManager: {fileID: 5317609359447579419}
-  p_inventory: {fileID: 5317609359852656250}
-  pickup_obj: {fileID: 0}
-  rightHand: {fileID: 5317609359654265136}
-  blackscreen_anim: {fileID: 0}
-  isLoadingScreen: {fileID: 0}
-  seesDoor: 0
-  seesBed: 0
-  seesPickup: 0
-  isDisabled: 0
+  raycastLength: 4
+  rayIsDisabled: 0
 --- !u!114 &5317609359447579419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +330,8 @@ MonoBehaviour:
   pickupList: 
   p_ray: {fileID: 5317609359447579418}
   p_rightHand: {fileID: 5317609359654265136}
+  newHandObj: {fileID: 0}
+  placePickup: {fileID: 0}
 --- !u!1 &5317609359171755556
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,8 +419,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5317609359938075517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.5, z: 1.2}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 5317609359105687018}
   m_RootOrder: 0
