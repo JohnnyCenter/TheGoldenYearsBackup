@@ -1,0 +1,273 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.985; Version 2004; 64bit' Language: 'no' Physical Memory: 16347 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\UnityLibrary(e)\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/UnityProjects (e)/TheGoldenYearsBackup
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64645
+Successfully changed project path to: E:/UnityProjects (e)/TheGoldenYearsBackup
+E:/UnityProjects (e)/TheGoldenYearsBackup
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 52.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/UnityProjects (e)/TheGoldenYearsBackup/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.6627
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Initialize mono
+Mono path[0] = 'E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/UnityLibrary(e)/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000991 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 52.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000851 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 57.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.8 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2064.
+Total: 1.962500 ms (FindLiveObjects: 0.154900 ms CreateObjectMapping: 0.055800 ms MarkObjects: 1.379200 ms  DeleteObjects: 0.371700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/DistortedModels/Armchair_Distorted.fbx
+  artifactKey: Guid(673ef5591feba4947ac6de8bfcb87c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Armchair_Distorted.fbx using Guid(673ef5591feba4947ac6de8bfcb87c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1867896ce403d93f4d4189d50d9e1eb2') in 0.195508 seconds
+  Import took 0.198381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/DistortedModels/Bedroom_Pouf_Distorted.fbx
+  artifactKey: Guid(35347806a0aa8954b8bf42810e0d1b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Bedroom_Pouf_Distorted.fbx using Guid(35347806a0aa8954b8bf42810e0d1b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730d956e64f60cde6453357c49c0af31') in 0.034093 seconds
+  Import took 0.037591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/DistortedModels/Plant_B_Distorted.fbx
+  artifactKey: Guid(248c875ce0844db429491bc0bb9dbfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Plant_B_Distorted.fbx using Guid(248c875ce0844db429491bc0bb9dbfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed3cb428f6b08d4c036939820bdcd4b') in 0.029514 seconds
+  Import took 0.033142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/DistortedModels/CookingHood_Distorted.fbx
+  artifactKey: Guid(0ec878eabdd40504b913220a93a1e28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/CookingHood_Distorted.fbx using Guid(0ec878eabdd40504b913220a93a1e28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da3da8835f45e64f634ed981ec30af1') in 0.022099 seconds
+  Import took 0.024949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/DistortedModels/DiningSet_Chair_Distorted.fbx
+  artifactKey: Guid(628755b0f2b8755488140c03d783dddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/DiningSet_Chair_Distorted.fbx using Guid(628755b0f2b8755488140c03d783dddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846baa756a4b266c43a642a6e0ef4a9e') in 0.074855 seconds
+  Import took 0.078873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/DistortedModels/Fireplace_Distorted.fbx
+  artifactKey: Guid(9e404997803435d419d3d24582ca5fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Fireplace_Distorted.fbx using Guid(9e404997803435d419d3d24582ca5fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e70fa1f8e30725c4d125f4d8fe4b6d9') in 0.040796 seconds
+  Import took 0.061644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/DistortedModels/Bulb_Distorted.fbx
+  artifactKey: Guid(ed84ea740dad4cc4baacd5503fff26fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Bulb_Distorted.fbx using Guid(ed84ea740dad4cc4baacd5503fff26fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e038c9a24f36d05ac8ea110c1f19b1c6') in 0.176777 seconds
+  Import took 0.180264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/DistortedModels/Key_Distorted.fbx
+  artifactKey: Guid(648cf750cdf287740945bebb81dbad95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Key_Distorted.fbx using Guid(648cf750cdf287740945bebb81dbad95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e65cdb01d76e86b506d145e96ee2bf') in 0.012632 seconds
+  Import took 0.016729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/DistortedModels/CookingRange_Distorted.fbx
+  artifactKey: Guid(dde6bee27ae1d4f44b34ee02484396e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/CookingRange_Distorted.fbx using Guid(dde6bee27ae1d4f44b34ee02484396e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ecada50f46c71452a132139f912b428') in 0.051229 seconds
+  Import took 0.054679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/DistortedModels/Dryer_Distorted.fbx
+  artifactKey: Guid(355065e2068dc0c49a94825dd3ee4186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Dryer_Distorted.fbx using Guid(355065e2068dc0c49a94825dd3ee4186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b392af8e0a45bb5afc49d19ab1700c') in 0.030355 seconds
+  Import took 0.033411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/DistortedModels/Plant_C_Distorted.fbx
+  artifactKey: Guid(a47cf8cfb68fa01449f2763cee2403c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Plant_C_Distorted.fbx using Guid(a47cf8cfb68fa01449f2763cee2403c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241f69a2e207b5c4a2810c6b075dbe16') in 0.029426 seconds
+  Import took 0.032668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/DistortedModels/Crate_Distorted.fbx
+  artifactKey: Guid(0ed8242367f84834c87edf1dfc87b65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Crate_Distorted.fbx using Guid(0ed8242367f84834c87edf1dfc87b65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dac039d377c4264262991f30c351d6b') in 0.010200 seconds
+  Import took 0.013169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/DistortedModels/DressingTable_Distorted.fbx
+  artifactKey: Guid(50e257d5ff5de404a9997c21eb9bf637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/DressingTable_Distorted.fbx using Guid(50e257d5ff5de404a9997c21eb9bf637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5842ba35cc2ca63d854f2998e098a0a5') in 0.046839 seconds
+  Import took 0.049887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/DistortedModels/DecorativePlate_Distorted.fbx
+  artifactKey: Guid(27edc0264fbe3cd4d8d8ccdd14553089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/DecorativePlate_Distorted.fbx using Guid(27edc0264fbe3cd4d8d8ccdd14553089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09824e731437ac7d5537ce4c4269688b') in 0.027294 seconds
+  Import took 0.030225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/DistortedModels/BulbHolder_Distorted.fbx
+  artifactKey: Guid(48182d4904db71341a60e7335437427b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/BulbHolder_Distorted.fbx using Guid(48182d4904db71341a60e7335437427b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d087a14ae2a91f895d63bedd3bb359') in 0.020555 seconds
+  Import took 0.023464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/DistortedModels/ChestOfDrawers_A_Distorted.fbx
+  artifactKey: Guid(1a69466383fad2f4599a86cf7eacf581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/ChestOfDrawers_A_Distorted.fbx using Guid(1a69466383fad2f4599a86cf7eacf581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b7a197619fc8111f1de8df48d93e9c') in 0.049412 seconds
+  Import took 0.052479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/DistortedModels/JewelryCasket_Distorted.fbx
+  artifactKey: Guid(afe66625760378b40a41dad1bb5e9ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/JewelryCasket_Distorted.fbx using Guid(afe66625760378b40a41dad1bb5e9ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4e82991e5e55b1482401a96fda93e7') in 0.028761 seconds
+  Import took 0.032856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/DistortedModels/DeskChair_Distorted.fbx
+  artifactKey: Guid(49b303b37b7f2be4c95635f8bbd03d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/DeskChair_Distorted.fbx using Guid(49b303b37b7f2be4c95635f8bbd03d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09626c94f757cc50ad562bbf0b01f4ef') in 0.042939 seconds
+  Import took 0.045860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/DistortedModels/FirewoodStorageFilled_Distorted.fbx
+  artifactKey: Guid(c96399dc14eacde4898b8f1085bbdcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/FirewoodStorageFilled_Distorted.fbx using Guid(c96399dc14eacde4898b8f1085bbdcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f23750feafd18339e22bdc45dc2698') in 0.030308 seconds
+  Import took 0.033232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/DistortedModels/Curtains_Distorted.fbx
+  artifactKey: Guid(6fe7445d01cddb1499d8f647e2261cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DistortedModels/Curtains_Distorted.fbx using Guid(6fe7445d01cddb1499d8f647e2261cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27cbb2fdbc622ed716ff96254322d9d9') in 0.028949 seconds
+  Import took 0.032213 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001555 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.771 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.6 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2110.
+Total: 2.062900 ms (FindLiveObjects: 0.152900 ms CreateObjectMapping: 0.050700 ms MarkObjects: 1.485600 ms  DeleteObjects: 0.372800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000966 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.828 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.6 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2113.
+Total: 2.102500 ms (FindLiveObjects: 0.148800 ms CreateObjectMapping: 0.053700 ms MarkObjects: 1.513400 ms  DeleteObjects: 0.385500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
