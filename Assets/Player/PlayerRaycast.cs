@@ -21,7 +21,7 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] Transform inspectObjPos;
     [SerializeField] GameObject isLoadingScreen;
 
-    Transform teleportBedObject; 
+    GameObject teleportBedObject; 
     [SerializeField] Vector3 returnToPlayerPos;
 
     [Header("Other References")]
@@ -54,7 +54,7 @@ public class PlayerRaycast : MonoBehaviour
                 if(hit.collider.tag == "Bed")
                 {
                     seesBed = true;
-                    teleportBedObject = hit.transform.GetComponent<BedScript>().bedTransform;
+                    teleportBedObject = hit.transform.GetComponent<BedScript>().bedTransform.gameObject;
                 }   
                 
                 if(hit.collider.tag == "Door")
@@ -247,7 +247,7 @@ public class PlayerRaycast : MonoBehaviour
 
         blackscreen_anim.SetBool("Fade", false);
         //MAYBE TEMPORARY THIS UNDER:
-        EndDay();
+        teleportBedObject.GetComponent<BedScript>().GoToBed();
 
         playerManager.EnablePlayerAll();
         yield return null;
@@ -256,17 +256,10 @@ public class PlayerRaycast : MonoBehaviour
     void GoToBed()
     {
         returnToPlayerPos = gameObject.transform.position;
-        transform.position = teleportBedObject.position; 
-        transform.rotation = teleportBedObject.rotation; 
+        transform.position = teleportBedObject.transform.position; 
+        transform.rotation = teleportBedObject.transform.rotation;
 
-        EndDay();
-    }
-
-    void EndDay()
-    {
-        //SWITCH SCENE
-        //PROGRESSION COUNTER
-        //MAYBE HAVE THIS IN THE GAME MANAGER
+        teleportBedObject.GetComponent<BedScript>().GoToBed();
     }
 
     
