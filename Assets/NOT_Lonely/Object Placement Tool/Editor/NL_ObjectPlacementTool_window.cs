@@ -354,7 +354,7 @@ public class NL_ObjectPlacementTool_window : EditorWindow
     void OnEnable()
     {
 
-        SceneView.onSceneGUIDelegate += Upd;
+        SceneView.duringSceneGui += Upd;
 
         EditorApplication.playModeStateChanged += OnPlaymodeStateChanged;
 
@@ -370,7 +370,7 @@ public class NL_ObjectPlacementTool_window : EditorWindow
     void OnDisable()
     {
         EditorApplication.playModeStateChanged -= OnPlaymodeStateChanged;
-        SceneView.onSceneGUIDelegate -= Upd;
+        SceneView.duringSceneGui -= Upd;
     }
 
     void DropAreaGUI()

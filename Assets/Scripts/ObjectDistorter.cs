@@ -24,7 +24,14 @@ public class ObjectDistorter : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
         InitializeLists();
     }
     private void Start()
@@ -40,19 +47,19 @@ public class ObjectDistorter : MonoBehaviour
         }
         DistortManually(ManualInputForDistortion);
     }
-    //Use this function to increase the distortion with a value. The distortion is set to 0 at the start of the game. 100 is max distortion.
-    public void IncreaseDistortion(float _value)
+    public void IncreaseDistortion(float _value) //Use this function to increase the distortion with a value. 
+    //The distortion is set to 0 at the start of the game. 100 is max distortion.
     {
-        if(!overideScriptWithInputFromInspector)
+        if (!overideScriptWithInputFromInspector)
         {
             foreach (SkinnedMeshRenderer renderer in meshRenderers)
             {
-                float currentDistortion = renderer.GetBlendShapeWeight(0);
-                float newDistortion = currentDistortion + _value;
-                renderer.SetBlendShapeWeight(0, newDistortion);
+                float currentDistortion = renderer.GetBlendShapeWeight(0); //Gets the current level of distortion
+                float newDistortion = currentDistortion + _value; //Adds the new distortion to the current level
+                Mathf.Clamp(newDistortion, 0, 100); //Clamps the values
+                renderer.SetBlendShapeWeight(0, newDistortion); //Sets the distortion to the new clamped value
             }
         }
-
     }
 
     #region For testing and demonstration
@@ -69,7 +76,7 @@ public class ObjectDistorter : MonoBehaviour
     }
     #endregion
 
-    #region Initialization and stuff
+    #region Initialization
     private void InitializeLists()
     {
         distortableObjects = GameObject.FindGameObjectsWithTag("CanBeDistorted");
@@ -77,7 +84,7 @@ public class ObjectDistorter : MonoBehaviour
         foreach(GameObject _object in distortableObjects)
         {
             //Get the mesh renderers and add them
-            SkinnedMeshRenderer localRenderer = _object.GetComponent<SkinnedMeshRenderer>();
+            _object.TryGetComponent<SkinnedMeshRenderer>(out SkinnedMeshRenderer localRenderer);
             meshRenderers.Add(localRenderer);
         }
         //print("Distortable objects contains: " + distortableObjects.Length);
