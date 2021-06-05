@@ -36,7 +36,10 @@ public class PlayerManagerTemporary : MonoBehaviour
         p_look.TurnOffMouseControls();
         p_movement.enabled = false;
     }
-
+    public void EnablePlayerRay()
+    {
+        p_raycast.rayIsDisabled = false;
+    }
     public void EnablePlayerAll()
     {
         p_look.TurnOnMouseControls();

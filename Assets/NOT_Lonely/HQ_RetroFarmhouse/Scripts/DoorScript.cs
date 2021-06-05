@@ -17,6 +17,8 @@ namespace NOTLonely_Door
         private Transform[] Childs;
         private Transform Joint01;
         private Transform Joint02;
+        public Transform playRoom;
+        public Transform teleportRoom;
         public enum OpenStyle
         {
             BUTTON,
@@ -431,7 +433,7 @@ namespace NOTLonely_Door
         }
         #endregion
 
-        void OpenDoor()
+        public void OpenDoor()
         {
 
             doorAnimation[AnimationNames.OpeningAnim].speed = controls.openingSpeed;
@@ -448,7 +450,7 @@ namespace NOTLonely_Door
             keySystem.enabled = false;
         }
 
-        void CloseDoor()
+        public void CloseDoor()
         {
             if (doorAnimation[AnimationNames.OpeningAnim].normalizedTime < 0.98f && doorAnimation[AnimationNames.OpeningAnim].normalizedTime > 0)
             {

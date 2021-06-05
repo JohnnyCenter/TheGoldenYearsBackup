@@ -35,6 +35,8 @@ public class PlayerRaycast : MonoBehaviour
     Vector3 pickupOriginalPos; Quaternion pickupOriginalRot;
     [HideInInspector] public bool rayIsDisabled = false;
     [HideInInspector] GameObject animationObject;
+    public GameObject door;
+    public bool doorAnimPlay;
 
     void Update()
     {
@@ -59,7 +61,10 @@ public class PlayerRaycast : MonoBehaviour
                 
                 if(hit.collider.tag == "Door")
                 {
-
+                    if (door == null)
+                    {
+                        door = hit.collider.gameObject;
+                    }
                     seesDoor = true;
                 } 
                 
@@ -101,6 +106,19 @@ public class PlayerRaycast : MonoBehaviour
             }
 
             #endregion
+        }
+        
+    }
+    private void FixedUpdate()
+    {
+        if (doorAnimPlay)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, door.GetComponent<NOTLonely_Door.DoorScript>().playRoom.transform.position, 3 * Time.fixedDeltaTime);
+            if (Vector3.Distance(transform.position, door.GetComponent<NOTLonely_Door.DoorScript>().playRoom.transform.position) < 0.001f)
+            {
+                transform.position = door.GetComponent<NOTLonely_Door.DoorScript>().teleportRoom.transform.position;
+                OpenDoor();
+            }
         }
     }
 
@@ -269,8 +287,12 @@ public class PlayerRaycast : MonoBehaviour
     //HER KAN DU KALLE PÅ FUNKSJONEN FOR Å ÅPNE DØRA OSV
     void OpenDoor()
     {
+        doorAnimPlay = false;
+        door = door.GetComponent<NOTLonely_Door.DoorScript>().teleportRoom.parent.gameObject;
+        playerManager.EnablePlayerRay();
         Debug.Log("OPEN DOOR");
-        isLoadingScreen.SetActive(true);
+        isLoadingScreen.SetActive(true);       
+        door.GetComponent<NOTLonely_Door.DoorScript>().OpenDoor();
         //PLAY ANIM
         //PLAY SOUND EFFECT
     }
@@ -278,7 +300,9 @@ public class PlayerRaycast : MonoBehaviour
     private IEnumerator DoorAnim()
     {
         playerManager.DisablePlayerAll();
-        OpenDoor();
+        doorAnimPlay = true;
+        
+        
 
         //HVOR MANGE SEKUNDER VARER ANIM;
         yield return new WaitForSeconds(2f);
