@@ -15,11 +15,11 @@ C:/Users/Vumsy/Desktop/Spill-Skole/Unity/GIT/TheGoldenYearsBackup
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57176
+49155
 Successfully changed project path to: C:/Users/Vumsy/Desktop/Spill-Skole/Unity/GIT/TheGoldenYearsBackup
 C:/Users/Vumsy/Desktop/Spill-Skole/Unity/GIT/TheGoldenYearsBackup
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 376.80 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 90.95 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -36,12 +36,1851 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.072949 seconds.
+Registered in 0.003017 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 110.27 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 97.01 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+- Completed reload, in  5.484 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002276 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 81.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.526 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.7 MB.
+System memory in use after: 110.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2093.
+Total: 4.169100 ms (FindLiveObjects: 0.662400 ms CreateObjectMapping: 0.208300 ms MarkObjects: 3.249900 ms  DeleteObjects: 0.046000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenToolsHooks.prefab
+  artifactKey: Guid(0a26da564dd7adc4db88d2f5ef41d3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenToolsHooks.prefab using Guid(0a26da564dd7adc4db88d2f5ef41d3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44903bc2bc6556c5aa85e2cc1b996efd') in 0.656606 seconds
+  Import took 0.665105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTool_A.fbx
+  artifactKey: Guid(49391b6236c75634dadacf6ae82ab416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTool_A.fbx using Guid(49391b6236c75634dadacf6ae82ab416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d963f771c95ceff8eb8ddedec9c2c0') in 0.320070 seconds
+  Import took 0.329620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_C.FBX
+  artifactKey: Guid(364c1f10f928af74a8db928317349c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_C.FBX using Guid(364c1f10f928af74a8db928317349c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025312d3adfb9b76a73cbaebae314e06') in 1.149095 seconds
+  Import took 1.183622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000637 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_D.FBX
+  artifactKey: Guid(3e26b561fe184074496e320f1d77a852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_D.FBX using Guid(3e26b561fe184074496e320f1d77a852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6760b25da674868943f78cbe9d7820') in 0.385955 seconds
+  Import took 0.400773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenToolsHooks_tools.fbx
+  artifactKey: Guid(3c9f3bfe789a6f847a3be1f53cdde682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenToolsHooks_tools.fbx using Guid(3c9f3bfe789a6f847a3be1f53cdde682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e027c05c9d80ec0c19d22301118b6cef') in 0.110130 seconds
+  Import took 0.122932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTowel_B.fbx
+  artifactKey: Guid(9273237085655d748a09ec5b0848005b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTowel_B.fbx using Guid(9273237085655d748a09ec5b0848005b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa08a1ef458f11ecae266793db902ee9') in 0.107897 seconds
+  Import took 0.131165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001333 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchen/MCS_Kitchen_Counter.prefab
+  artifactKey: Guid(85e6cb0bb800a3f418fd00076b411f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchen/MCS_Kitchen_Counter.prefab using Guid(85e6cb0bb800a3f418fd00076b411f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1002036bc13087fe905b826a51ba00') in 0.262052 seconds
+  Import took 0.274178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WoodCoated_C_mtl.mat
+  artifactKey: Guid(2d694c0f9cb06854394ce65585d9d862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WoodCoated_C_mtl.mat using Guid(2d694c0f9cb06854394ce65585d9d862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35294e7fa1f81b0899e3cd2ca6624a8d') in 0.111031 seconds
+  Import took 0.116628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTowel_A.fbx
+  artifactKey: Guid(41519faa1df3c9a4e93a3c9bb3fce56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTowel_A.fbx using Guid(41519faa1df3c9a4e93a3c9bb3fce56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc901408792f460454883aac3e40817') in 0.110978 seconds
+  Import took 0.145236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTowel_B.prefab
+  artifactKey: Guid(3c67e0fba44fec7489487185cb24acde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTowel_B.prefab using Guid(3c67e0fba44fec7489487185cb24acde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e556206850fb8e6e0ad5428179a73999') in 0.081818 seconds
+  Import took 0.090007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000667 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTowel_C.fbx
+  artifactKey: Guid(ba77cb9ea47f40a4f99219f38e171c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTowel_C.fbx using Guid(ba77cb9ea47f40a4f99219f38e171c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0d5a4dae98c40bfe3563a5309833f1') in 0.111340 seconds
+  Import took 0.119928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTool_C.prefab
+  artifactKey: Guid(39ecd0be63e14dc4fabdf7b67b652448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTool_C.prefab using Guid(39ecd0be63e14dc4fabdf7b67b652448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f68abcf8bbae314f5cc8a0efbff59a1') in 0.095620 seconds
+  Import took 0.104050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTowel_C.prefab
+  artifactKey: Guid(f13eb5aae7599564f9e8b3f84250d978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTowel_C.prefab using Guid(f13eb5aae7599564f9e8b3f84250d978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f875b7a560b312322db8e1ea2a71035') in 0.095478 seconds
+  Import took 0.104102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WindowGlass_mtl.mat
+  artifactKey: Guid(6317084ee8cf40a48a3fb0d32206f73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WindowGlass_mtl.mat using Guid(6317084ee8cf40a48a3fb0d32206f73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fb1822da5b6e849c27afc4264c5ff5') in 0.181725 seconds
+  Import took 0.187174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTool_B.prefab
+  artifactKey: Guid(83ca542036253de4f8c5abd1e7fdfdb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTool_B.prefab using Guid(83ca542036253de4f8c5abd1e7fdfdb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7822b24a9009d8352f1d4a8221a56f87') in 0.213306 seconds
+  Import took 0.222127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchen/MCS_Kitchen_TopCabinets.prefab
+  artifactKey: Guid(80aa6a572b399e64581fafdbbca742d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchen/MCS_Kitchen_TopCabinets.prefab using Guid(80aa6a572b399e64581fafdbbca742d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180dd2db3f5f0ce9751437123816de4f') in 0.396354 seconds
+  Import took 0.666756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000591 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTool_C.fbx
+  artifactKey: Guid(ecdfa025af2ed5f45b3460bee8801a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTool_C.fbx using Guid(ecdfa025af2ed5f45b3460bee8801a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728a19a1ca1d20c951e48b3de61ea663') in 0.366631 seconds
+  Import took 0.384634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000572 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTool_A.prefab
+  artifactKey: Guid(24d40d1fc21da5e42add05106ecc2db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTool_A.prefab using Guid(24d40d1fc21da5e42add05106ecc2db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2cfb8a5823b3bde9586c1ba5c50c74') in 0.372603 seconds
+  Import took 0.525797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000473 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_A.FBX
+  artifactKey: Guid(ee6425f2af1b3ea41b6286978f7a6a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_A.FBX using Guid(ee6425f2af1b3ea41b6286978f7a6a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13fcf44c8c7bc256e472c5dc3bfffce2') in 0.234430 seconds
+  Import took 0.298312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/Materials/Kitchenware_mtl.mat
+  artifactKey: Guid(cf7a5caafcef2de45ba3f7225038ca79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/Materials/Kitchenware_mtl.mat using Guid(cf7a5caafcef2de45ba3f7225038ca79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f69425d17d1fa6833e983d6736e81d9') in 0.112161 seconds
+  Import took 0.122893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WindowGlass_worn_mtl.mat
+  artifactKey: Guid(a478d866a1bb479418b02dd95825ad78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WindowGlass_worn_mtl.mat using Guid(a478d866a1bb479418b02dd95825ad78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5a5104416a049646e611add15d8eb7') in 0.064243 seconds
+  Import took 0.076067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Top_I.FBX
+  artifactKey: Guid(f85d1915cc4402c48b12245c85feda93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Top_I.FBX using Guid(f85d1915cc4402c48b12245c85feda93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5375ac657ced4124f0a5f76ed9a90cd7') in 0.150060 seconds
+  Import took 0.166630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000561 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTowel_A.prefab
+  artifactKey: Guid(133bc9bbe8d5b0741aa11f1daae5ddfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchenware/KitchenTowel_A.prefab using Guid(133bc9bbe8d5b0741aa11f1daae5ddfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb65671277681b88ba5c58e7a6fd31a') in 0.099073 seconds
+  Import took 0.146501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_ao.tif
+  artifactKey: Guid(6820ded0623f49243bb2b61bc0b19b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_ao.tif using Guid(6820ded0623f49243bb2b61bc0b19b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab44a8a045c735c1a46b956778904d38') in 0.132171 seconds
+  Import took 0.138152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_m_g.tif
+  artifactKey: Guid(421ce6c399b39d5409f81986a4108b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_m_g.tif using Guid(421ce6c399b39d5409f81986a4108b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a113f3701f1cefe0b245db18bb3a11') in 0.114719 seconds
+  Import took 0.123339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000911 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Modules/Interior/Materials/WallTiles_Kitchen_mtl.mat
+  artifactKey: Guid(6cb446761b44bba4194265288890b04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Modules/Interior/Materials/WallTiles_Kitchen_mtl.mat using Guid(6cb446761b44bba4194265288890b04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86c772f304b4e0bc2a027e204b13fb2') in 0.118543 seconds
+  Import took 0.159324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenToolsHooks.fbx
+  artifactKey: Guid(52dd44141cb58bc45a37becdc1812026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenToolsHooks.fbx using Guid(52dd44141cb58bc45a37becdc1812026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1cd4b372eb85712c584718fcae1d4e') in 0.102363 seconds
+  Import took 0.114377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_B.FBX
+  artifactKey: Guid(dbffd969688377f499d61aa417738f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_B.FBX using Guid(dbffd969688377f499d61aa417738f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4927711a568cd0037473615c4b043664') in 0.230991 seconds
+  Import took 0.240312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Window_mtl.mat
+  artifactKey: Guid(2cf4704913d72724991537dcb1b6e8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Window_mtl.mat using Guid(2cf4704913d72724991537dcb1b6e8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4005800132f1a230214041aa9c90e4b8') in 0.260438 seconds
+  Import took 0.266395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchen/Regular Prefabs/KitchenCabinet_Top_I.prefab
+  artifactKey: Guid(08b99decb3948d34885853462114ea5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Kitchen/Regular Prefabs/KitchenCabinet_Top_I.prefab using Guid(08b99decb3948d34885853462114ea5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807874ea65cd05b46851f3a2c4482cf8') in 0.625104 seconds
+  Import took 0.877057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.101461 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_F.FBX
+  artifactKey: Guid(88685ac0dfd376046af422156156ed99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_F.FBX using Guid(88685ac0dfd376046af422156156ed99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ebae800c4107be247a1dcb49ccfb24') in 0.385832 seconds
+  Import took 0.564840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WoodCoated_B_mtl.mat
+  artifactKey: Guid(aeb8ea6c48ba73f4a851a7e605793b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WoodCoated_B_mtl.mat using Guid(aeb8ea6c48ba73f4a851a7e605793b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26aef98a8317415878df1ae229da9efc') in 0.196351 seconds
+  Import took 0.315086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_n.tif
+  artifactKey: Guid(0b8df7371a445774b8d07e418d45e587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_n.tif using Guid(0b8df7371a445774b8d07e418d45e587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe1dc2dde1c9148d702412b89020e4d') in 0.164425 seconds
+  Import took 0.175046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTool_B.fbx
+  artifactKey: Guid(c27dd9f0d697a9c4cb48a2a96ccc6641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchenware/KitchenTool_B.fbx using Guid(c27dd9f0d697a9c4cb48a2a96ccc6641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd289d84a70e51995563de75a27934521') in 0.117084 seconds
+  Import took 0.129893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_bc.tif
+  artifactKey: Guid(934d1094fd0051842962b95e237d50f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Textures/Unwrapped/Kitchenware/Kitchenware_bc.tif using Guid(934d1094fd0051842962b95e237d50f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db948c57f816d1e72169bf81e640def5') in 0.077732 seconds
+  Import took 0.087159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Window_worn_mtl.mat
+  artifactKey: Guid(48e0047444ac1e0408e375a55a7aabf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Window_worn_mtl.mat using Guid(48e0047444ac1e0408e375a55a7aabf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a311c29f0c6bb5d411f0c2a1aba71d') in 0.071209 seconds
+  Import took 0.079492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000517 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_H.FBX
+  artifactKey: Guid(bd8a0bad818de8c4ba3e6b62c168f0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Kitchen/KitchenCabinet_Bottom_H.FBX using Guid(bd8a0bad818de8c4ba3e6b62c168f0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2eaf8a0223c98ea8dbb40ffdf14e60') in 0.183346 seconds
+  Import took 0.200555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WoodCoated_A_mtl.mat
+  artifactKey: Guid(f0a7a15062586e14c92d32270be32fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/WoodCoated_A_mtl.mat using Guid(f0a7a15062586e14c92d32270be32fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6aa525d42310ba3e93a1cf13286af29') in 0.053561 seconds
+  Import took 0.062041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.600751 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/PlasticContainers_mtl.mat
+  artifactKey: Guid(7a41ee977c8c6a449b27a51e449f0ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/PlasticContainers_mtl.mat using Guid(7a41ee977c8c6a449b27a51e449f0ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a33c0339c3b3695266e862600ff22fc') in 0.089299 seconds
+  Import took 0.176460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_mtl.mat
+  artifactKey: Guid(2075da4500d2b294f81ed8a0a98201ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_mtl.mat using Guid(2075da4500d2b294f81ed8a0a98201ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7bf588e5ce1d0dd867ba4487125109') in 0.132538 seconds
+  Import took 0.138071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Rack_mtl.mat
+  artifactKey: Guid(822399d031d29fe42a928b0b8c7c7e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Rack_mtl.mat using Guid(822399d031d29fe42a928b0b8c7c7e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab711586e1881c66892791d810eaa6fe') in 0.098546 seconds
+  Import took 0.105871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Posters_mtl.mat
+  artifactKey: Guid(a6c358677233a184f85d5a3710cfd2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Posters_mtl.mat using Guid(a6c358677233a184f85d5a3710cfd2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dada62095f688b7305a321eca4a5d6f0') in 0.061079 seconds
+  Import took 0.068359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_worn_mtl.mat
+  artifactKey: Guid(f776b267b7de3e84babe9bd76b8e9063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_worn_mtl.mat using Guid(f776b267b7de3e84babe9bd76b8e9063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e28af50a544aec54bc878a017e331a0') in 0.075080 seconds
+  Import took 0.081065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radio_mtl.mat
+  artifactKey: Guid(bae43857dd8ae7245aed62de8d1db61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radio_mtl.mat using Guid(bae43857dd8ae7245aed62de8d1db61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c0628c5c17c59bfc561571234ae124') in 0.085093 seconds
+  Import took 0.091923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_B_worn_mtl.mat
+  artifactKey: Guid(c0629a51e23468a4f80a3e83ac4d0f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_B_worn_mtl.mat using Guid(c0629a51e23468a4f80a3e83ac4d0f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6fb94a8c42086e4c7945322d6f9525') in 0.083398 seconds
+  Import took 0.089524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_B_mtl.mat
+  artifactKey: Guid(dc3fe4c1b6bf5c34f8c0da111c95806b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_B_mtl.mat using Guid(dc3fe4c1b6bf5c34f8c0da111c95806b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd433df34f387cca66080af907b43246') in 0.062775 seconds
+  Import took 0.068544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003483 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_B_mtl.mat
+  artifactKey: Guid(dc3fe4c1b6bf5c34f8c0da111c95806b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Radiator_B_mtl.mat using Guid(dc3fe4c1b6bf5c34f8c0da111c95806b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd433df34f387cca66080af907b43246') in 0.030147 seconds
+  Import took 0.036157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 139.127625 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/RecordPlayer_mtl.mat
+  artifactKey: Guid(b38b1b6de6fab4f408ffca226a7020ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/RecordPlayer_mtl.mat using Guid(b38b1b6de6fab4f408ffca226a7020ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac863f12910fb505a8c093e1f0e7615') in 0.177951 seconds
+  Import took 0.187169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000561 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Refrigerator_mtl.mat
+  artifactKey: Guid(6f56a3abe131a1d41812cbb6c8f7c06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Refrigerator_mtl.mat using Guid(6f56a3abe131a1d41812cbb6c8f7c06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd74047d0e851a846c662cfde91af47') in 0.147790 seconds
+  Import took 0.167184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/RockingChair_mtl.mat
+  artifactKey: Guid(8349b0038585a4d4aab9475af49a2267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/RockingChair_mtl.mat using Guid(8349b0038585a4d4aab9475af49a2267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a196f31ff66675647ec0288b61a84d') in 0.184599 seconds
+  Import took 0.190718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Refrigerator_worn_mtl.mat
+  artifactKey: Guid(62149f973cc4fa244a467797c33fcbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Refrigerator_worn_mtl.mat using Guid(62149f973cc4fa244a467797c33fcbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b58b803913d3228d0aa420038033fc8') in 0.070254 seconds
+  Import took 0.079540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008084 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Refrigerator_worn_mtl.mat
+  artifactKey: Guid(62149f973cc4fa244a467797c33fcbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Materials/Refrigerator_worn_mtl.mat using Guid(62149f973cc4fa244a467797c33fcbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b58b803913d3228d0aa420038033fc8') in 0.032089 seconds
+  Import took 0.038950 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001662 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.966 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.5 MB.
+System memory in use after: 109.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2142.
+Total: 4.255500 ms (FindLiveObjects: 0.376100 ms CreateObjectMapping: 0.158500 ms MarkObjects: 3.689200 ms  DeleteObjects: 0.029600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002384 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.895 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.5 MB.
+System memory in use after: 109.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2145.
+Total: 2.989400 ms (FindLiveObjects: 0.233300 ms CreateObjectMapping: 0.080800 ms MarkObjects: 2.647100 ms  DeleteObjects: 0.025400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002291 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.294 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.5 MB.
+System memory in use after: 109.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2148.
+Total: 2.603600 ms (FindLiveObjects: 0.353400 ms CreateObjectMapping: 0.136700 ms MarkObjects: 2.087000 ms  DeleteObjects: 0.021500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002549 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.162 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.5 MB.
+System memory in use after: 109.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2151.
+Total: 2.655400 ms (FindLiveObjects: 0.354000 ms CreateObjectMapping: 0.105700 ms MarkObjects: 2.171500 ms  DeleteObjects: 0.022600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001399 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.427 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.6 MB.
+System memory in use after: 109.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2154.
+Total: 3.282100 ms (FindLiveObjects: 0.327100 ms CreateObjectMapping: 0.124700 ms MarkObjects: 2.804200 ms  DeleteObjects: 0.024300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001391 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.298 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.6 MB.
+System memory in use after: 109.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2157.
+Total: 2.744300 ms (FindLiveObjects: 0.402900 ms CreateObjectMapping: 0.124500 ms MarkObjects: 2.193300 ms  DeleteObjects: 0.021800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002856 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.228 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.6 MB.
+System memory in use after: 109.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2160.
+Total: 2.551800 ms (FindLiveObjects: 0.199300 ms CreateObjectMapping: 0.068000 ms MarkObjects: 2.248800 ms  DeleteObjects: 0.033300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001555 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.404 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.6 MB.
+System memory in use after: 109.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2163.
+Total: 2.569600 ms (FindLiveObjects: 0.181800 ms CreateObjectMapping: 0.061000 ms MarkObjects: 2.306100 ms  DeleteObjects: 0.019200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3780.957722 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FirewoodStorageFilled.fbx
+  artifactKey: Guid(b502c200e84ddd646bf9cff10f3627bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FirewoodStorageFilled.fbx using Guid(b502c200e84ddd646bf9cff10f3627bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260f5f1ad920ca7c73962e5ab5b59125') in 0.724140 seconds
+  Import took 0.732072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_50cm.fbx
+  artifactKey: Guid(bb284f3a99b51f04380db41b2e0e6469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_50cm.fbx using Guid(bb284f3a99b51f04380db41b2e0e6469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5230c906d4783e13b52a9584ae2af0c') in 0.133014 seconds
+  Import took 0.138616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000527 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FloorShelves.FBX
+  artifactKey: Guid(d039bff18fb56944d8cbd7d433d9e905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FloorShelves.FBX using Guid(d039bff18fb56944d8cbd7d433d9e905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044e8dd527dd8a90286bf1adebcf5187') in 0.168947 seconds
+  Import took 0.176164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000508 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Outlet.fbx
+  artifactKey: Guid(933601c6a4cbf8d4da5d84a0a08e62cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Outlet.fbx using Guid(933601c6a4cbf8d4da5d84a0a08e62cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c12b42505da0688f73c6c539836b9d3') in 0.112272 seconds
+  Import took 0.119679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Globe.FBX
+  artifactKey: Guid(f274712770f50ab49be818fd800411f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Globe.FBX using Guid(f274712770f50ab49be818fd800411f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '461413daf40bfc81c63d90cedbe28d09') in 0.182340 seconds
+  Import took 0.189212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000520 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Plaid_Sofa_A.fbx
+  artifactKey: Guid(051154ad80c87be40a9f944a8eebd836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Plaid_Sofa_A.fbx using Guid(051154ad80c87be40a9f944a8eebd836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2908c75069d0ca509084084e235b648') in 0.138286 seconds
+  Import took 0.143820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/IroningBoard.fbx
+  artifactKey: Guid(4cbb703b89ac9294ca8bd8418f17eb78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/IroningBoard.fbx using Guid(4cbb703b89ac9294ca8bd8418f17eb78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1851de4c67a9026d12c176a67e45b3c') in 0.608514 seconds
+  Import took 0.621132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000687 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/JewelryCasket.FBX
+  artifactKey: Guid(40829f4e14441fd4887bc610c1d06053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/JewelryCasket.FBX using Guid(40829f4e14441fd4887bc610c1d06053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69972611bb3f98538706adebc902285') in 0.583702 seconds
+  Import took 0.597260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_B.fbx
+  artifactKey: Guid(c9698461c8c63cb4cb11bf6e073e5147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_B.fbx using Guid(c9698461c8c63cb4cb11bf6e073e5147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d229bf2d53a0a1fd4ba52a7c45f1fa') in 0.080611 seconds
+  Import took 0.089619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000658 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_250cm.fbx
+  artifactKey: Guid(bc61be19f3aaa8c49b5b3f7c4e47d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_250cm.fbx using Guid(bc61be19f3aaa8c49b5b3f7c4e47d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebef7c70ee7d862115ef1d692d90e59e') in 0.086406 seconds
+  Import took 0.100854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_A.fbx
+  artifactKey: Guid(2b176b36cb4486c4f8df889618013f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_A.fbx using Guid(2b176b36cb4486c4f8df889618013f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ade6987d599d606ebdec62258e9e4ea') in 0.060436 seconds
+  Import took 0.069158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsole.fbx
+  artifactKey: Guid(caa5191b55ff39d47bccbcc3c482a7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsole.fbx using Guid(caa5191b55ff39d47bccbcc3c482a7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcd652cc975ac5ee24b173913db6e24') in 0.188383 seconds
+  Import took 0.198467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Plant_A.fbx
+  artifactKey: Guid(a50eceebba723034e8daf1265a3322df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Plant_A.fbx using Guid(a50eceebba723034e8daf1265a3322df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b272d08e16e7d4031031f53eef9b6e') in 0.779808 seconds
+  Import took 0.786407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000498 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Interior.FBX
+  artifactKey: Guid(bac4bca413a09be4993873d2e1df4652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Interior.FBX using Guid(bac4bca413a09be4993873d2e1df4652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58e4c5fe753b9547ad8f19ded96f0ab6') in 1.587562 seconds
+  Import took 1.604054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000542 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FuseBox.FBX
+  artifactKey: Guid(793bdf2e8069c4841a3d9d9f7da3a9db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FuseBox.FBX using Guid(793bdf2e8069c4841a3d9d9f7da3a9db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5cf2a602d052edf759e17f9bd85a75') in 0.187039 seconds
+  Import took 0.276761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000647 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_100cm.fbx
+  artifactKey: Guid(5224fc441a3a8fd469c1bbd433a45199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_100cm.fbx using Guid(5224fc441a3a8fd469c1bbd433a45199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a789346bdad9ba5407c8ecaf0878fedb') in 0.229893 seconds
+  Import took 0.238804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000546 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/LightSwitch.fbx
+  artifactKey: Guid(c35ed99e2a8d7ee4fbcb5568ce058b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/LightSwitch.fbx using Guid(c35ed99e2a8d7ee4fbcb5568ce058b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafa701a11fc823a539eb9555aee5860') in 0.133055 seconds
+  Import took 0.143094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000479 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_corner.fbx
+  artifactKey: Guid(f72abe1a18d55f143b7020e94afbd2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_corner.fbx using Guid(f72abe1a18d55f143b7020e94afbd2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b55917ea0a2909328c1a1ed7bff152b') in 0.104516 seconds
+  Import took 0.111853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Key.fbx
+  artifactKey: Guid(d4cee03b03b1332428041b9c641f5287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Key.fbx using Guid(d4cee03b03b1332428041b9c641f5287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c17ed8687a86012bd7b2f94adcc4fd') in 0.101629 seconds
+  Import took 0.107087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_cross.fbx
+  artifactKey: Guid(4d6b8640cc2163245be68e7c8bba3a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pipe_cross.fbx using Guid(4d6b8640cc2163245be68e7c8bba3a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496830c435eb11bf0083dc207225e097') in 0.100321 seconds
+  Import took 0.149134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleCartridge_A.fbx
+  artifactKey: Guid(644009ab7e8a0854da7af87b668839c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleCartridge_A.fbx using Guid(644009ab7e8a0854da7af87b668839c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298c43bb001a8d768375ef4b5dd6dbcb') in 0.072144 seconds
+  Import took 0.080000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pennants.FBX
+  artifactKey: Guid(7948c9068d4b23e4b9891cb5d48b72bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Pennants.FBX using Guid(7948c9068d4b23e4b9891cb5d48b72bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf34f1c88f8230480e8acd484a0ffa7') in 0.069581 seconds
+  Import took 0.079235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Iron.fbx
+  artifactKey: Guid(6be4eadece8c8cf4c9a4bdf0ffdbac5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Iron.fbx using Guid(6be4eadece8c8cf4c9a4bdf0ffdbac5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69101d1a88fcf24e8358ab679c7bd56b') in 0.074465 seconds
+  Import took 0.303113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.082554 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Mirror.fbx
+  artifactKey: Guid(c99c36845ef06784c8cb385cc67f3768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Mirror.fbx using Guid(c99c36845ef06784c8cb385cc67f3768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cddba6cdda2eadc4555082d478323b8') in 0.358877 seconds
+  Import took 0.393399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000651 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleJoystick.fbx
+  artifactKey: Guid(32e19c1324ae6d942ab54adcfbc6c86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleJoystick.fbx using Guid(32e19c1324ae6d942ab54adcfbc6c86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a2e5eac7dca1a26cbd53ee9ab8f92a') in 0.179966 seconds
+  Import took 0.205860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012319 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleCartridge_C.fbx
+  artifactKey: Guid(afcfaf6773305304a9df4f54c6d899c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleCartridge_C.fbx using Guid(afcfaf6773305304a9df4f54c6d899c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd662152c50e2d48000f40897f8762c92') in 0.066767 seconds
+  Import took 0.148214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000513 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleCartridge_B.fbx
+  artifactKey: Guid(dcc78b62634b3344faf524914cd67487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/GameConsoleCartridge_B.fbx using Guid(dcc78b62634b3344faf524914cd67487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585ca4be1b6f4528dc98c0c2dc5cd602') in 0.070027 seconds
+  Import took 0.079016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000604 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_B_raised.fbx
+  artifactKey: Guid(d5b433549b00c5b4cae2072aef169fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_B_raised.fbx using Guid(d5b433549b00c5b4cae2072aef169fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601c923c835fd9c19a11e2079949ebaa') in 0.051043 seconds
+  Import took 0.061051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001072 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FirreplaceTools_Distorted.fbx
+  artifactKey: Guid(13fefe1f8a9c9924fb62fd67d19b3483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/FirreplaceTools_Distorted.fbx using Guid(13fefe1f8a9c9924fb62fd67d19b3483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81473e68a60025787fb1af1cdc99560f') in 0.141500 seconds
+  Import took 0.150703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_A_closed.fbx
+  artifactKey: Guid(ec09b69f46c082f47bdc174c43cdbf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_A_closed.fbx using Guid(ec09b69f46c082f47bdc174c43cdbf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e071d9d7c51ecf313aedab455b29088') in 0.064959 seconds
+  Import took 0.075063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000699 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_B_closed.fbx
+  artifactKey: Guid(16302f5af4122a143bb9e91860dfa587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_B_closed.fbx using Guid(16302f5af4122a143bb9e91860dfa587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2895db27481e12a055eb0f5f0d0210') in 0.105644 seconds
+  Import took 0.115486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Plaid_RockingChair.fbx
+  artifactKey: Guid(c8bca1a41510c9c4691c57da913e012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Plaid_RockingChair.fbx using Guid(c8bca1a41510c9c4691c57da913e012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74ce217656a2937b0e2998f4be63cac') in 0.165614 seconds
+  Import took 0.172728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_A_raised.fbx
+  artifactKey: Guid(699e86247753a184ab2a5c8c6ff9aa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Meshes/Jalousie_A_raised.fbx using Guid(699e86247753a184ab2a5c8c6ff9aa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5618bbf39e4166576229cfcdc75508') in 0.110025 seconds
+  Import took 0.116989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.579907 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_50cmX500cm.prefab
+  artifactKey: Guid(2d8b207c1ab80264ca6ed403cdeb9ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_50cmX500cm.prefab using Guid(2d8b207c1ab80264ca6ed403cdeb9ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe7afdc535c52c6a4a63132fa5c938c') in 1.547741 seconds
+  Import took 1.576045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX500cm.prefab
+  artifactKey: Guid(8d11021b528957842b49fc1af47318ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX500cm.prefab using Guid(8d11021b528957842b49fc1af47318ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedd6e93ac7df294374465f109a53886') in 0.454146 seconds
+  Import took 0.467778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_50cmX750cm.prefab
+  artifactKey: Guid(14e72e007f2946f47b53dc36d83d7c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_50cmX750cm.prefab using Guid(14e72e007f2946f47b53dc36d83d7c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1745f4f5abff5af8d19f6dee339d8d') in 0.242448 seconds
+  Import took 0.255929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX750cm_gable.prefab
+  artifactKey: Guid(d73f3c5acd0a5b8418c9bcdaafb1f50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX750cm_gable.prefab using Guid(d73f3c5acd0a5b8418c9bcdaafb1f50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b7ad3065472f57a015e42c482dc94b') in 1.390730 seconds
+  Import took 1.583390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000675 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX750cm.prefab
+  artifactKey: Guid(480d06013fcbee943932812090732755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX750cm.prefab using Guid(480d06013fcbee943932812090732755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c578dd4ceab004b31866c845f0fd77') in 0.230578 seconds
+  Import took 0.251153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_50cmX500cm.prefab
+  artifactKey: Guid(361c960c9896ac1489450acf88a4824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_50cmX500cm.prefab using Guid(361c960c9896ac1489450acf88a4824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e4d82252847f6ef1c0e790425cc82f') in 0.210141 seconds
+  Import took 0.229078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000513 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX500cm_gable.prefab
+  artifactKey: Guid(d7bd34d317bd8f24781521457db18572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX500cm_gable.prefab using Guid(d7bd34d317bd8f24781521457db18572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bd58bda7e917247265e9148be5585c') in 0.592764 seconds
+  Import took 0.624064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000607 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX1000cm_gable.prefab
+  artifactKey: Guid(1ff0d02032f4cd94f9f21ee829cc5284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX1000cm_gable.prefab using Guid(1ff0d02032f4cd94f9f21ee829cc5284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d1af564c192b9a1835eec6e2a83153') in 0.332484 seconds
+  Import took 0.356488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX750cm_gable.prefab
+  artifactKey: Guid(3bdfe4ac4f306874da2db149f323cc47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX750cm_gable.prefab using Guid(3bdfe4ac4f306874da2db149f323cc47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79943851f57e7181f30c159cb7daab5') in 0.197322 seconds
+  Import took 0.215114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_1500cm_corner.prefab
+  artifactKey: Guid(d10cf74244bae0142b5f8f43d7fcdb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_1500cm_corner.prefab using Guid(d10cf74244bae0142b5f8f43d7fcdb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efa69143901685f70c2ea4c6a50f8e2') in 0.473353 seconds
+  Import took 0.503391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000610 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_L_broken.prefab
+  artifactKey: Guid(46ee2d80e3b29c248b4197849967b8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_L_broken.prefab using Guid(46ee2d80e3b29c248b4197849967b8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502718b6d48e3f878f0660a73a752080') in 1.195097 seconds
+  Import took 1.413863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000572 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerIn_broken.prefab
+  artifactKey: Guid(b627927cbacce6b49b56322834ce8df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerIn_broken.prefab using Guid(b627927cbacce6b49b56322834ce8df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39cc6883c8cd057042d276df8c63bda6') in 0.200218 seconds
+  Import took 0.218028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000699 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_L.prefab
+  artifactKey: Guid(072d6bb7237d3784783dbb7fde0b6443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_L.prefab using Guid(072d6bb7237d3784783dbb7fde0b6443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b6765f9e4f7f68b693656cfd9f4e23') in 0.280966 seconds
+  Import took 0.306712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000546 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_R.prefab
+  artifactKey: Guid(736fff80180a8d542be5135183c35987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_R.prefab using Guid(736fff80180a8d542be5135183c35987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a56dca5ca47e23c12dc0a05ba23d695') in 0.188051 seconds
+  Import took 0.210257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windows.prefab
+  artifactKey: Guid(4c1e1686e18ccc54883c054e6c79b272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windows.prefab using Guid(4c1e1686e18ccc54883c054e6c79b272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b788ac7024a630459cfd8ce6fe2cf43') in 0.173112 seconds
+  Import took 0.191403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerIn.prefab
+  artifactKey: Guid(7de0f3a2bd409684187569d10689b1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerIn.prefab using Guid(7de0f3a2bd409684187569d10689b1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc531c957e43a0df67017345a44a088') in 0.208165 seconds
+  Import took 0.227436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_R.prefab
+  artifactKey: Guid(dd487ea6577000c4fb8e36762ef2acba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_R.prefab using Guid(dd487ea6577000c4fb8e36762ef2acba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18df6c169675a7b578c84f31199d9fde') in 0.290389 seconds
+  Import took 0.329535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallL_broken.prefab
+  artifactKey: Guid(004c7267ef875fc49be4cf7ccae97ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallL_broken.prefab using Guid(004c7267ef875fc49be4cf7ccae97ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8bb659122b9445ad1f1290959f4572') in 0.189738 seconds
+  Import took 0.205856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_L.prefab
+  artifactKey: Guid(220d028eb9ebd3a4abc42ae7c1c12c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_L.prefab using Guid(220d028eb9ebd3a4abc42ae7c1c12c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '916dcf09487e7e53be9773caa418e659') in 1.011512 seconds
+  Import took 1.051005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078684 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_porch.prefab
+  artifactKey: Guid(8c7195ee95893d14fa23141734c81e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_porch.prefab using Guid(8c7195ee95893d14fa23141734c81e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2201cbc2184a22366c15644ef60e7fd6') in 0.420656 seconds
+  Import took 0.463627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000709 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_500cm_porch_broken.prefab
+  artifactKey: Guid(785953e2f3053304abf33134eb658703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_500cm_porch_broken.prefab using Guid(785953e2f3053304abf33134eb658703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7462b76c3b0f408f755a347578b03a') in 0.168600 seconds
+  Import took 0.258123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000534 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_R_broken.prefab
+  artifactKey: Guid(e9987be527927804495eb44166d2ba1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_R_broken.prefab using Guid(e9987be527927804495eb44166d2ba1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284d77a1a4c07791e82d4ae6e7a6f37f') in 0.471449 seconds
+  Import took 0.631119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_corner.prefab
+  artifactKey: Guid(d6402c2db43dddd44aeeb9d337553ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_corner.prefab using Guid(d6402c2db43dddd44aeeb9d337553ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49dbac7fcc3c9bbfb5348e34d4265773') in 0.191336 seconds
+  Import took 0.212354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000514 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_broken.prefab
+  artifactKey: Guid(c5245ac274963bb4a99b784d271d7d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_broken.prefab using Guid(c5245ac274963bb4a99b784d271d7d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3525d99a7792c79f3c658547f56b53d') in 0.332297 seconds
+  Import took 0.483330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX800cm_gable.prefab
+  artifactKey: Guid(2995ada97bafe9e4d95f566b29b97d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX800cm_gable.prefab using Guid(2995ada97bafe9e4d95f566b29b97d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13fa777a2e4da4fda4c783ab8a6da52f') in 0.725005 seconds
+  Import took 1.350734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_R_broken.prefab
+  artifactKey: Guid(cd262b53ffa548c4d9d19d918fba0c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_R_broken.prefab using Guid(cd262b53ffa548c4d9d19d918fba0c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1b1ce270fa809320036702b138f890') in 0.413548 seconds
+  Import took 0.440925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_50cm_plain.prefab
+  artifactKey: Guid(951a0ee972a932542b0398a31d271e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_50cm_plain.prefab using Guid(951a0ee972a932542b0398a31d271e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1074a87a54761c2d84dcec92616b558d') in 0.264369 seconds
+  Import took 0.276131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000483 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porch_broken.prefab
+  artifactKey: Guid(5986302cc8db1994c86dde0b105dad20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porch_broken.prefab using Guid(5986302cc8db1994c86dde0b105dad20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e7d7eb089ff0e8eee791641c99b3db') in 0.264304 seconds
+  Import took 0.287542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000512 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowL.prefab
+  artifactKey: Guid(6f2e72a7f65ce744ab41a68bc8add579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowL.prefab using Guid(6f2e72a7f65ce744ab41a68bc8add579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b538d3ecbf670982bf682504679a80fc') in 0.225285 seconds
+  Import took 0.246301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000547 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_50cmX1000cm.prefab
+  artifactKey: Guid(a594c1ea64c6be64d9922d6f26cf55fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_50cmX1000cm.prefab using Guid(a594c1ea64c6be64d9922d6f26cf55fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e3e2e2f9d56dc9bebdbc2fe92df669') in 0.191324 seconds
+  Import took 0.209304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_500cm_broken.prefab
+  artifactKey: Guid(838ab07eaca10784aa7e0bc3361bff95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_500cm_broken.prefab using Guid(838ab07eaca10784aa7e0bc3361bff95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78b3a960e0465c532cc7d13aa526e1d') in 0.206850 seconds
+  Import took 0.224981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_broken.prefab
+  artifactKey: Guid(00a7c8b34e3593e46a54a5c5fca0746c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_broken.prefab using Guid(00a7c8b34e3593e46a54a5c5fca0746c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c782ba78a8366afa00d40aa99bc2f9') in 0.234509 seconds
+  Import took 0.251894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000540 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_doorWide.prefab
+  artifactKey: Guid(59652290d6f5a264ab98bda66f13aa28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_doorWide.prefab using Guid(59652290d6f5a264ab98bda66f13aa28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9113a7ac2952061219a2d13dfaceff9') in 0.103603 seconds
+  Import took 0.114209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windows_broken.prefab
+  artifactKey: Guid(c136e31e402c280479bc210cd059f3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windows_broken.prefab using Guid(c136e31e402c280479bc210cd059f3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c8feaf9c0417941e3aa6a3efaeed9e') in 0.207487 seconds
+  Import took 0.226163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000698 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX750cm.prefab
+  artifactKey: Guid(4773b3caaa8783b42a8a8737ceb052a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX750cm.prefab using Guid(4773b3caaa8783b42a8a8737ceb052a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5d5af693617ca450db879aee92785d3') in 0.507430 seconds
+  Import took 0.820486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001122 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_windowSmall.prefab
+  artifactKey: Guid(65a858b1953657f4ab514ce8e4978ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_windowSmall.prefab using Guid(65a858b1953657f4ab514ce8e4978ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e394eacc5058d43999e7cd09e5b75efe') in 0.517022 seconds
+  Import took 0.550689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000680 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX500cm_gable.prefab
+  artifactKey: Guid(d36630bcec62a0c45a8499a4a4c180b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX500cm_gable.prefab using Guid(d36630bcec62a0c45a8499a4a4c180b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd287915cf51fc6ab60215236006f15f4') in 0.707325 seconds
+  Import took 0.921185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_50cmX750cm.prefab
+  artifactKey: Guid(cd8bb6031ee67524d903411c05543dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_50cmX750cm.prefab using Guid(cd8bb6031ee67524d903411c05543dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37ce3dc87a1649ca1efd5f36b2da2f6') in 0.314034 seconds
+  Import took 0.326572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001529 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX500cm_gable.prefab
+  artifactKey: Guid(d7bd34d317bd8f24781521457db18572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_high_250cmX500cm_gable.prefab using Guid(d7bd34d317bd8f24781521457db18572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bd58bda7e917247265e9148be5585c') in 0.245720 seconds
+  Import took 0.261903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_L_broken.prefab
+  artifactKey: Guid(d476262faf50168479ac800b2402b64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_door_L_broken.prefab using Guid(d476262faf50168479ac800b2402b64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904afc0bb95ef64379e91d637f04bb53') in 0.225779 seconds
+  Import took 0.239097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowL_broken.prefab
+  artifactKey: Guid(df8e946ec66760e40bfaacf72de1214c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowL_broken.prefab using Guid(df8e946ec66760e40bfaacf72de1214c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2f2065b6956541d537a5b814e9b901') in 0.149714 seconds
+  Import took 0.163794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallR_broken.prefab
+  artifactKey: Guid(39c003b30dbc02948a5f0f6dae3d2492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallR_broken.prefab using Guid(39c003b30dbc02948a5f0f6dae3d2492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bdbfe21af746ad1fe71cf6ef4f6d6d') in 0.177946 seconds
+  Import took 0.193417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowsSmall.prefab
+  artifactKey: Guid(3f821b70318f567418b5b96b290ee800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowsSmall.prefab using Guid(3f821b70318f567418b5b96b290ee800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8b42c9e54ee11e4bf393af2b739e47') in 0.422919 seconds
+  Import took 1.057637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000625 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_window_broken.prefab
+  artifactKey: Guid(ce58d9665029a644186fbfdeccfb4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_window_broken.prefab using Guid(ce58d9665029a644186fbfdeccfb4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48fab5a24248cae763301bf44ad9c8a6') in 0.350873 seconds
+  Import took 0.551712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001118 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porchSeparate.prefab
+  artifactKey: Guid(438442783b12ba444acf2c7a358fbb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porchSeparate.prefab using Guid(438442783b12ba444acf2c7a358fbb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98eb067e335673cc31ab32c55552bc9e') in 0.485691 seconds
+  Import took 0.522668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallL.prefab
+  artifactKey: Guid(500c8f90de27f0345acb5422972b5d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallL.prefab using Guid(500c8f90de27f0345acb5422972b5d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610cdd8b7bd2ad2496564e9f027bf87b') in 0.172423 seconds
+  Import took 0.203737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000588 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_R_broken.prefab
+  artifactKey: Guid(245b9571b04fb7b4094e1308d5bf87f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_end_R_broken.prefab using Guid(245b9571b04fb7b4094e1308d5bf87f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe08930e9248913461dccae536fec85e') in 0.311572 seconds
+  Import took 0.337147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000470 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_doorNarrow_broken.prefab
+  artifactKey: Guid(bd98cf2eefe242a4f99d475c76e7eb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_doorNarrow_broken.prefab using Guid(bd98cf2eefe242a4f99d475c76e7eb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6970bfb3757f6d2cf501befde4cb366e') in 0.215656 seconds
+  Import took 0.234138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX800cm.prefab
+  artifactKey: Guid(14efa7e795978574b8f163568277e99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX800cm.prefab using Guid(14efa7e795978574b8f163568277e99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1cf0ab2df9e253c49ddfb911d7c2795') in 0.181948 seconds
+  Import took 0.203743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000587 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_window.prefab
+  artifactKey: Guid(bb5fbadd8f0ecd6429b0845aa1f4e37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_window.prefab using Guid(bb5fbadd8f0ecd6429b0845aa1f4e37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808ed03d082d394fded91e73d70ebcbd') in 0.262106 seconds
+  Import took 0.274904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000511 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowR.prefab
+  artifactKey: Guid(3975cce8c650edb4d8b363525f7a021c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowR.prefab using Guid(3975cce8c650edb4d8b363525f7a021c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb9c200694c151e902b4e86e8a7a028') in 0.158159 seconds
+  Import took 0.176572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_500cm.prefab
+  artifactKey: Guid(9e5a4127d7af96442850037ff3cd9474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_500cm.prefab using Guid(9e5a4127d7af96442850037ff3cd9474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4521dd75b24e45744afb263c7c33002') in 0.641485 seconds
+  Import took 0.815339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014325 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallR.prefab
+  artifactKey: Guid(ce7605744ffdd924db665da625bd7900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowSmallR.prefab using Guid(ce7605744ffdd924db665da625bd7900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f237933abd72d0a86def91c8953613') in 0.313907 seconds
+  Import took 0.332837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000470 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porchSeparate_broken.prefab
+  artifactKey: Guid(657cfbaef047dc547be23fe4dd2a2f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porchSeparate_broken.prefab using Guid(657cfbaef047dc547be23fe4dd2a2f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b29795c18f144d68c45b7ca4bc12f9') in 0.311754 seconds
+  Import took 0.348429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_L_broken.prefab
+  artifactKey: Guid(d8dd1b8d93b28e04a846b6bed5d765c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_L_broken.prefab using Guid(d8dd1b8d93b28e04a846b6bed5d765c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07502a3b54c2c07ad26a5ad9a6520087') in 0.228102 seconds
+  Import took 0.251174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_1500cm.prefab
+  artifactKey: Guid(edf21b3945d0d2e4788adc58924c1bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_1500cm.prefab using Guid(edf21b3945d0d2e4788adc58924c1bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d1df848636f73552844a2c7d38ad30') in 0.437182 seconds
+  Import took 0.473196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_plain.prefab
+  artifactKey: Guid(ca7bfd1564073634ca56f830585b37ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_plain.prefab using Guid(ca7bfd1564073634ca56f830585b37ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8723ecfec359f394da84a607f6d7d6') in 0.424913 seconds
+  Import took 0.578759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000667 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm.prefab
+  artifactKey: Guid(2179b01e8a72cfb4fa35873c5f62a604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm.prefab using Guid(2179b01e8a72cfb4fa35873c5f62a604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb4a39d375927734bc6dd77d3b64bfa') in 0.218011 seconds
+  Import took 0.308732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_porch_broken.prefab
+  artifactKey: Guid(a1e47ccd7056026429fd3c2d89023707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_porch_broken.prefab using Guid(a1e47ccd7056026429fd3c2d89023707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16063f6015aecdd97fcf21a1848d2319') in 0.211796 seconds
+  Import took 0.232711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut.prefab
+  artifactKey: Guid(d46197056bb3e2f488d64e627b9db373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut.prefab using Guid(d46197056bb3e2f488d64e627b9db373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7538089c2f9c6d7ddf3c68005b424c2a') in 0.200838 seconds
+  Import took 0.220486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_R.prefab
+  artifactKey: Guid(f32710967bdc32d42b26ebf2792119ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_R.prefab using Guid(f32710967bdc32d42b26ebf2792119ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c15fd5ebf6f659f3b0dc30ba2b2e58') in 0.999799 seconds
+  Import took 1.167557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_plain_broken.prefab
+  artifactKey: Guid(3221656b2e216c240a7b284901cddbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_plain_broken.prefab using Guid(3221656b2e216c240a7b284901cddbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8065289163ca3448d304c03c090b7cb5') in 1.452641 seconds
+  Import took 1.606593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowsSmall_broken.prefab
+  artifactKey: Guid(d49a6ecd744dc8e4e81acd41b330339e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowsSmall_broken.prefab using Guid(d49a6ecd744dc8e4e81acd41b330339e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514c3c65b86c71edb64d1b6af05ef2c0') in 0.338593 seconds
+  Import took 0.351318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_L.prefab
+  artifactKey: Guid(36d5c2b7e3267054395008df4eaff9ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm_end_L.prefab using Guid(36d5c2b7e3267054395008df4eaff9ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b77e1607a862acb12b18c78991bf4c') in 0.176712 seconds
+  Import took 0.190231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowR_broken.prefab
+  artifactKey: Guid(39b1b48782497e646adb67144ef0c3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_cornerOut_windowR_broken.prefab using Guid(39b1b48782497e646adb67144ef0c3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d2387564346eefcbdeeff2e05f33c2') in 1.102721 seconds
+  Import took 1.144590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000786 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_corner_broken.prefab
+  artifactKey: Guid(12e507b3bb4f8434993abf8cc3f9c8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_corner_broken.prefab using Guid(12e507b3bb4f8434993abf8cc3f9c8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b32a061ddee31fa65e11e8509526c9') in 0.404362 seconds
+  Import took 0.460020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000598 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_doorNarrow.prefab
+  artifactKey: Guid(753ccd61474788b46980de709eda56d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_doorNarrow.prefab using Guid(753ccd61474788b46980de709eda56d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279d92cdb11ebab79390526fd1db812f') in 0.089950 seconds
+  Import took 0.211875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000887 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porch.prefab
+  artifactKey: Guid(6f1b65f459f07d9468c91b9f315a5266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_porch.prefab using Guid(6f1b65f459f07d9468c91b9f315a5266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e3b1ddc0b59cd2e4d5f4536168e17b8') in 0.201267 seconds
+  Import took 0.216928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_broken.prefab
+  artifactKey: Guid(23f326c8b242766419f1601b27b4d6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceA_250cm_broken.prefab using Guid(23f326c8b242766419f1601b27b4d6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a248b5a1bbe9d53be8a27878890b64') in 0.184474 seconds
+  Import took 0.207817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX1000cm.prefab
+  artifactKey: Guid(e84d676176549b14794540ab2a59d5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX1000cm.prefab using Guid(e84d676176549b14794540ab2a59d5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da334d7f9b33cc0046435a37c162f66c') in 0.336118 seconds
+  Import took 0.393352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000616 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX500cm.prefab
+  artifactKey: Guid(37f42d47b930ec14f82074ee5f3ea524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Roof_low_250cmX500cm.prefab using Guid(37f42d47b930ec14f82074ee5f3ea524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629e58f25babf92bc86eb25a6fc38598') in 0.193715 seconds
+  Import took 0.209962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm.prefab
+  artifactKey: Guid(82fe8506967800847b21659f4b948ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_250cm.prefab using Guid(82fe8506967800847b21659f4b948ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94558951e8709387e13e50a7a2f8c83c') in 0.205591 seconds
+  Import took 0.230875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_500cm_porch.prefab
+  artifactKey: Guid(c3b1b5dca24311b4c999a80d7027400d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/TerraceB_500cm_porch.prefab using Guid(c3b1b5dca24311b4c999a80d7027400d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9d5f142fabae98aa8978125806bb94') in 1.062226 seconds
+  Import took 1.143808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.299835 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_windowSmall_broken.prefab
+  artifactKey: Guid(a74daf09098b5684cae7390cdad184e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_250cm_windowSmall_broken.prefab using Guid(a74daf09098b5684cae7390cdad184e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a0684a81d8715a675d9adbfdb6414f') in 0.335790 seconds
+  Import took 0.355355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_window.prefab
+  artifactKey: Guid(6fc1931546bce8642ab83d39730d6758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_window.prefab using Guid(6fc1931546bce8642ab83d39730d6758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b632cca54619a1e632c59d4ebb48d448') in 0.191499 seconds
+  Import took 0.207591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000686 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_door.prefab
+  artifactKey: Guid(418342d277262214ba23b6feb22377d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_door.prefab using Guid(418342d277262214ba23b6feb22377d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e584bdede4be17bc3124d7d391323a86') in 0.202200 seconds
+  Import took 0.238600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000523 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_door_broken.prefab
+  artifactKey: Guid(3041e49d32ed3cb45b4f3ae7156c8051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_door_broken.prefab using Guid(3041e49d32ed3cb45b4f3ae7156c8051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ed63ec7290896d780190206a36b86c') in 0.231738 seconds
+  Import took 0.248507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_cornerOut_patch.prefab
+  artifactKey: Guid(1dd6b6465e51aa64685113d40199cb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_cornerOut_patch.prefab using Guid(1dd6b6465e51aa64685113d40199cb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b40139dced5602a6db15bc7db8f1bf') in 0.162534 seconds
+  Import took 0.174714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_window_broken.prefab
+  artifactKey: Guid(e79bef1265ab6444c9032657d1130999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NOT_Lonely/HQ_RetroFarmhouse/Prefabs/Modules/Exterior/Wall_out_500cm_window_broken.prefab using Guid(e79bef1265ab6444c9032657d1130999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2afae482fa3551a7a45f93662ec6ea4c') in 0.165496 seconds
+  Import took 0.184207 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002575 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.772 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.8 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2167.
+Total: 2.633100 ms (FindLiveObjects: 0.272000 ms CreateObjectMapping: 0.086100 ms MarkObjects: 2.248700 ms  DeleteObjects: 0.024500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001983 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.416 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2170.
+Total: 3.939100 ms (FindLiveObjects: 0.421800 ms CreateObjectMapping: 0.167600 ms MarkObjects: 3.319400 ms  DeleteObjects: 0.027900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.891 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2173.
+Total: 2.132600 ms (FindLiveObjects: 0.184400 ms CreateObjectMapping: 0.061000 ms MarkObjects: 1.866300 ms  DeleteObjects: 0.019500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002074 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.407 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2176.
+Total: 2.496200 ms (FindLiveObjects: 0.194600 ms CreateObjectMapping: 0.065300 ms MarkObjects: 2.214700 ms  DeleteObjects: 0.020200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002786 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.630 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2179.
+Total: 4.709600 ms (FindLiveObjects: 0.401000 ms CreateObjectMapping: 0.163900 ms MarkObjects: 4.109500 ms  DeleteObjects: 0.032900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.029489 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.541 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2182.
+Total: 2.362800 ms (FindLiveObjects: 0.195000 ms CreateObjectMapping: 0.061200 ms MarkObjects: 2.083000 ms  DeleteObjects: 0.022000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003505 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.355 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2185.
+Total: 2.232800 ms (FindLiveObjects: 0.212200 ms CreateObjectMapping: 0.066400 ms MarkObjects: 1.909500 ms  DeleteObjects: 0.043300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001437 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.373 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2188.
+Total: 2.650400 ms (FindLiveObjects: 0.194000 ms CreateObjectMapping: 0.064800 ms MarkObjects: 2.364500 ms  DeleteObjects: 0.025100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002126 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.426 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2191.
+Total: 2.183300 ms (FindLiveObjects: 0.221900 ms CreateObjectMapping: 0.074100 ms MarkObjects: 1.866600 ms  DeleteObjects: 0.019300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001416 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.513 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2194.
+Total: 2.202700 ms (FindLiveObjects: 0.204900 ms CreateObjectMapping: 0.065900 ms MarkObjects: 1.909900 ms  DeleteObjects: 0.018900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002164 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.567 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2197.
+Total: 2.453400 ms (FindLiveObjects: 0.200200 ms CreateObjectMapping: 0.067300 ms MarkObjects: 2.167200 ms  DeleteObjects: 0.017100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001883 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.943 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2200.
+Total: 3.311000 ms (FindLiveObjects: 0.333500 ms CreateObjectMapping: 0.141800 ms MarkObjects: 2.810700 ms  DeleteObjects: 0.023200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001395 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.349 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2203.
+Total: 2.230800 ms (FindLiveObjects: 0.210000 ms CreateObjectMapping: 0.072500 ms MarkObjects: 1.926700 ms  DeleteObjects: 0.020100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001984 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.329 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2206.
+Total: 2.218000 ms (FindLiveObjects: 0.197600 ms CreateObjectMapping: 0.066600 ms MarkObjects: 1.934400 ms  DeleteObjects: 0.018200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001398 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.635 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.9 MB.
+System memory in use after: 111.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2209.
+Total: 2.466100 ms (FindLiveObjects: 0.199200 ms CreateObjectMapping: 0.068000 ms MarkObjects: 2.179200 ms  DeleteObjects: 0.018400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004057 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.615 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 111.0 MB.
+System memory in use after: 111.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2212.
+Total: 2.207900 ms (FindLiveObjects: 0.204600 ms CreateObjectMapping: 0.061100 ms MarkObjects: 1.922000 ms  DeleteObjects: 0.019000 ms)
+

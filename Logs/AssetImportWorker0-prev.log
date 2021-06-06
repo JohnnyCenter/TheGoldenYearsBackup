@@ -15,11 +15,11 @@ C:/Users/Vumsy/Desktop/Spill-Skole/Unity/GIT/TheGoldenYearsBackup
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59000
+64940
 Successfully changed project path to: C:/Users/Vumsy/Desktop/Spill-Skole/Unity/GIT/TheGoldenYearsBackup
 C:/Users/Vumsy/Desktop/Spill-Skole/Unity/GIT/TheGoldenYearsBackup
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 159.85 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 87.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -36,60 +36,73 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003898 seconds.
+Registered in 0.006712 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 297.66 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 92.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.677 seconds
+- Completed reload, in  3.293 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002064 seconds.
+Registered in 0.004349 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 116.72 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 116.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.653 seconds
+- Completed reload, in  1.552 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.19 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 3.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 110.5 MB.
-System memory in use after: 110.6 MB.
+Unloading 1619 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.6 MB.
+System memory in use after: 110.7 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2092.
-Total: 3.530900 ms (FindLiveObjects: 0.367700 ms CreateObjectMapping: 0.139400 ms MarkObjects: 2.984300 ms  DeleteObjects: 0.037600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/SimonTest.unity
-  artifactKey: Guid(1e027b002cd8d94478a4f96d8c70af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SimonTest.unity using Guid(1e027b002cd8d94478a4f96d8c70af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36819e74d5c7cac502fa8483d6cf8de') in 0.029025 seconds
-  Import took 0.039225 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2093.
+Total: 2.895000 ms (FindLiveObjects: 0.347500 ms CreateObjectMapping: 0.148700 ms MarkObjects: 2.357600 ms  DeleteObjects: 0.039400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.568825 seconds.
   path: Assets/Scenes/EgilTestScene.unity
   artifactKey: Guid(f394fed6fc9ac8047b29e7751dab3a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/EgilTestScene.unity using Guid(f394fed6fc9ac8047b29e7751dab3a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ce1ddac524d7f1d9e5312c3cca868a') in 0.005306 seconds
-  Import took 0.017513 seconds .
+Start importing Assets/Scenes/EgilTestScene.unity using Guid(f394fed6fc9ac8047b29e7751dab3a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18abc09ea54bccb1de2e1551b74a7909') in 0.024573 seconds
+  Import took 0.031953 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.701729 seconds.
+  Time since last request: 248.465721 seconds.
   path: Assets/Scenes/MAIN SCENE.unity
-  artifactKey: Guid(5a54df4b85c55e94d85b188ce2e51c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MAIN SCENE.unity using Guid(5a54df4b85c55e94d85b188ce2e51c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a11433e7dfdf1e66244a25a2f9514453') in 0.013448 seconds
-  Import took 0.029273 seconds .
+  artifactKey: Guid(0fda9ca7cd50a3340a8aa9975662d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MAIN SCENE.unity using Guid(0fda9ca7cd50a3340a8aa9975662d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e6b74da64d2844e6b4bee3b1d9b9b2') in 0.008448 seconds
+  Import took 0.014415 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001708 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.322 seconds
+Platform modules already initialized, skipping
+Shader 'NOT_Lonely/NOTLonely_fire': fallback shader 'Particles/Additive' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1564 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.8 MB.
+System memory in use after: 105.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2096.
+Total: 2.084400 ms (FindLiveObjects: 0.161400 ms CreateObjectMapping: 0.048200 ms MarkObjects: 1.854600 ms  DeleteObjects: 0.019000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
