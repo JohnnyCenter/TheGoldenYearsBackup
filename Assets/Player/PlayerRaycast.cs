@@ -229,13 +229,17 @@ public class PlayerRaycast : MonoBehaviour
 
     private IEnumerator AddObjectToInventory()
     {
-        p_inventory.OnTriggerPickup();
-        playerManager.EnablePlayerAll();
-        //PLAY SOUND
+        if (pickup_obj.GetComponent<Pickups>().canAddToInventory)
+        {
 
-        yield return new WaitForSeconds(.1f);
-        canAddToInventory = false;
+            p_inventory.OnTriggerPickup();
+            playerManager.EnablePlayerAll();
+            //PLAY SOUND
 
+            yield return new WaitForSeconds(.1f);
+            canAddToInventory = false;
+
+        }
         yield return null;
     }
 
@@ -248,7 +252,13 @@ public class PlayerRaycast : MonoBehaviour
         pickup_obj.transform.position = inspectObjPos.position;
         p_look.inspectObj = pickup_obj;
 
-        //PLAY SOUND
+        //PLAY PICKUPSOUND
+
+        if (pickup_obj.GetComponent<StartCutsceneOnPickup>() != null)
+        {
+            pickup_obj.GetComponent<StartCutsceneOnPickup>().StartCutscene();
+        }
+
         canAddToInventory = true;
         yield return new WaitForSeconds(.1f);
 
@@ -340,3 +350,4 @@ public class PlayerRaycast : MonoBehaviour
         Gizmos.DrawRay(cam.position, cam.forward * raycastLength);
     }
 }
+

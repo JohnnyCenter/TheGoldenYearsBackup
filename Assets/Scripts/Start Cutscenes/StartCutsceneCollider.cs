@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 using UnityEngine.UI;
 using TMPro;
 
-public class StartCutscene : MonoBehaviour
+public class StartCutsceneCollider : MonoBehaviour
 {
     PlayerManagerTemporary p_manager;
     [SerializeField] GameObject target;
@@ -15,6 +15,7 @@ public class StartCutscene : MonoBehaviour
     TMPro.TextMeshProUGUI questTextReference;
     [SerializeField] GameObject nextQuest;
     [SerializeField] string nextQuestText;
+    //[SerializeField] AudioSource audioClip;
 
     [Header("Colors")]
     [SerializeField] Color questActive;

@@ -18,9 +18,4 @@ public class Pickups : MonoBehaviour
     {
         return pickupType;
     }
-
-    public bool CheckIfInventory()
-    {
-        return canAddToInventory;
-    }
 }

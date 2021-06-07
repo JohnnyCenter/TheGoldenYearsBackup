@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        nrOfDays = System.Enum.GetValues(Day).Length;
+        //nrOfDays = System.Enum.GetValues(Day).Length;
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
     }
 
@@ -38,19 +38,19 @@ public class GameManager : MonoBehaviour
 
     private void UpdateDay()
     {
-        public Day _day = Day.day1;
-        Day += 1;
-        if (Day == numberOfWeaponTypes) weaponType = 0;
+        //public Day _day = Day.day1;
+        //Day += 1;
+        //if (Day == numberOfWeaponTypes) weaponType = 0;
 
-        //CALL NEXT DAY FUNCTION
-        if (_day == Day.day1)
-        {
+        ////CALL NEXT DAY FUNCTION
+        //if (_day == Day.day1)
+        //{
 
-        }        
+        //}        
         
-        if (_day == Day.day2)
-        {
+        //if (_day == Day.day2)
+        //{
 
-        }
+        //}
     }
 }

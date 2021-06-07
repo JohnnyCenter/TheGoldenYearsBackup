@@ -56,6 +56,11 @@ public class PlayerInventory : MonoBehaviour
                 Debug.Log("Should call the funtction in PlayerRay");
                 p_ray.PlaceObject();
                 placePickup.DoFunctionPlace();
+
+                if (p_ray.pickup_obj.GetComponent<StartCutsceneOnPutdown>() != null)
+                {
+                    p_ray.pickup_obj.GetComponent<StartCutsceneOnPutdown>().StartCutscene();
+                }
             }
         }
     }
