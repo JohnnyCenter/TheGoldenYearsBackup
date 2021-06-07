@@ -6,6 +6,11 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    enum Day{day1, day2, day3, day4, day5, day6, day7}
+    int nrOfDays;
+    //static Day[] vals = values();
+
+
     TMPro.TextMeshProUGUI questTextReference;
 
     [Header("Colors")]
@@ -15,24 +20,37 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        nrOfDays = System.Enum.GetValues(Day).Length;
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
     }
 
-    public void SetNewQuest()
-    {
-        //SET QUESTTEXT QUEST
-        //questText.text =
-    }
 
     public void EndDay()
     {
-        questTextReference.color = questActive;
+        questTextReference.color = questDone;
     }
 
     public void GeneralStartDay()
     {
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
+    }
 
+    private void UpdateDay()
+    {
+        public Day _day = Day.day1;
+        Day += 1;
+        if (Day == numberOfWeaponTypes) weaponType = 0;
+
+        //CALL NEXT DAY FUNCTION
+        if (_day == Day.day1)
+        {
+
+        }        
+        
+        if (_day == Day.day2)
+        {
+
+        }
     }
 }
