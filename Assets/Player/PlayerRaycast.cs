@@ -35,6 +35,9 @@ public class PlayerRaycast : MonoBehaviour
     Vector3 pickupOriginalPos; Quaternion pickupOriginalRot;
     [HideInInspector] public bool rayIsDisabled = false;
     [HideInInspector] GameObject animationObject;
+    public GameObject door;
+    public bool doorAnimPlay;
+    public bool doorWalkThrough;
 
     void Update()
     {
@@ -59,7 +62,10 @@ public class PlayerRaycast : MonoBehaviour
                 
                 if(hit.collider.tag == "Door")
                 {
-
+                    if (door == null)
+                    {
+                        door = hit.collider.gameObject;
+                    }
                     seesDoor = true;
                 } 
                 
@@ -98,9 +104,39 @@ public class PlayerRaycast : MonoBehaviour
                 seesBed = false;
                 canPlaceObject = false;
                 playerManager.objectsSeen.Clear();
+                if (door != null && !doorWalkThrough)
+                {
+                    door = null;
+                }
             }
 
             #endregion
+        }
+        
+    }
+    private void FixedUpdate()
+    {
+        if (doorAnimPlay) //starts walking to transform position, then changes the registered door and teleports
+        {
+            cam.transform.LookAt(door.GetComponent<NOTLonely_Door.DoorScript>().knob.transform.position);
+            transform.position = Vector3.MoveTowards(transform.position, door.GetComponent<NOTLonely_Door.DoorScript>().playRoom.transform.position, 3 * Time.fixedDeltaTime);
+            if (Vector3.Distance(transform.position, door.GetComponent<NOTLonely_Door.DoorScript>().playRoom.transform.position) < 0.001f)
+            {
+                transform.position = door.GetComponent<NOTLonely_Door.DoorScript>().teleportRoom.transform.position;
+                transform.rotation = door.GetComponent<NOTLonely_Door.DoorScript>().teleportRoom.transform.rotation;
+                OpenDoor();
+            }
+        }
+        if (doorWalkThrough)//when animation is finished, walk through door and close it
+        {
+            if (!door.GetComponent<Animation>().isPlaying)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, door.GetComponent<NOTLonely_Door.DoorScript>().playRoom.transform.position, 3 * Time.fixedDeltaTime);
+                if (Vector3.Distance(transform.position, door.GetComponent<NOTLonely_Door.DoorScript>().playRoom.transform.position) < 0.001f)
+                {
+                    CloseDoor();
+                }
+            }
         }
     }
 
@@ -269,23 +305,32 @@ public class PlayerRaycast : MonoBehaviour
     //HER KAN DU KALLE PÅ FUNKSJONEN FOR Å ÅPNE DØRA OSV
     void OpenDoor()
     {
-        Debug.Log("OPEN DOOR");
-        isLoadingScreen.SetActive(true);
+        doorAnimPlay = false;//fixed update bool
+        door = door.GetComponent<NOTLonely_Door.DoorScript>().teleportRoom.parent.gameObject;//swap door to tp point door
+        //isLoadingScreen.SetActive(true);
+        cam.transform.LookAt(door.GetComponent<NOTLonely_Door.DoorScript>().knob.transform.position);
+        door.GetComponent<NOTLonely_Door.DoorScript>().OpenDoor();
+        doorWalkThrough = true;//fixed update bool
         //PLAY ANIM
         //PLAY SOUND EFFECT
+    }
+    void CloseDoor()
+    {
+        doorWalkThrough = false;//fixed update bool
+        door.GetComponent<NOTLonely_Door.DoorScript>().CloseDoor();
+        door = null;
     }
 
     private IEnumerator DoorAnim()
     {
         playerManager.DisablePlayerAll();
-        OpenDoor();
+        doorAnimPlay = true;//fixed update bool
 
         //HVOR MANGE SEKUNDER VARER ANIM;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
-        isLoadingScreen.SetActive(false);
+        //isLoadingScreen.SetActive(false);
         playerManager.EnablePlayerAll();
-
         yield return null;
     }
     #endregion
