@@ -10,6 +10,9 @@ public class RecordPlayer : MonoBehaviour {
 
     GameObject disc;
     GameObject arm;
+    public AudioSource audioSource;
+    public AudioClip[] audioClips;
+    int currentClip = 0;
 
     int mode;
     float armAngle;
@@ -39,10 +42,21 @@ void Start()
 //--------------------------------------------------------------------------------------------
 void Update()
 {
+        if (recordPlayerActive && !audioSource.isPlaying)
+        {
+            if (currentClip >= audioClips.Length - 1)
+            {
+                currentClip = 0;
+            }
+            else
+            {
+                currentClip += 1;
+            }
+        }
     //-- Mode 0: player off
     if(mode == 0)
-    {   
-        if(recordPlayerActive == true)
+    {
+            if (recordPlayerActive == true)
             mode = 1;
     }
     //-- Mode 1: activation
@@ -60,6 +74,7 @@ void Update()
             discSpeed += Time.deltaTime * 80.0f;
         }
         else
+                audioSource.Pause();
             mode = 3;
     }
     //-- Mode 2: running
@@ -68,6 +83,7 @@ void Update()
         if(recordPlayerActive == true)
             discAngle += Time.deltaTime * discSpeed;
         else
+                audioSource.Pause();
             mode = 3;
     }
     //-- Mode 3: stopping
@@ -75,7 +91,8 @@ void Update()
     {
         if(recordPlayerActive == false)
         {
-            armAngle -= Time.deltaTime * 30.0f;
+                audioSource.Pause();
+                armAngle -= Time.deltaTime * 30.0f;
             if(armAngle <= 0.0f)
                 armAngle = 0.0f;
 
@@ -95,7 +112,12 @@ void Update()
     arm.transform.localEulerAngles = new Vector3(0.0f, armAngle, 0.0f);
     disc.transform.localEulerAngles = new Vector3(0.0f, discAngle, 0.0f);
 }
-//--------------------------------------------------------------------------------------------
-//--------------------------------------------------------------------------------------------
-//--------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------
+    public void PlayMusic()
+    {
+        audioSource.clip = audioClips[currentClip];
+        audioSource.Play();
+    }
 }

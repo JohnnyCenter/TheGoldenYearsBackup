@@ -10,6 +10,7 @@ TagManager:
   - PlaceObject
   - Animation
   - CanBeDistorted
+  - Music
   layers:
   - Default
   - TransparentFX

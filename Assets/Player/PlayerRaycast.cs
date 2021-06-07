@@ -21,7 +21,8 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] Transform inspectObjPos;
     [SerializeField] GameObject isLoadingScreen;
 
-    GameObject teleportBedObject; 
+    GameObject teleportBedObject;
+    GameObject musicObject;
     [SerializeField] Vector3 returnToPlayerPos;
 
     [Header("Other References")]
@@ -31,7 +32,7 @@ public class PlayerRaycast : MonoBehaviour
     [Header("Variables")]
     [SerializeField] float raycastLength = 4f;
 
-    bool seesDoor = false, seesBed = false, seesPickup = false, canPlaceObject = false, seesAnimation = false;
+    bool seesDoor = false, seesBed = false, seesPickup = false, canPlaceObject = false, seesAnimation = false, seesMusic = true;
     Vector3 pickupOriginalPos; Quaternion pickupOriginalRot;
     [HideInInspector] public bool rayIsDisabled = false;
     [HideInInspector] GameObject animationObject;
@@ -83,6 +84,11 @@ public class PlayerRaycast : MonoBehaviour
                     animationObject = hit.transform.gameObject;
                 }
 
+                if (hit.collider.tag == "Music")
+                {
+                    seesMusic = true;
+                    musicObject = hit.transform.gameObject;
+                }
 
                 if(hit.collider.tag == "Pickup")
                 {
@@ -103,6 +109,7 @@ public class PlayerRaycast : MonoBehaviour
                 seesDoor = false;
                 seesBed = false;
                 canPlaceObject = false;
+                seesMusic = false;
                 playerManager.objectsSeen.Clear();
                 if (door != null && !doorWalkThrough)
                 {
@@ -191,6 +198,19 @@ public class PlayerRaycast : MonoBehaviour
             if (canPlaceObject)
             {
                 p_inventory.OnTriggerPlaceObject();
+            }
+
+            if (seesMusic)
+            {
+                if (!musicObject.GetComponent<RecordPlayer>().recordPlayerActive)
+                {
+                    musicObject.GetComponent<RecordPlayer>().recordPlayerActive = true;
+                    musicObject.GetComponent<RecordPlayer>().PlayMusic();
+                }
+                else
+                {
+                    musicObject.GetComponent<RecordPlayer>().recordPlayerActive = false;
+                }
             }
         }
     }
