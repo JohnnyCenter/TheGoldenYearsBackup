@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1914656198689579715}
   - component: {fileID: 1914656198689579712}
+  - component: {fileID: 3459012931224365811}
   m_Layer: 0
   m_Name: DoorManager
   m_TagString: Untagged
@@ -47,8 +48,52 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tpRooms:
   - {fileID: 0}
   - {fileID: 0}
-  tpPoints: []
-  wallpapers: []
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tpPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  wallpapers:
+  - {fileID: 2100000, guid: 9458e52989dcbe34a91dc31dd14caa69, type: 2}
+  - {fileID: 2100000, guid: b852340846d57984b8ce72bec7268145, type: 2}
+  - {fileID: 2100000, guid: 94a35b1fecb611e4ab25d047bbfc29f0, type: 2}
+  - {fileID: 2100000, guid: 9ad5f1e3d9f83f8479f13e7329343669, type: 2}
+  - {fileID: 2100000, guid: fdfdbc45153cdd7439695d235ab5037c, type: 2}
+--- !u!114 &3459012931224365811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914656198689579713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddbb54bea4df704e97a766c868a29f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects: []
+  tpObjectPoints: []

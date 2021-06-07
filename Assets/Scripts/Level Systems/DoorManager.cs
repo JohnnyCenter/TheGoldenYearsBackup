@@ -9,10 +9,6 @@ public class DoorManager : MonoBehaviour
     public List<Transform> tpPoints;
     public List<Material> wallpapers;
 
-    private void Start()
-    {
-        SwapDoors(0, 5);
-    }
     /// <summary>
     /// DoorIndex 0 = Hall>Bathroom door located in Hallway,
     /// tpPointIndex 0 = Hall>Bathroom point located outside Bathroom,
@@ -46,7 +42,7 @@ public class DoorManager : MonoBehaviour
     /// <description>8 = Bathroom>Hall</description>
     /// </item>
     /// <item>
-    /// <description>9 = Bedroom>Hall</description>
+    /// <description>9 = Bedroom>LivingRoom</description>
     /// </item>
     /// </list>
     /// </summary>
