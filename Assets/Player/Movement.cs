@@ -14,6 +14,18 @@ public class Movement : MonoBehaviour
     {
         Vector3 horizontalVel = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
         cont.Move(horizontalVel * Time.deltaTime);
+        SFXManager.PlaySFX(SFXManager.Sound.SFX_FootstepsParquet, transform.position);
+        /*if (moving) //Bool for checking movement and surface needed.
+        {
+            if (!carpet)
+            {
+                SFXManager.PlaySFX(SFXManager.Sound.SFX_FootstepsParquet);
+            }
+            else
+            {
+                SFXManager.PlaySFX(SFXManager.Sound.SFX_FootstepsCarpet);
+            }
+        }*/
     }
 
     public void RecieveInput(Vector2 _horizontalInput)
