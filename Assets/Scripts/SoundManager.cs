@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class SFXManager
+public static class SoundManager
 {
     private static Dictionary<Sound, float> soundTime;
     private static GameObject soundGameObject;
@@ -25,7 +25,10 @@ public static class SFXManager
         UI_Pause,
         UI_Unpause,
         UI_PauseResume,
-        UI_PauseQuit
+        UI_PauseQuit,
+        VO_Helga,
+        VO_Benjamin,
+        VO_Robert
     }
     /// <summary>
     /// 3D audio sound from position.
@@ -69,6 +72,39 @@ public static class SFXManager
         
         
         oneShotAudioSource.PlayOneShot(GetAudioClip(sound));
+        }
+    }
+    public static void PlayVoice(Sound sound, Vector3 position, int index)
+    {
+        if (CanPlay(sound))
+        {
+            if (soundGameObject == null)
+            {
+                soundGameObject = new GameObject("3D Sound");
+                soundGameObject.transform.position = position;
+                soundAudioSource = soundGameObject.AddComponent<AudioSource>();
+                soundAudioSource.maxDistance = 100;
+                soundAudioSource.spatialBlend = 1;
+                soundAudioSource.rolloffMode = AudioRolloffMode.Linear;
+                soundAudioSource.dopplerLevel = 0;
+            }
+            else
+            {
+                soundAudioSource.transform.position = position;
+            }
+            soundAudioSource.PlayOneShot(GetVoiceClip(sound, index));
+        }
+    }
+    public static void PlayVoice(Sound sound, int index)
+    {
+        if (CanPlay(sound))
+        {
+            if (oneShotObject == null)
+            {
+                oneShotObject = new GameObject("2D Sound");
+                oneShotAudioSource = oneShotObject.AddComponent<AudioSource>();
+            }
+            oneShotAudioSource.PlayOneShot(GetVoiceClip(sound, index));
         }
     }
     public static void Initialize()
@@ -130,6 +166,17 @@ public static class SFXManager
             {
                 int sfxIndex = Random.Range(0, soundAudioClip.audioClips.Length - 1);
                 return soundAudioClip.audioClips[sfxIndex];
+            }
+        }
+        return null;
+    }
+    private static AudioClip GetVoiceClip(Sound sound, int index)
+    {
+        foreach (GameAssets.VOAudioClip VoiceClip in GameAssets.i.VoiceClips)
+        {
+            if (VoiceClip.sound == sound)
+            {
+                return VoiceClip.audioClips[index];
             }
         }
         return null;

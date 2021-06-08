@@ -79,3 +79,10 @@ MonoBehaviour:
     audioClips: []
   - sound: 14
     audioClips: []
+  VoiceClips:
+  - sound: 15
+    audioClips: []
+  - sound: 16
+    audioClips: []
+  - sound: 17
+    audioClips: []

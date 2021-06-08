@@ -36,7 +36,7 @@ void Start()
     armAngle = 0.0f;
     discAngle = 0.0f;
     discSpeed = 0.0f;
-        //SFXManager.PlaySFX(SFXManager.Sound.SFX_DoorOpen, transform.position);
+        //SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorOpen, transform.position);
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------

@@ -21,7 +21,14 @@ public class GameAssets : MonoBehaviour
     [System.Serializable]
     public class SoundAudioClip
     {
-        public SFXManager.Sound sound;
+        public SoundManager.Sound sound;
+        public AudioClip[] audioClips;
+    }
+    public VOAudioClip[] VoiceClips;
+    [System.Serializable]
+    public class VOAudioClip
+    {
+        public SoundManager.Sound sound;
         public AudioClip[] audioClips;
     }
 }

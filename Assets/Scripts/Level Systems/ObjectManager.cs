@@ -9,7 +9,7 @@ public class ObjectManager : MonoBehaviour
 
     private void Awake()
     {
-        SFXManager.Initialize();
+        SoundManager.Initialize();
     }
     public void SwapObject(int objectIndex, int tpPointIndex)
     {
