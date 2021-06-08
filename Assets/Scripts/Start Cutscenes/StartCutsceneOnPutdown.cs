@@ -16,6 +16,9 @@ public class StartCutsceneOnPutdown : MonoBehaviour
     [SerializeField] GameObject nextQuest;
     [SerializeField] string nextQuestText;
     //[SerializeField] AudioSource audioClip;
+    [SerializeField] bool destroyOnInvisible;
+
+    bool canDestroyNow = false;
 
     [Header("Colors")]
     [SerializeField] Color questActive;
@@ -52,6 +55,10 @@ public class StartCutsceneOnPutdown : MonoBehaviour
 
         yield return new WaitForSeconds(cutsceneLenght);
 
+        if (destroyOnInvisible)
+        {
+            canDestroyNow = true;
+        }
 
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
@@ -60,6 +67,14 @@ public class StartCutsceneOnPutdown : MonoBehaviour
 
         Destroy(gameObject);
         yield return null;
+    }
+
+    private void OnBecameInvisible()
+    {
+        if (canDestroyNow)
+        {
+            Destroy(gameObject);
+        }
     }
 }
 

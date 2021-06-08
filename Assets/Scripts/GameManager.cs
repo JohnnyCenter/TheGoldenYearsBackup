@@ -6,11 +6,11 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    enum Day{day1, day2, day3, day4, day5, day6, day7}
-    int nrOfDays;
-    //static Day[] vals = values();
+    [Header("Changes automatically when going to bed")]
+    [SerializeField] int currentDay;
 
 
+    //[Header("References")]
     TMPro.TextMeshProUGUI questTextReference;
 
     [Header("Colors")]
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        //nrOfDays = System.Enum.GetValues(Day).Length;
+        currentDay = 1;
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
     }
 
@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     {
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
+
+        UpdateDay();
     }
 
     private void UpdateDay()
