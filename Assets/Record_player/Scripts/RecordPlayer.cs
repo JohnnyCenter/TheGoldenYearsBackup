@@ -47,10 +47,12 @@ void Update()
             if (currentClip >= audioClips.Length - 1)
             {
                 currentClip = 0;
+                PlayMusic();
             }
             else
             {
                 currentClip += 1;
+                PlayMusic();
             }
         }
     //-- Mode 0: player off
