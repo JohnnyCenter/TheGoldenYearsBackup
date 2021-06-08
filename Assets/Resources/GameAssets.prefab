@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4580257719812029863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2678383829622780382}
+  - component: {fileID: 530753706}
+  m_Layer: 0
+  m_Name: GameAssets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2678383829622780382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580257719812029863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &530753706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580257719812029863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd29df7aec59094cbf17ef96b0f4dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundAudioClips:
+  - sound: 0
+    audioClips:
+    - {fileID: 8300000, guid: f959940d43abc1545a4fce72238905b6, type: 3}
+    - {fileID: 8300000, guid: 2259e92bbd3fee14aa749556250abab0, type: 3}
+    - {fileID: 8300000, guid: 505c8f9623ca37641b5e5d3ddbf43941, type: 3}
+    - {fileID: 8300000, guid: e02166493c40c3a4f95675868ca36962, type: 3}
+    - {fileID: 8300000, guid: b9c9c64160c103648bd22b05ff99a9f8, type: 3}
+  - sound: 1
+    audioClips: []
+  - sound: 2
+    audioClips: []
+  - sound: 3
+    audioClips: []
+  - sound: 4
+    audioClips: []
+  - sound: 5
+    audioClips: []
+  - sound: 6
+    audioClips: []
+  - sound: 7
+    audioClips: []
+  - sound: 8
+    audioClips: []
+  - sound: 9
+    audioClips: []
+  - sound: 10
+    audioClips: []
+  - sound: 11
+    audioClips: []
+  - sound: 12
+    audioClips: []
+  - sound: 13
+    audioClips: []
+  - sound: 14
+    audioClips: []
+  VoiceClips:
+  - sound: 15
+    audioClips: []
+  - sound: 16
+    audioClips: []
+  - sound: 17
+    audioClips: []

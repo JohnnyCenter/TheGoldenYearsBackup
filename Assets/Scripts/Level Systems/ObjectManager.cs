@@ -7,6 +7,10 @@ public class ObjectManager : MonoBehaviour
     public List<GameObject> objects;
     public List<Transform> tpObjectPoints;
 
+    private void Awake()
+    {
+        SoundManager.Initialize();
+    }
     public void SwapObject(int objectIndex, int tpPointIndex)
     {
         objects[objectIndex].transform.position = tpObjectPoints[tpPointIndex].transform.position;

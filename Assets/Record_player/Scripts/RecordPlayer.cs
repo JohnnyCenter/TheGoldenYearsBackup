@@ -36,6 +36,7 @@ void Start()
     armAngle = 0.0f;
     discAngle = 0.0f;
     discSpeed = 0.0f;
+        //SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorOpen, transform.position);
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
@@ -47,10 +48,12 @@ void Update()
             if (currentClip >= audioClips.Length - 1)
             {
                 currentClip = 0;
+                PlayMusic();
             }
             else
             {
                 currentClip += 1;
+                PlayMusic();
             }
         }
     //-- Mode 0: player off
