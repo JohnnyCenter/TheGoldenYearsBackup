@@ -28,6 +28,7 @@ public class PlayerRaycast : MonoBehaviour
     [Header("Other References")]
     [SerializeField] Animator blackscreen_anim;
     [SerializeField] LayerMask interactableMask;
+    [SerializeField] GameManager gm;
 
     [Header("Variables")]
     [SerializeField] float raycastLength = 4f;
@@ -296,12 +297,11 @@ public class PlayerRaycast : MonoBehaviour
         blackscreen_anim.SetBool("Fade", false);
 
         GoToBed();
+        teleportBedObject.GetComponent<BedScript>().GoToBed();
 
         //TEMPORARY
         //isLoadingScreen.SetActive(true);
 
-
-        //HOW LONG IS ANIMATION
         yield return new WaitForSeconds(2f);
         blackscreen_anim.SetBool("Fade", true);
         isLoadingScreen.SetActive(false);
@@ -310,10 +310,10 @@ public class PlayerRaycast : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         gameObject.transform.position = returnToPlayerPos;
         yield return new WaitForSeconds(3f);
-
+        gm.GeneralStartDay();
+        
         blackscreen_anim.SetBool("Fade", false);
         //MAYBE TEMPORARY THIS UNDER:
-        teleportBedObject.GetComponent<BedScript>().GoToBed();
 
         playerManager.EnablePlayerAll();
         yield return null;

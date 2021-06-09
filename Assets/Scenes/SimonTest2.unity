@@ -157,9 +157,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0838143f8e1a8147893c60a9ce0c85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questActive: {r: 0, g: 0, b: 0, a: 0}
-  questDone: {r: 0, g: 0, b: 0, a: 0}
-  nextQuestText: 
+  currentDay: 0
+  day1Quest: 
+  day2Quest: 
+  day3Quest: 
+  day4Quest: 
+  day5Quest: 
+  day6Quest: 
+  day7Quest: 
+  questActive: {r: 1, g: 0.85840803, b: 0.051886797, a: 0}
+  questDone: {r: 0.2265538, g: 1, b: 0, a: 0}
 --- !u!4 &219864064
 Transform:
   m_ObjectHideFlags: 0

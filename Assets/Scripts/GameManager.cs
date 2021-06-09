@@ -10,17 +10,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] int currentDay;
 
 
+    [Header("Start Day Quests")]
+    [SerializeField] string day1Quest, day2Quest, day3Quest, day4Quest, day5Quest, day6Quest, day7Quest;
+
     //[Header("References")]
     TMPro.TextMeshProUGUI questTextReference;
 
     [Header("Colors")]
     [SerializeField] Color questActive;
     [SerializeField] Color questDone;
-    [SerializeField] string nextQuestText;
 
     private void Awake()
     {
-        currentDay = 1;
+        currentDay = 0;
+        UpdateDay();
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
     }
 
@@ -32,27 +35,44 @@ public class GameManager : MonoBehaviour
 
     public void GeneralStartDay()
     {
+        //KALLES NÅR MAN STÅR OPP FRA SENGA
         questTextReference.color = questActive;
-        questTextReference.text = nextQuestText;
 
         UpdateDay();
     }
 
     private void UpdateDay()
     {
-        //public Day _day = Day.day1;
-        //Day += 1;
-        //if (Day == numberOfWeaponTypes) weaponType = 0;
+        currentDay++;
 
-        ////CALL NEXT DAY FUNCTION
-        //if (_day == Day.day1)
-        //{
+        if(currentDay == 1)
+        { //JONATHAN SKRIV DIN KODE HER
+            questTextReference.text = day1Quest;
 
-        //}        
-        
-        //if (_day == Day.day2)
-        //{
-
-        //}
+        }
+        if(currentDay == 2)
+        {
+            questTextReference.text = day2Quest;
+        }
+        if(currentDay == 3)
+        {
+            questTextReference.text = day3Quest;
+        }
+        if(currentDay == 4)
+        {
+            questTextReference.text = day4Quest;
+        }
+        if(currentDay == 5)
+        {
+            questTextReference.text = day5Quest;
+        }
+        if(currentDay == 6)
+        {
+            questTextReference.text = day6Quest;
+        }
+        if(currentDay == 7)
+        {
+            questTextReference.text = day7Quest;
+        }
     }
 }
