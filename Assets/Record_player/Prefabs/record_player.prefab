@@ -263,11 +263,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d532c1a0f8842f4439d383bf1675a019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recordPlayerActive: 0
+  recordPlayerActive: 1
   audioSource: {fileID: 1745992448}
-  audioClips:
-  - {fileID: 8300000, guid: 8a6de4f90bb6aae4ab4a282e7dc7c50d, type: 3}
-  - {fileID: 8300000, guid: e06e9d89ef5d10f48a753c613902be36, type: 3}
+  audioClips1:
+  - {fileID: 8300000, guid: 648082dcef8701842b279bee5da84e9b, type: 3}
+  - {fileID: 8300000, guid: fbe6d5dbe199d044999fefb9e5177bcc, type: 3}
+  - {fileID: 8300000, guid: 0fde2bb2144195b49b6d8505d9c6e063, type: 3}
+  - {fileID: 8300000, guid: 9197b5b52aefd40439f4c97c0873371c, type: 3}
+  audioClips2:
+  - {fileID: 8300000, guid: 2f611687e0122dc4485345196962a18b, type: 3}
+  - {fileID: 8300000, guid: c16700bceb74f9d45a8bd8110f20542d, type: 3}
+  - {fileID: 8300000, guid: 8c757de0f6ed4d44983e2247dea3db4d, type: 3}
+  - {fileID: 8300000, guid: 4e45b4db18f323c48848e446346bfcf3, type: 3}
+  audioClips3:
+  - {fileID: 8300000, guid: eb3931d0618ceb944972370feabe6b99, type: 3}
+  - {fileID: 8300000, guid: 212b511fe8b0bed4f9bb851ef207fd1c, type: 3}
+  - {fileID: 8300000, guid: 78572fcbe107fa04b81d06b8997ac1ee, type: 3}
+  - {fileID: 8300000, guid: d221f10bdf2cfd5418d550676758d5d0, type: 3}
 --- !u!82 &1745992448
 AudioSource:
   m_ObjectHideFlags: 0
@@ -280,7 +292,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
