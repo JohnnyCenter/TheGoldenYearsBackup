@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee38dec71775203409858d67971b062f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distortableObjects: []
   overideScriptWithInputFromInspector: 1
   ManualInputForDistortion: 0
