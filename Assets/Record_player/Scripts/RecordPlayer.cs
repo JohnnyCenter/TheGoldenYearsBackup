@@ -11,7 +11,9 @@ public class RecordPlayer : MonoBehaviour {
     GameObject disc;
     GameObject arm;
     public AudioSource audioSource;
-    public AudioClip[] audioClips;
+    public AudioClip[] audioClips1;
+    public AudioClip[] audioClips2;
+    public AudioClip[] audioClips3;
     int currentClip = 0;
 
     int mode;
@@ -36,7 +38,7 @@ void Start()
     armAngle = 0.0f;
     discAngle = 0.0f;
     discSpeed = 0.0f;
-        //SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorOpen, transform.position);
+    PlayMusic();
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
@@ -45,10 +47,11 @@ void Update()
 {
         if (recordPlayerActive && !audioSource.isPlaying)
         {
-            if (currentClip >= audioClips.Length - 1)
+            if (currentClip >= audioClips1.Length - 1)
             {
                 currentClip = 0;
-                PlayMusic();
+                recordPlayerActive = false;
+                audioSource.Pause();
             }
             else
             {
@@ -120,7 +123,23 @@ void Update()
     //--------------------------------------------------------------------------------------------
     public void PlayMusic()
     {
-        audioSource.clip = audioClips[currentClip];
+        /*if (GameManager.currentDay == 1)
+        {
+            audioSource.spatialBlend = 0.7f;
+            audioSource.clip = audioClips1[currentClip];
+        }
+        if (GameManager.currentDay == 2)
+        {
+            audioSource.clip = audioClips2[currentClip];
+            audioSource.spatialBlend = 0.5f;
+        }
+        if (GameManager.currentDay == 3)
+        {
+            audioSource.clip = audioClips3[currentClip];
+            audioSource.spatialBlend = 0.3f;
+        }*/
+        audioSource.spatialBlend = 0.3f;
+        audioSource.clip = audioClips3[currentClip];
         audioSource.Play();
     }
 }

@@ -11,7 +11,8 @@ public class ObjectDistorter : MonoBehaviour
     public static ObjectDistorter Instance;
 
     //Creates a list of all objects in the scene marked as "CanBeDistorted"
-    private GameObject[] distortableObjects;
+    [Header("Drag all assets that will be distorted into this array")]
+    [SerializeField] private GameObject[] distortableObjects;
     private List<SkinnedMeshRenderer> meshRenderers;
 
     //For testing
@@ -21,6 +22,8 @@ public class ObjectDistorter : MonoBehaviour
     [Range(0f, 100f)]
     [Tooltip("How much to distort the models")]
     [SerializeField] private float ManualInputForDistortion;
+
+
 
     private void Awake()
     {
@@ -79,7 +82,6 @@ public class ObjectDistorter : MonoBehaviour
     #region Initialization
     private void InitializeLists()
     {
-        distortableObjects = GameObject.FindGameObjectsWithTag("CanBeDistorted");
         meshRenderers = new List<SkinnedMeshRenderer>();
         foreach(GameObject _object in distortableObjects)
         {
