@@ -8,10 +8,10 @@ public class DoorManager : MonoBehaviour
     public List<GameObject> tpRooms;
     public List<Transform> tpPoints;
     public List<Material> wallpapers;
-
+    
     /// <summary>
-    /// DoorIndex 0 = Hall>Bathroom door located in Hallway,
-    /// tpPointIndex 0 = Hall>Bathroom point located outside Bathroom,
+    /// DoorIndex 0 = Hall>Livingroom door located in Hallway,
+    /// tpPointIndex 0 = Hall>Livingroom point located outside Bathroom,
     /// Therefore:
     /// <list type="bullet">
     /// <item>
@@ -27,10 +27,10 @@ public class DoorManager : MonoBehaviour
     /// <description>3 = LivingRoom>Hall,</description>
     /// </item>
     /// <item>
-    /// <description>4 = Livingroom>Kitchen,</description>
+    /// <description>4 = Livingroom>Bedroom,</description>
     /// </item>
     /// <item>
-    /// <description>5 = Livingroom>Bedroom</description>
+    /// <description>5 = Livingroom>Kitchen</description>
     /// </item>
     /// <item>
     /// <description>6 = Kitchen>LivingRoom,</description>
@@ -51,7 +51,6 @@ public class DoorManager : MonoBehaviour
     public void SwapDoors(int doorIndex, int tpPointIndex)
     {
         doors[doorIndex].GetComponent<NOTLonely_Door.DoorScript>().teleportRoom = tpPoints[tpPointIndex].transform;
-        doors[tpPointIndex].GetComponent<NOTLonely_Door.DoorScript>().teleportRoom = tpPoints[doorIndex].transform;
         if (doorIndex <= 2)
         {
             SetWallPaper1(tpPointIndex, doorIndex, 0);
