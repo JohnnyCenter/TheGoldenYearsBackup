@@ -148,8 +148,17 @@ MonoBehaviour:
   cutsceneLenght: 2
   nextQuest: {fileID: 43467642}
   nextQuestText: Find the window dude REEE
+  destroyOnInvisible: 0
   questActive: {r: 1, g: 0.7673603, b: 0, a: 1}
   questDone: {r: 0.14971161, g: 1, b: 0, a: 1}
+  playVoice: 1
+  speaker1: 1
+  speaker1startIndex: 20
+  s1AmountOfVoicelines: 1
+  isTwoSpeakers: 0
+  speaker2: 0
+  speaker2startIndex: 0
+  s2AmountOfVoicelines: 0
 --- !u!1 &43467642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 500956296242553514, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
@@ -234,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentDay: 0
-  day1Quest: Find coffe
+  day1Quest: Find covfefe
   day2Quest: Do that
   day3Quest: YEs
   day4Quest: Nice
@@ -599,8 +608,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 429cc5fe760b48247bb0b829b2a52a47, type: 2}
+  m_sharedMaterial: {fileID: -1688343151154109947, guid: 429cc5fe760b48247bb0b829b2a52a47, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1100,7 +1109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1552685114
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1132,16 +1141,14 @@ MonoBehaviour:
   nextQuestText: GO TO BED
   questActive: {r: 0.754717, g: 0.6118634, b: 0, a: 1}
   questDone: {r: 0.1701765, g: 1, b: 0, a: 1}
-  playVoice: 0
+  playVoice: 1
   speaker1: 1
-  speaker1startIndex: 0
-  s1AmountOfVoicelines: 0
-  speaker2YesOrNo: 0
-  speaker2: 0
-  speaker2startIndex: 0
-  s2AmountOfVoicelines: 0
-  internalS1Played: 0
-  internalS2Played: 0
+  speaker1startIndex: 3
+  s1AmountOfVoicelines: 3
+  isTwoSpeakers: 1
+  speaker2: 3
+  speaker2startIndex: 3
+  s2AmountOfVoicelines: 3
 --- !u!4 &1552685116
 Transform:
   m_ObjectHideFlags: 0
@@ -1376,7 +1383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 500956296242553515, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
       propertyPath: speaker2
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 500956296242553515, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
       propertyPath: nextQuest
@@ -1395,6 +1402,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 500956296242553515, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
+      propertyPath: isTwoSpeakers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 500956296242553515, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
       propertyPath: questActive.a
       value: 1
       objectReference: {fileID: 0}
@@ -1407,8 +1418,16 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 500956296242553515, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
+      propertyPath: speaker2startIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 500956296242553515, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
       propertyPath: s1AmountOfVoicelines
-      value: 1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 500956296242553515, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
+      propertyPath: s2AmountOfVoicelines
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55609ca584fb8a840901cbcf5df75b0e, type: 3}
