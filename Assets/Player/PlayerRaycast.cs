@@ -33,10 +33,10 @@ public class PlayerRaycast : MonoBehaviour
     [Header("Variables")]
     [SerializeField] float raycastLength = 4f;
 
-    bool seesDoor = false, seesBed = false, seesPickup = false, canPlaceObject = false, seesAnimation = false, seesMusic = true;
+    bool seesDoor = false, seesBed = false, seesPickup = false, canPlaceObject = false, seesAnimation = false, seesMusic = false;
     Vector3 pickupOriginalPos; Quaternion pickupOriginalRot;
     [HideInInspector] public bool rayIsDisabled = false;
-    [HideInInspector] GameObject animationObject;
+    [HideInInspector] GameObject animationObject, bedObj;
     public GameObject door;
     public bool doorAnimPlay;
     public bool doorWalkThrough;
@@ -60,6 +60,7 @@ public class PlayerRaycast : MonoBehaviour
                 {
                     seesBed = true;
                     teleportBedObject = hit.transform.GetComponent<BedScript>().bedTransform.gameObject;
+                    bedObj = hit.transform.gameObject;
                 }   
                 
                 if(hit.collider.tag == "Door")
@@ -325,7 +326,7 @@ public class PlayerRaycast : MonoBehaviour
         transform.position = teleportBedObject.transform.position; 
         transform.rotation = teleportBedObject.transform.rotation;
 
-        teleportBedObject.GetComponent<BedScript>().GoToBed();
+        bedObj.GetComponent<BedScript>().GoToBed();
     }
 
     

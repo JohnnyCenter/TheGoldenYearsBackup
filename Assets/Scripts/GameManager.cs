@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] string day1Quest, day2Quest, day3Quest, day4Quest, day5Quest, day6Quest, day7Quest;
 
     //[Header("References")]
-    TMPro.TextMeshProUGUI questTextReference;
+    TMP_Text questTextReference;
 
     [Header("Colors")]
     [SerializeField] Color questActive;
@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         currentDay = 0;
-        UpdateDay();
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
+        UpdateDay();
     }
 
 
@@ -45,32 +45,32 @@ public class GameManager : MonoBehaviour
     {
         currentDay++;
 
-        if(currentDay == 1)
+        if (currentDay == 1)
         { //JONATHAN SKRIV DIN KODE HER
             questTextReference.text = day1Quest;
 
         }
-        if(currentDay == 2)
+        if (currentDay == 2)
         {
             questTextReference.text = day2Quest;
         }
-        if(currentDay == 3)
+        if (currentDay == 3)
         {
             questTextReference.text = day3Quest;
         }
-        if(currentDay == 4)
+        if (currentDay == 4)
         {
             questTextReference.text = day4Quest;
         }
-        if(currentDay == 5)
+        if (currentDay == 5)
         {
             questTextReference.text = day5Quest;
         }
-        if(currentDay == 6)
+        if (currentDay == 6)
         {
             questTextReference.text = day6Quest;
         }
-        if(currentDay == 7)
+        if (currentDay == 7)
         {
             questTextReference.text = day7Quest;
         }

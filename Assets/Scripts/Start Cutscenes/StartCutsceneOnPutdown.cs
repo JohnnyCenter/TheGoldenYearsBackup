@@ -12,7 +12,7 @@ public class StartCutsceneOnPutdown : MonoBehaviour
     [SerializeField] float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
     [Header("Next Quest")]
-    TMPro.TextMeshProUGUI questTextReference;
+    TMP_Text questTextReference;
     [SerializeField] GameObject nextQuest;
     [SerializeField] string nextQuestText;
     //[SerializeField] AudioSource audioClip;

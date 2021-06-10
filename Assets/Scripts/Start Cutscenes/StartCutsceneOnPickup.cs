@@ -12,11 +12,11 @@ public class StartCutsceneOnPickup : MonoBehaviour
     [SerializeField] float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
     [Header("Next Quest")]
-    TMPro.TextMeshProUGUI questTextReference;
+    TMP_Text questTextReference;
     [SerializeField] GameObject nextQuest;
     [SerializeField] string nextQuestText;
     //[SerializeField] AudioSource audioClip;
-    [SerializeField] bool destroyOnInvisible;
+    //[SerializeField] bool destroyOnInvisible;
 
     bool canDestroyNow = false;
 
@@ -39,9 +39,10 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
     private IEnumerator PlayEvent()
     {
+        questTextReference.color = questDone;
         p_manager.DisablePlayerAll();
         Camera.main.transform.LookAt(target.transform);
-        questTextReference.color = questDone;
+
         //timeline.Play();
         if (target.GetComponent<Animation>() != null)
         {
@@ -55,26 +56,28 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
         yield return new WaitForSeconds(cutsceneLenght);
 
-        if (destroyOnInvisible)
-        {
-            canDestroyNow = true;
-        }
+        //if (destroyOnInvisible)
+        //{
+        //    canDestroyNow = true;
+        //}
 
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
+
         p_manager.EnablePlayerAll();
         nextQuest.SetActive(true);
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        
         yield return null;
     }
 
-    private void OnBecameInvisible()
-    {
-        if (canDestroyNow)
-        {
-            Destroy(gameObject);
-        }
-    }
+    //private void OnBecameInvisible()
+    //{
+    //    if (canDestroyNow)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
 }
 
