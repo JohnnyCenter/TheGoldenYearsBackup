@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem.UI;
 
-public class MainMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public GameObject Play, Options, OptionsMenu, Quit, soundSlider, musicSlider, fade;
     public GameObject mainMenu;
@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     public AudioMixer Mixer;
     public Image fadetoblack;
     private float start = 0;
-    private bool newGame = false;
+    private bool exitGame = false;
     public bool newOptionMenu;
     public bool pressed;
     public float newSound = -30f;
@@ -29,20 +29,21 @@ public class MainMenu : MonoBehaviour
     
     private void Update()
     {
-        if (newGame)
+        if (exitGame)
         {
             fade.SetActive(true);
             float alpha = start += 0.33f * Time.deltaTime;
             fadetoblack.color = new Color(0, 0, 0, alpha);
             if (alpha >= 1.3)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(0);
             }
         }
     }
-    public void PlayGame()
+    public void ExitGame()
     {
-        newGame = true;
+        Time.timeScale = 1;
+        exitGame = true;
     }
     public void Cancel()
     {
@@ -60,9 +61,29 @@ public class MainMenu : MonoBehaviour
         OptionsMenu.SetActive(true);
         newOptionMenu = true;
     }
-    public void QuitGame()
+    public void ResumeGame()
     {
-        Application.Quit();
+        Time.timeScale = 1;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        mainMenu.SetActive(false);
+    }
+    public void PauseGame()
+    {
+        
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            mainMenu.SetActive(true);
+        }
+        else if (!newOptionMenu)
+        {
+            Debug.Log("paused");
+            ResumeGame();
+        }
+        
     }
 
     public void Sound(float soundlevel)

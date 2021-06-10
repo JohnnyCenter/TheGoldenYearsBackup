@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] Movement movement;
     [SerializeField] PlayerLook playerLook;
     [SerializeField] PlayerRaycast playerRaycast;
+    [SerializeField] PauseMenu pauseMenu;
 
     PlayerControls controls;
     PlayerControls.GroundMovementActions groundMove;
@@ -28,6 +29,8 @@ public class InputManager : MonoBehaviour
 
         groundMove.Interact.performed += _ => playerRaycast.InteractPressed();
         groundMove.RightClick.performed += _ => playerRaycast.RightClickPressed();
+
+        groundMove.Pause.performed += _ => pauseMenu.PauseGame();
     }
 
     private void Update()

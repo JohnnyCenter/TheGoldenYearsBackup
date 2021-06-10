@@ -57,6 +57,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""f769bbee-fe86-4fee-9cad-37941eade159"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -279,6 +287,28 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""RightClick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1a184df5-532b-4364-8357-824b5e041a2f"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0c7e7092-2840-46a3-b1c5-96119542f175"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -292,6 +322,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_GroundMovement_MouseX = m_GroundMovement.FindAction("MouseX", throwIfNotFound: true);
         m_GroundMovement_MouseY = m_GroundMovement.FindAction("MouseY", throwIfNotFound: true);
         m_GroundMovement_RightClick = m_GroundMovement.FindAction("RightClick", throwIfNotFound: true);
+        m_GroundMovement_Pause = m_GroundMovement.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -346,6 +377,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_GroundMovement_MouseX;
     private readonly InputAction m_GroundMovement_MouseY;
     private readonly InputAction m_GroundMovement_RightClick;
+    private readonly InputAction m_GroundMovement_Pause;
     public struct GroundMovementActions
     {
         private @PlayerControls m_Wrapper;
@@ -355,6 +387,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @MouseX => m_Wrapper.m_GroundMovement_MouseX;
         public InputAction @MouseY => m_Wrapper.m_GroundMovement_MouseY;
         public InputAction @RightClick => m_Wrapper.m_GroundMovement_RightClick;
+        public InputAction @Pause => m_Wrapper.m_GroundMovement_Pause;
         public InputActionMap Get() { return m_Wrapper.m_GroundMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -379,6 +412,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @RightClick.started -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnRightClick;
                 @RightClick.performed -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnRightClick;
                 @RightClick.canceled -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnRightClick;
+                @Pause.started -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_GroundMovementActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_GroundMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -398,6 +434,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @RightClick.started += instance.OnRightClick;
                 @RightClick.performed += instance.OnRightClick;
                 @RightClick.canceled += instance.OnRightClick;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -409,5 +448,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMouseX(InputAction.CallbackContext context);
         void OnMouseY(InputAction.CallbackContext context);
         void OnRightClick(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
