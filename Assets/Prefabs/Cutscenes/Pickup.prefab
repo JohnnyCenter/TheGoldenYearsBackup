@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &16298089128042698
+--- !u!1 &4789995191275011090
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 16298089128042709}
-  - component: {fileID: 16298089128042710}
-  - component: {fileID: 16298089128042711}
-  - component: {fileID: 16298089128042696}
-  - component: {fileID: 16298089128042697}
+  - component: {fileID: 4789995191275011085}
+  - component: {fileID: 4789995191275011086}
+  - component: {fileID: 4789995191275011087}
+  - component: {fileID: 4789995191275011088}
+  - component: {fileID: 4789995191275011089}
+  - component: {fileID: 4773987377086925943}
   m_Layer: 7
-  m_Name: Pickup (1)
+  m_Name: Pickup
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &16298089128042709
+--- !u!4 &4789995191275011085
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16298089128042698}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.313, y: 1.4300001, z: 7.865}
+  m_GameObject: {fileID: 4789995191275011090}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.69, y: 2.7389998, z: 4.707}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &16298089128042710
+--- !u!33 &4789995191275011086
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16298089128042698}
+  m_GameObject: {fileID: 4789995191275011090}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &16298089128042711
+--- !u!23 &4789995191275011087
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16298089128042698}
+  m_GameObject: {fileID: 4789995191275011090}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,30 +84,56 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &16298089128042696
+--- !u!65 &4789995191275011088
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16298089128042698}
+  m_GameObject: {fileID: 4789995191275011090}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &16298089128042697
+--- !u!114 &4789995191275011089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16298089128042698}
+  m_GameObject: {fileID: 4789995191275011090}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46679d75fc301684c8eaa1ad86ab70d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickupType: 0
-  canAddToInventory: 1
+  canAddToInventory: 0
+--- !u!114 &4773987377086925943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4789995191275011090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1287f0d8f7d4fa744bec9bff909e2caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutsceneLenght: 2
+  nextQuest: {fileID: 0}
+  nextQuestText: Find the window dude REEE
+  destroyOnInvisible: 0
+  questActive: {r: 1, g: 0.7673603, b: 0, a: 1}
+  questDone: {r: 0.14971161, g: 1, b: 0, a: 1}
+  playVoice: 1
+  speaker1: 1
+  speaker1startIndex: 20
+  s1AmountOfVoicelines: 1
+  isTwoSpeakers: 0
+  speaker2: 0
+  speaker2startIndex: 0
+  s2AmountOfVoicelines: 0
