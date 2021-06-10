@@ -45,6 +45,7 @@ public static class SoundManager
                 soundGameObject = new GameObject("3D Sound");
                 soundGameObject.transform.position = position;
                 soundAudioSource = soundGameObject.AddComponent<AudioSource>();
+                soundAudioSource.outputAudioMixerGroup.audioMixer.FindMatchingGroups("Sound");
                 soundAudioSource.maxDistance = 100;
                 soundAudioSource.spatialBlend = 1;
                 soundAudioSource.rolloffMode = AudioRolloffMode.Linear;

@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SimonTest.unity
     guid: 1e027b002cd8d94478a4f96d8c70af6d
+  - enabled: 1
+    path: Assets/Scenes/EgilTestScene.unity
+    guid: 65a30c6be52fbdc48a46b86619108cbb
+  - enabled: 1
+    path: Assets/Scenes/MAIN SCENE.unity
+    guid: 0fda9ca7cd50a3340a8aa9975662d4f1
   m_configObjects: {}
