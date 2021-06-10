@@ -21,6 +21,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
     bool canDestroyNow = false;
     Animator targetAnimator;
 
+
     [Header("Colors")]
     [SerializeField] Color questActive;
     [SerializeField] Color questDone;
@@ -184,7 +185,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
                         if (target.GetComponent<Animator>() != null)
                         {
-                            targetAnimator.SetBool("isTalking", false);
+                            targetAnimator.SetBool("isTalking", true);
                         }
 
                         StartCoroutine(WaitForSecondsCoroutine());

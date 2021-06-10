@@ -11,7 +11,6 @@ public class PlayerManagerTemporary : MonoBehaviour
     public List<GameObject> objectsSeen = new List<GameObject>();
     [SerializeField] GameObject canvasText_interact;
 
-
     private void Update()
     {
         if (objectsSeen.Count > 0)

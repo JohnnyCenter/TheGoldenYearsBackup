@@ -41,6 +41,18 @@ public class PlayerRaycast : MonoBehaviour
     public bool doorAnimPlay;
     public bool doorWalkThrough;
 
+    private void Awake()
+    {
+        //ADD CANVAS TEXT
+        //ADD CANVAS TEXT
+        //ADD CANVAS TEXT
+        //ADD CANVAS TEXT
+        //ADD CANVAS TEXT
+        //ADD CANVAS TEXT
+        //ADD CANVAS TEXT
+        //ADD CANVAS TEXT
+    }
+
     void Update()
     {
         if (!rayIsDisabled)

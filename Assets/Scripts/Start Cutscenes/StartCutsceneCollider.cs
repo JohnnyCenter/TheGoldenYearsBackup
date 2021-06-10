@@ -9,6 +9,8 @@ public class StartCutsceneCollider : MonoBehaviour
 {
     PlayerManagerTemporary p_manager;
     [SerializeField] GameObject target;
+    [SerializeField] Transform lookAtPoint;
+    Animator targetAnimator;
     [SerializeField] float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
     [Header("Next Quest")]
@@ -39,7 +41,7 @@ public class StartCutsceneCollider : MonoBehaviour
     private IEnumerator PlayEvent()
     {
         p_manager.DisablePlayerAll();
-        Camera.main.transform.LookAt(target.transform);
+        Camera.main.transform.LookAt(lookAtPoint);
         questTextReference.color = questDone;
         //timeline.Play();
         if(target.GetComponent<Animation>() != null)
@@ -49,6 +51,10 @@ public class StartCutsceneCollider : MonoBehaviour
         if (target.GetComponent<AudioSource>() != null)
         {
             target.GetComponent<AudioSource>().Play();
+        }
+        if(target.GetComponent<Animator>() != null)
+        {
+            targetAnimator = target.GetComponent<Animator>();
         }
 
         if (playVoice)
@@ -88,6 +94,7 @@ public class StartCutsceneCollider : MonoBehaviour
     [Header("Is there a Speaker 2?")]
     [Tooltip("True = Yes, False = No")]
     [SerializeField] bool isTwoSpeakers;
+    [SerializeField] bool speaker2isTalkingFirst;
     [Header("Speaker 2")]
     [Tooltip("None = 0, Helga = 1, Benjamin = 2, Robert = 3")]
     [Range(0, 3)]
@@ -95,20 +102,18 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] int speaker2startIndex = 0;    
     [SerializeField] int s2AmountOfVoicelines = 0;
     int internalS1Played = 0, internalS2Played = 0;
-    bool talkSwitch = false;
     float currentVoicelineTime = 10;
     #endregion
 
     void PlayVoiceLines()
     {
-        Debug.Log("Called general VoiceLine Function");
         if (!isTwoSpeakers) {speaker2 = 0; speaker2startIndex = 0; s2AmountOfVoicelines = 0; }
         if (playVoice)
         {
             if(speaker2 > 0) //IF 2 SPEAKERS
             {
-                Debug.Log("2 People should be talking now");
-                if (talkSwitch)
+
+                if (speaker2isTalkingFirst)
                 {
                     if (internalS1Played > s1AmountOfVoicelines && internalS2Played > s2AmountOfVoicelines)
                     {
@@ -161,6 +166,11 @@ public class StartCutsceneCollider : MonoBehaviour
                             currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker1startIndex);
                         }
 
+                        if (target.GetComponent<Animator>() != null)
+                        {
+                            targetAnimator.SetBool("isTalking", true);
+                        }
+
                         StartCoroutine(WaitForSecondsCoroutine());
                     }
 
@@ -209,7 +219,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
             if (isTwoSpeakers)
             {
-                if (talkSwitch)
+                if (speaker2isTalkingFirst)
                 {
                     internalS1Played++;
                     speaker1startIndex++;
@@ -225,10 +235,16 @@ public class StartCutsceneCollider : MonoBehaviour
 
         IEnumerator WaitForSecondsCoroutine()
         {
-            Debug.Log("WaitForSecondsShitCalled");
             yield return new WaitForSeconds(currentVoicelineTime);
             AddInternalCount();
-            talkSwitch ^= true;
+            if (!speaker2isTalkingFirst)
+            {
+                if (target.GetComponent<Animator>() != null)
+                {
+                    targetAnimator.SetBool("isTalking", false);
+                }
+            }
+            speaker2isTalkingFirst ^= true;
             yield return new WaitForSeconds(.7f);
             PlayVoiceLines();
 
