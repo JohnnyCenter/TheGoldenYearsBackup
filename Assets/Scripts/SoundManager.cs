@@ -9,6 +9,7 @@ public static class SoundManager
     private static AudioSource soundAudioSource;
     private static GameObject oneShotObject;
     private static AudioSource oneShotAudioSource;
+    private static float clipLength;
     public enum Sound
     {
         SFX_FootstepsParquet,
@@ -180,5 +181,17 @@ public static class SoundManager
             }
         }
         return null;
+    }
+
+    public static float GetVoiceDuration(Sound sound, int index)
+    {
+        foreach (GameAssets.VOAudioClip VoiceClip in GameAssets.i.VoiceClips)
+        {
+            if (VoiceClip.sound == sound)
+            {
+                clipLength = VoiceClip.audioClips[index].length;
+            }
+        }
+        return clipLength;
     }
 }

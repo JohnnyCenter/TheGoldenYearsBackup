@@ -298,7 +298,7 @@ public class PlayerRaycast : MonoBehaviour
         blackscreen_anim.SetBool("Fade", false);
 
         GoToBed();
-        teleportBedObject.GetComponent<BedScript>().GoToBed();
+        bedObj.GetComponent<BedScript>().GoToBed();
 
         //TEMPORARY
         //isLoadingScreen.SetActive(true);

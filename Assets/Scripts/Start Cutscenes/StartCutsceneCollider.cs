@@ -51,19 +51,29 @@ public class StartCutsceneCollider : MonoBehaviour
             target.GetComponent<AudioSource>().Play();
         }
 
+        if (playVoice)
+        {
+            PlayVoiceLines();
+        } else
+        {
+            ContinueGame();
+        }
 
-        yield return new WaitForSeconds(cutsceneLenght);
+        yield return null;
+    }
 
-
+    void ContinueGame()
+    {
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
         p_manager.EnablePlayerAll();
         nextQuest.SetActive(true);
 
         Destroy(gameObject);
-        yield return null;
+
     }
 
+    #region Voice References
     [Header("Voice Over Yes/No")]    
     [SerializeField] bool playVoice;
 
@@ -84,16 +94,20 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] int speaker2 = 0;
     [SerializeField] int speaker2startIndex = 0;    
     [SerializeField] int s2AmountOfVoicelines = 0;
-    int internalS1Played = 0, internalS2Played = 0;
+    [SerializeField] int internalS1Played = 0, internalS2Played = 0;
     bool talkSwitch;
+    float currentVoicelineTime = 10;
+    #endregion
 
     void PlayVoiceLines()
     {
+        Debug.Log("Called general VoiceLine Function");
         if (!speaker2YesOrNo) {speaker2 = 0; speaker2startIndex = 0; s2AmountOfVoicelines = 0; }
         if (playVoice)
         {
             if(speaker2 > 0) //IF 2 SPEAKERS
             {
+                Debug.Log("2 People should be talking now");
                 if (talkSwitch)
                 {
                     if(internalS1Played >= s1AmountOfVoicelines)
@@ -111,8 +125,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
                     if (internalS1Played >= s1AmountOfVoicelines && internalS2Played >= s2AmountOfVoicelines)
                     {
-                        //CONTINUE GAME
-                        Debug.Log("Countinue Game");
+                        ContinueGame();
                     }
                     else
                     {
@@ -127,11 +140,20 @@ public class StartCutsceneCollider : MonoBehaviour
                     if(internalS2Played >= s2AmountOfVoicelines)
                     {
                         if (speaker2 == 1)
-                        { SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex); }
+                        { 
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);
+                            currentVoicelineTime = 2;
+                        }
                         if (speaker2 == 2)
-                        { SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker1startIndex); }
+                        { 
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker1startIndex); 
+                        
+                        }
                         if (speaker2 == 3)
-                        { SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker1startIndex); }
+                        { 
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker1startIndex); 
+                        
+                        }
 
                         talkSwitch ^= true;
                     }
@@ -139,10 +161,11 @@ public class StartCutsceneCollider : MonoBehaviour
                     if (internalS1Played >= s1AmountOfVoicelines && internalS2Played >= s2AmountOfVoicelines)
                     {
                         Debug.Log("Continue Game");
+                        ContinueGame();
                     }
                     else
                     {
-                        PlayVoiceLines();
+                        StartCoroutine(WaitForSecondsCoroutine());
                     }
 
                     internalS2Played++;
@@ -152,26 +175,48 @@ public class StartCutsceneCollider : MonoBehaviour
 
             else //IF 1 SPEAKER
             {
-                if(speaker1 == 1)
-                { SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);}                
-                if(speaker1 == 2)
-                { SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker1startIndex);}                
-                if(speaker1 == 3)
-                { SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker1startIndex);}
-
-
-                internalS1Played++;
-                speaker1startIndex++;
-
                 if(internalS1Played >= s1AmountOfVoicelines)
                 {
-                    //CONTINUE GAME
+                    Debug.Log("Continue Game BC internal Splayed > amountOfVoicelines");
+                    ContinueGame();
                 }
-                else
+
+                if(internalS1Played < s1AmountOfVoicelines)
                 {
-                    PlayVoiceLines();
+                    Debug.Log("1 Person should be talking now");
+                    if (speaker1 == 1)
+                    { 
+                        SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);
+                        currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, speaker1startIndex);
+                        Debug.Log(currentVoicelineTime);
+                    }
+                    if (speaker1 == 2)
+                    { SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker1startIndex); }
+                    if (speaker1 == 3)
+                    { SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker1startIndex); }
+
+                    StartCoroutine(WaitForSecondsCoroutine());
                 }
+
             }
+        }
+
+        void AddInternalCount()
+        {
+            //if(!speaker2YesOrNo)
+                internalS1Played++;
+                speaker1startIndex++;
+            
+        }
+
+        IEnumerator WaitForSecondsCoroutine()
+        {
+            Debug.Log("WaitForSecondsShitCalled");
+            yield return new WaitForSeconds(currentVoicelineTime);
+            AddInternalCount();
+            PlayVoiceLines();
+
+            yield return null;
         }
     }
 
