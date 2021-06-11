@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 4929b8480de2afd42b5408697db7e2a4
+=======
+<<<<<<< HEAD:Assets/Prefabs/OldLadyAndSon/Armature_ProperWalk.anim.meta
+guid: ff2fad82100b2db42bfbec30affe3da8
+=======
+guid: 4929b8480de2afd42b5408697db7e2a4
+>>>>>>> 140798997963d98f0fd83f7402d0e585e7482efa:Assets/Prefabs/OldLadyAndSon/Armature_Talk.anim.meta
+>>>>>>> 140798997963d98f0fd83f7402d0e585e7482efa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
