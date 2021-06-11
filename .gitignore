@@ -40,3 +40,11 @@ sysinfo.txt
 Logs/
 Logs/shadercompiler-UnityShaderCompiler.exe0.log
 *.log
+*.meta
+*.meta
+Assets/NOT_Lonely/HQ_RetroFarmhouse/Substances.unitypackage.meta
+Assets/NOT_Lonely/HQ_RetroFarmhouse/URP.unitypackage.meta
+Assets/NOT_Lonely/HQ_RetroFarmhouse/HDRP.unitypackage.meta
+Assets/Prefabs/OldLadyAndSon/Armature_ProperWalk.anim.meta
+Assets/Prefabs/OldLadyAndSon/Armature__Idle.anim.meta
+Assets/Prefabs/OldLadyAndSon/Armature_ProperWalk.anim.meta~merged

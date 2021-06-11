@@ -7,6 +7,8 @@ using TMPro;
 
 public class StartCutsceneCollider : MonoBehaviour
 {
+
+
     PlayerManagerTemporary p_manager;
     PlayerRaycast p_ray;
     [SerializeField] GameObject target;
@@ -31,15 +33,22 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] int tpToIndex;
     DoorManager doorManager;
     Animator blackScreen;
+    Transform backToPos;
 
     private void Awake()
     {
+
         blackScreen = GameObject.Find("BlackScreen").GetComponent<Animator>();
         doorManager = GameObject.Find("Door/ObjectManager").GetComponent<DoorManager>();
         p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
         p_ray = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerRaycast>();
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
         //p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
+
+        if(s1AmountOfVoicelines < 2.5f)
+        {
+            internalS1Played = 1;
+        }
     }
 
     private void OnTriggerEnter(Collider col)
@@ -71,6 +80,8 @@ public class StartCutsceneCollider : MonoBehaviour
             if (target.GetComponent<Animator>() != null)
             {
                 targetAnimator = target.GetComponent<Animator>();
+                backToPos = target.transform;
+                target.transform.LookAt(transform);
             }
         }
 
@@ -103,18 +114,21 @@ public class StartCutsceneCollider : MonoBehaviour
         }
             nextQuest.SetActive(true);
 
-        if(transform.parent.GetComponent<DestroyFunction>() != null)
+        if (target != null)
+        {
+            if (target.tag == "Son")
         {
             blackScreen.SetBool("Fade", true);
-            Invoke("StopBlackScreenAnim", .6f);
-
-            transform.parent.GetComponent<DestroyFunction>().DestroyThisThing();
+            Invoke("StopBlackScreenAnim", 1.5f);
+        }
         }
     }
 
     void StopBlackScreenAnim()
     {
+        Debug.Log("Stop BlackScreen");
         blackScreen.SetBool("Fade", false);
+        Destroy(target);
         Destroy(gameObject);
     }
 
@@ -133,7 +147,7 @@ public class StartCutsceneCollider : MonoBehaviour
     [Header("Is there a Speaker 2?")]
     [Tooltip("True = Yes, False = No")]
     [SerializeField] bool isTwoSpeakers;
-    [SerializeField] bool speaker2isTalkingFirst;
+    [SerializeField] bool speaker1isTalkingFirst;
     [Header("Speaker 2")]
     [Tooltip("None = 0, Helga = 1, Benjamin = 2, Robert = 3")]
     [Range(0, 3)]
@@ -152,7 +166,7 @@ public class StartCutsceneCollider : MonoBehaviour
             if(speaker2 > 0) //IF 2 SPEAKERS
             {
 
-                if (speaker2isTalkingFirst)
+                if (speaker1isTalkingFirst)
                 {
                     if (internalS1Played > s1AmountOfVoicelines && internalS2Played > s2AmountOfVoicelines)
                     {
@@ -191,18 +205,18 @@ public class StartCutsceneCollider : MonoBehaviour
                     {
                         if (speaker2 == 1)
                         {
-                            SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);
-                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, speaker1startIndex);
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker2startIndex);
+                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, speaker2startIndex);
                         }
                         if (speaker2 == 2)
                         {
-                            SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker1startIndex);
-                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Benjamin, speaker1startIndex);
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker2startIndex);
+                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Benjamin, speaker2startIndex);
                         }
                         if (speaker2 == 3)
                         {
-                            SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker1startIndex);
-                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker1startIndex);
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker2startIndex);
+                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker2startIndex);
                         }
 
                         if (target.GetComponent<Animator>() != null)
@@ -249,6 +263,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
         void AddInternalCount()
         {
+
             if (!isTwoSpeakers)
             {
                 internalS1Played++;
@@ -257,7 +272,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
             if (isTwoSpeakers)
             {
-                if (speaker2isTalkingFirst)
+                if (speaker1isTalkingFirst)
                 {
                     internalS1Played++;
                     speaker1startIndex++;
@@ -275,7 +290,7 @@ public class StartCutsceneCollider : MonoBehaviour
         {
             yield return new WaitForSeconds(currentVoicelineTime);
             AddInternalCount();
-            if (!speaker2isTalkingFirst)
+            if (!speaker1isTalkingFirst)
             {
                 if(target != null)
                 {
@@ -285,7 +300,7 @@ public class StartCutsceneCollider : MonoBehaviour
                     }
                 }
             }
-            speaker2isTalkingFirst ^= true;
+            speaker1isTalkingFirst ^= true;
             yield return new WaitForSeconds(.7f);
             PlayVoiceLines();
 

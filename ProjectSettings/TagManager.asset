@@ -11,6 +11,7 @@ TagManager:
   - Animation
   - CanBeDistorted
   - Music
+  - Son
   layers:
   - Default
   - TransparentFX
