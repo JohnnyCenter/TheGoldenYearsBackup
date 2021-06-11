@@ -240,7 +240,7 @@ public class PlayerRaycast : MonoBehaviour
         }
     }
 
-    void PutObjectBack()
+    public void PutObjectBack()
     {
         if (seesPickup)
         {

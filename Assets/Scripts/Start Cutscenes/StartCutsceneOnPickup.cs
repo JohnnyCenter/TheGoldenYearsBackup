@@ -8,6 +8,7 @@ using TMPro;
 public class StartCutsceneOnPickup : MonoBehaviour
 {
     PlayerManagerTemporary p_manager;
+    PlayerRaycast p_ray;
     GameObject target;
     [SerializeField] float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
@@ -55,6 +56,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
     private void Awake()
     {
         p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
+        p_ray = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerRaycast>();
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
         target = transform.gameObject;
         //p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
@@ -110,6 +112,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
     void ContinueGame()
     {
+        p_ray.PutObjectBack();
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
 
