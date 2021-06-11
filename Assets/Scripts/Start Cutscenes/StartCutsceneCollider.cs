@@ -14,6 +14,7 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
     [Header("Next Quest")]
+    [SerializeField] bool isQuest;
     TMP_Text questTextReference;
     [SerializeField] GameObject nextQuest;
     [SerializeField] string nextQuestText;
@@ -23,8 +24,17 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] Color questActive;
     [SerializeField] Color questDone;
 
+    [Header("SwapDoors")]
+    [SerializeField] bool shouldSwapDoors;
+    [SerializeField] int doorIndex;
+    [SerializeField] int tpToIndex;
+    DoorManager doorManager;
+    Animator blackScreen;
+
     private void Awake()
     {
+        blackScreen = GameObject.Find("BlackScreen").GetComponent<Animator>();
+        doorManager = GameObject.Find("Door/ObjectManager").GetComponent<DoorManager>();
         p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
         //p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
@@ -41,20 +51,30 @@ public class StartCutsceneCollider : MonoBehaviour
     private IEnumerator PlayEvent()
     {
         p_manager.DisablePlayerAll();
-        Camera.main.transform.LookAt(lookAtPoint);
-        questTextReference.color = questDone;
-        //timeline.Play();
-        if(target.GetComponent<Animation>() != null)
+        if (isQuest)
         {
-            target.GetComponent<Animation>().Play();
+            Camera.main.transform.LookAt(lookAtPoint);
+            questTextReference.color = questDone;
         }
-        if (target.GetComponent<AudioSource>() != null)
+        if(target != null)
         {
-            target.GetComponent<AudioSource>().Play();
+            if (target.GetComponent<Animation>() != null)
+            {
+                target.GetComponent<Animation>().Play();
+            }
+            if (target.GetComponent<AudioSource>() != null)
+            {
+                target.GetComponent<AudioSource>().Play();
+            }
+            if (target.GetComponent<Animator>() != null)
+            {
+                targetAnimator = target.GetComponent<Animator>();
+            }
         }
-        if(target.GetComponent<Animator>() != null)
+
+        if (shouldSwapDoors)
         {
-            targetAnimator = target.GetComponent<Animator>();
+            doorManager.SwapDoors(doorIndex, tpToIndex);
         }
 
         if (playVoice)
@@ -70,13 +90,28 @@ public class StartCutsceneCollider : MonoBehaviour
 
     void ContinueGame()
     {
-        questTextReference.color = questActive;
-        questTextReference.text = nextQuestText;
+
         p_manager.EnablePlayerAll();
-        nextQuest.SetActive(true);
+        if (isQuest)
+        {
+            questTextReference.color = questActive;
+            questTextReference.text = nextQuestText;
+        }
+            nextQuest.SetActive(true);
 
+        if(transform.parent.GetComponent<DestroyFunction>() != null)
+        {
+            blackScreen.SetBool("Fade", true);
+            Invoke("StopBlackScreenAnim", .6f);
+
+            transform.parent.GetComponent<DestroyFunction>().DestroyThisThing();
+        }
+    }
+
+    void StopBlackScreenAnim()
+    {
+        blackScreen.SetBool("Fade", false);
         Destroy(gameObject);
-
     }
 
     #region Voice References
@@ -239,9 +274,12 @@ public class StartCutsceneCollider : MonoBehaviour
             AddInternalCount();
             if (!speaker2isTalkingFirst)
             {
-                if (target.GetComponent<Animator>() != null)
+                if(target != null)
                 {
-                    targetAnimator.SetBool("isTalking", false);
+                    if (target.GetComponent<Animator>() != null)
+                    {
+                        targetAnimator.SetBool("isTalking", false);
+                    }
                 }
             }
             speaker2isTalkingFirst ^= true;

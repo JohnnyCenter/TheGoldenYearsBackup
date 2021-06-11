@@ -27,11 +27,11 @@ public class PlayerLook : MonoBehaviour
         Cursor.visible = false;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (!isDisabled)
         {
-            transform.Rotate(Vector3.up, mouseX * Time.fixedDeltaTime);
+            transform.Rotate(Vector3.up, mouseX * Time.deltaTime);
 
             playerCamera.eulerAngles = targetRotation;
         }
@@ -42,7 +42,7 @@ public class PlayerLook : MonoBehaviour
 
         if (canInspectObj)
         {
-            inspectObj.transform.Rotate(Vector3.up, mouseX * Time.fixedDeltaTime);
+            inspectObj.transform.Rotate(Vector3.up, mouseX * Time.deltaTime);
         }
     }
 

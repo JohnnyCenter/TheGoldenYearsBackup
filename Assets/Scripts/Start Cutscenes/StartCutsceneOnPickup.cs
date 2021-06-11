@@ -69,7 +69,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
     {
         if (canDestroyNow)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
@@ -103,7 +103,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
         }
 
 
-        yield return new WaitForSeconds(cutsceneLenght);
+        //yield return new WaitForSeconds(cutsceneLenght);
         
         yield return null;
     }

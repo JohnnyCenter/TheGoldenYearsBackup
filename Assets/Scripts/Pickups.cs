@@ -10,7 +10,7 @@ public class Pickups : MonoBehaviour
     public enum PickupType
     {
         //ADD ALL PICKUPS HERE
-        greenBlock_d1,
+        painting_d1,
         key_d2,
         coffeeMug_d3
     }

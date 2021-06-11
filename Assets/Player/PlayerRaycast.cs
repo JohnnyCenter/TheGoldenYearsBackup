@@ -11,7 +11,7 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] PlayerInventory p_inventory;
     [SerializeField] PlayerLook p_look;
 
-    [SerializeField] public GameObject pickup_obj;
+    [HideInInspector] public GameObject pickup_obj;
     Transform placePos;
     bool canAddToInventory = false, canPutBack = false;
 

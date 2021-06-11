@@ -45,16 +45,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  lookAtPoint: {fileID: 0}
   cutsceneLenght: 2
+  isQuest: 0
   nextQuest: {fileID: 0}
   nextQuestText: FIND ANOTHER WINDOW
   questActive: {r: 0.754717, g: 0.6118634, b: 0, a: 1}
   questDone: {r: 0.1701765, g: 1, b: 0, a: 1}
+  shouldSwapDoors: 0
+  doorIndex: 0
+  tpToIndex: 0
   playVoice: 1
   speaker1: 1
   speaker1startIndex: 4
   s1AmountOfVoicelines: 3
   isTwoSpeakers: 1
+  speaker2isTalkingFirst: 0
   speaker2: 2
   speaker2startIndex: 3
   s2AmountOfVoicelines: 3
@@ -69,5 +75,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.854576, y: 5.5578938, z: 1}
-  m_Center: {x: -3.927288, y: 2.2789474, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
