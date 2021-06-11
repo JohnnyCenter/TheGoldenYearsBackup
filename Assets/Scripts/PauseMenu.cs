@@ -80,7 +80,6 @@ public class PauseMenu : MonoBehaviour
         }
         else if (!newOptionMenu)
         {
-            Debug.Log("paused");
             ResumeGame();
         }
         
