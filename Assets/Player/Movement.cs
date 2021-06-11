@@ -14,7 +14,6 @@ public class Movement : MonoBehaviour
     {
         Vector3 horizontalVel = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
         cont.Move(horizontalVel * Time.deltaTime);
-
         //SoundManager.PlaySFX(SoundManager.Sound.SFX_FootstepsParquet, transform.position);
         //SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, 1);
 

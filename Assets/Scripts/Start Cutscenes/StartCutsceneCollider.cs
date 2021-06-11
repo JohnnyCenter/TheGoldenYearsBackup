@@ -8,6 +8,7 @@ using TMPro;
 public class StartCutsceneCollider : MonoBehaviour
 {
     PlayerManagerTemporary p_manager;
+    PlayerRaycast p_ray;
     [SerializeField] GameObject target;
     [SerializeField] Transform lookAtPoint;
     Animator targetAnimator;
@@ -36,6 +37,7 @@ public class StartCutsceneCollider : MonoBehaviour
         blackScreen = GameObject.Find("BlackScreen").GetComponent<Animator>();
         doorManager = GameObject.Find("Door/ObjectManager").GetComponent<DoorManager>();
         p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
+        p_ray = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerRaycast>();
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
         //p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
     }
@@ -90,8 +92,10 @@ public class StartCutsceneCollider : MonoBehaviour
 
     void ContinueGame()
     {
-
-        p_manager.EnablePlayerAll();
+        if (!p_ray.doorAnimPlay && !p_ray.doorWalkThrough)
+        {
+            p_manager.EnablePlayerAll();
+        }
         if (isQuest)
         {
             questTextReference.color = questActive;
