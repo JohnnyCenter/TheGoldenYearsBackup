@@ -225,7 +225,6 @@ public class StartCutsceneCollider : MonoBehaviour
 
                 if(internalS1Played <= s1AmountOfVoicelines)
                 {
-                    Debug.Log("1 Person should be talking now");
                     if (speaker1 == 1)
                     { 
                         SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);
