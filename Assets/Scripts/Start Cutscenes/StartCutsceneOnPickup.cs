@@ -105,19 +105,18 @@ public class StartCutsceneOnPickup : MonoBehaviour
         }
 
 
-        //yield return new WaitForSeconds(cutsceneLenght);
         
         yield return null;
     }
 
     void ContinueGame()
     {
-        p_ray.PutObjectBack();
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
 
         p_manager.EnablePlayerAll();
         nextQuest.SetActive(true);
+        //p_ray.PutObjectBack();
         canDestroyNow = true;
     }
 
@@ -125,7 +124,6 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
     void PlayVoiceLines()
     {
-        Debug.Log("Called general VoiceLine Function");
         if (!isTwoSpeakers) { speaker2 = 0; speaker2startIndex = 0; s2AmountOfVoicelines = 0; }
         if (playVoice)
         {
@@ -206,7 +204,6 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
                 if (internalS1Played <= s1AmountOfVoicelines)
                 {
-                    Debug.Log("1 Person should be talking now");
                     if (speaker1 == 1)
                     {
                         SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);
@@ -255,7 +252,6 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
         IEnumerator WaitForSecondsCoroutine()
         {
-            Debug.Log("WaitForSecondsShitCalled");
             yield return new WaitForSeconds(currentVoicelineTime);
             AddInternalCount();
             if (!talkSwitch)
