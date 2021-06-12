@@ -38,9 +38,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         //currentDay = 0;
-        day1QuestObj.SetActive(false); day2QuestObj.SetActive(false); day3QuestObj.SetActive(false); day4QuestObj.SetActive(false);
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
-        UpdateDay();
+        GeneralStartDay();
     }
 
 
@@ -51,6 +50,7 @@ public class GameManager : MonoBehaviour
 
     public void GeneralStartDay()
     {
+        day1QuestObj.SetActive(false); day2QuestObj.SetActive(false); day3QuestObj.SetActive(false); day4QuestObj.SetActive(false);
         //KALLES NÅR MAN STÅR OPP FRA SENGA
         questTextReference.color = questActive;
         doorManager.ResetDoors();

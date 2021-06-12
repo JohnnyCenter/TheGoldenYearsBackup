@@ -180,6 +180,7 @@ public class PlayerRaycast : MonoBehaviour
             if (seesAnimation)
             {
                 animationObject.GetComponent<Animation>().Play();
+                animationObject.GetComponent<Animation>().enabled = false;
             }
 
             if (seesPickup)
@@ -251,6 +252,8 @@ public class PlayerRaycast : MonoBehaviour
             pickup_obj.transform.SetParent(null);
             canAddToInventory = false;
             p_inventory.RemovePickup();
+            pickup_obj.tag = "Untagged";
+            pickup_obj.layer = 0;
         }
     }
 

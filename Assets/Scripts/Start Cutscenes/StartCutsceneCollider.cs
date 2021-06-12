@@ -40,6 +40,9 @@ public class StartCutsceneCollider : MonoBehaviour
     Animator blackScreen;
     Transform backToPos;
 
+    [Header("Reset All Doors After Cutscene")]
+    [SerializeField] bool resetAllDoors = false;
+
     private void Awake()
     {
         player = GameObject.Find("Player");
@@ -77,6 +80,8 @@ public class StartCutsceneCollider : MonoBehaviour
             if (target.GetComponent<Animation>() != null)
             {
                 target.GetComponent<Animation>().Play();
+                target.tag = "Untagged";
+                target.layer = 0;
             }
 
             if (target.GetComponent<Animator>() != null)
@@ -119,6 +124,11 @@ public class StartCutsceneCollider : MonoBehaviour
         if (deleteOtherObjectAfterCutscene)
         {
             Destroy(deleteObject);
+        }
+
+        if (resetAllDoors)
+        {
+            doorManager.ResetDoors();
         }
 
         if (target != null)
