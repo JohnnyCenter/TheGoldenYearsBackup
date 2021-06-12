@@ -15,10 +15,16 @@ public class PlayerManagerTemporary : MonoBehaviour
     {
         if (objectsSeen.Count > 0)
         {
-            canvasText_interact.SetActive(true);
+            if (!p_look.canInspectObj)
+            {
+                canvasText_interact.SetActive(true);
+            }
+            else
+            {
+                canvasText_interact.SetActive(false);
+            }
         } else
         {
-
             canvasText_interact.SetActive(false);
         }
     }

@@ -10,11 +10,12 @@ public class StartCutsceneCollider : MonoBehaviour
 
 
     PlayerManagerTemporary p_manager;
+    GameObject player;
     PlayerRaycast p_ray;
     [SerializeField] GameObject target;
     [SerializeField] Transform lookAtPoint;
     Animator targetAnimator;
-    [SerializeField] float cutsceneLenght;
+    float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
     [Header("Next Quest")]
     [SerializeField] bool isQuest;
@@ -27,6 +28,10 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] Color questActive;
     [SerializeField] Color questDone;
 
+    [Header("Delete Object after cutscene")]
+    [SerializeField] bool deleteOtherObjectAfterCutscene = false;
+    [SerializeField] GameObject deleteObject;
+
     [Header("SwapDoors")]
     [SerializeField] bool shouldSwapDoors;
     [SerializeField] int doorIndex;
@@ -37,7 +42,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
     private void Awake()
     {
-
+        player = GameObject.Find("Player");
         blackScreen = GameObject.Find("BlackScreen").GetComponent<Animator>();
         doorManager = GameObject.Find("Door/ObjectManager").GetComponent<DoorManager>();
         p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
@@ -45,7 +50,7 @@ public class StartCutsceneCollider : MonoBehaviour
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
         //p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
 
-        if(s1AmountOfVoicelines < 2.5f)
+        if(s1AmountOfVoicelines < 2.5f && s1AmountOfVoicelines > .5f)
         {
             internalS1Played = 1;
         }
@@ -73,15 +78,12 @@ public class StartCutsceneCollider : MonoBehaviour
             {
                 target.GetComponent<Animation>().Play();
             }
-            if (target.GetComponent<AudioSource>() != null)
-            {
-                target.GetComponent<AudioSource>().Play();
-            }
+
             if (target.GetComponent<Animator>() != null)
             {
                 targetAnimator = target.GetComponent<Animator>();
                 backToPos = target.transform;
-                target.transform.LookAt(transform);
+                target.transform.LookAt(player.transform);
             }
         }
 
@@ -114,6 +116,11 @@ public class StartCutsceneCollider : MonoBehaviour
         }
             nextQuest.SetActive(true);
 
+        if (deleteOtherObjectAfterCutscene)
+        {
+            Destroy(deleteObject);
+        }
+
         if (target != null)
         {
             if (target.tag == "Son")
@@ -126,7 +133,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
     void StopBlackScreenAnim()
     {
-        Debug.Log("Stop BlackScreen");
+
         blackScreen.SetBool("Fade", false);
         Destroy(target);
         Destroy(gameObject);

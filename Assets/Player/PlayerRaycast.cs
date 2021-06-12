@@ -13,7 +13,8 @@ public class PlayerRaycast : MonoBehaviour
 
     [HideInInspector] public GameObject pickup_obj;
     Transform placePos;
-    bool canAddToInventory = false, canPutBack = false;
+    bool canAddToInventory = false;
+    [HideInInspector] public bool canPutBack = false, isInspectObject = false;
 
     [Header("Gameobject References")]
     [SerializeField] Transform cam;
@@ -244,6 +245,7 @@ public class PlayerRaycast : MonoBehaviour
     {
         if (seesPickup)
         {
+            isInspectObject = false;
             pickup_obj.transform.position = pickupOriginalPos;
             pickup_obj.transform.rotation = pickupOriginalRot;
             pickup_obj.transform.SetParent(null);
@@ -292,6 +294,7 @@ public class PlayerRaycast : MonoBehaviour
         {
             pickup_obj.GetComponent<StartCutsceneOnPickup>().StartCutscene();
         }
+        isInspectObject = true;
 
         canAddToInventory = true;
         yield return new WaitForSeconds(.1f);

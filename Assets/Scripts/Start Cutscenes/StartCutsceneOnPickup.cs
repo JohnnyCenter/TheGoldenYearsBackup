@@ -10,8 +10,9 @@ public class StartCutsceneOnPickup : MonoBehaviour
     PlayerManagerTemporary p_manager;
     PlayerRaycast p_ray;
     GameObject target;
-    [SerializeField] float cutsceneLenght;
+    //[SerializeField] float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
+
     [Header("Next Quest")]
     TMP_Text questTextReference;
     [SerializeField] GameObject nextQuest;
@@ -37,7 +38,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
     [SerializeField] int speaker1 = 1;
     [Tooltip("Set index they are starting with, AmountOfVoiceLines will say how many to continue for")]
     [SerializeField] int speaker1startIndex = 0;
-    [SerializeField] int s1AmountOfVoicelines = 0;
+    [SerializeField] int s1AmountOfExtraVoicelines = 0;
 
     [Header("Is there a Speaker 2?")]
     [Tooltip("True = Yes, False = No")]
@@ -47,7 +48,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
     [Range(0, 3)]
     [SerializeField] int speaker2 = 0;
     [SerializeField] int speaker2startIndex = 0;
-    [SerializeField] int s2AmountOfVoicelines = 0;
+    [SerializeField] int s2AmountOfExtraVoicelines = 0;
     int internalS1Played = 0, internalS2Played = 0;
     bool talkSwitch;
     float currentVoicelineTime = 10;
@@ -89,11 +90,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
         if (target.GetComponent<Animation>() != null)
         {
             target.GetComponent<Animation>().Play();
-        }
-        if (target.GetComponent<AudioSource>() != null)
-        {
-            target.GetComponent<AudioSource>().Play();
-        }
+        }        
 
         if (playVoice)
         {
@@ -103,20 +100,18 @@ public class StartCutsceneOnPickup : MonoBehaviour
         {
             ContinueGame();
         }
-
-
         
         yield return null;
     }
 
     void ContinueGame()
     {
+        p_ray.PutObjectBack();
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
 
         p_manager.EnablePlayerAll();
         nextQuest.SetActive(true);
-        //p_ray.PutObjectBack();
         canDestroyNow = true;
     }
 
@@ -124,7 +119,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
     void PlayVoiceLines()
     {
-        if (!isTwoSpeakers) { speaker2 = 0; speaker2startIndex = 0; s2AmountOfVoicelines = 0; }
+        if (!isTwoSpeakers) { speaker2 = 0; speaker2startIndex = 0; s2AmountOfExtraVoicelines = 0; }
         if (playVoice)
         {
             if (speaker2 > 0) //IF 2 SPEAKERS
@@ -132,12 +127,12 @@ public class StartCutsceneOnPickup : MonoBehaviour
                 Debug.Log("2 People should be talking now");
                 if (talkSwitch)
                 {
-                    if (internalS1Played > s1AmountOfVoicelines && internalS2Played > s2AmountOfVoicelines)
+                    if (internalS1Played > s1AmountOfExtraVoicelines && internalS2Played > s2AmountOfExtraVoicelines)
                     {
                         ContinueGame();
                     }
 
-                    if (internalS1Played <= s1AmountOfVoicelines)
+                    if (internalS1Played <= s1AmountOfExtraVoicelines)
                     {
                         if (speaker1 == 1)
                         {
@@ -161,12 +156,12 @@ public class StartCutsceneOnPickup : MonoBehaviour
                 }
                 else
                 {
-                    if (internalS1Played > s1AmountOfVoicelines && internalS2Played > s2AmountOfVoicelines)
+                    if (internalS1Played > s1AmountOfExtraVoicelines && internalS2Played > s2AmountOfExtraVoicelines)
                     {
                         ContinueGame();
                     }
 
-                    if (internalS2Played <= s2AmountOfVoicelines)
+                    if (internalS2Played <= s2AmountOfExtraVoicelines)
                     {
                         if (speaker2 == 1)
                         {
@@ -197,12 +192,12 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
             else //IF 1 SPEAKER
             {
-                if (internalS1Played > s1AmountOfVoicelines)
+                if (internalS1Played > s1AmountOfExtraVoicelines)
                 {
                     ContinueGame();
                 }
 
-                if (internalS1Played <= s1AmountOfVoicelines)
+                if (internalS1Played <= s1AmountOfExtraVoicelines)
                 {
                     if (speaker1 == 1)
                     {

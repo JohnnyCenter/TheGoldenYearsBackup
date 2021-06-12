@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5807742900864226374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5807742900864226372}
+  - component: {fileID: 5807742900864226375}
+  - component: {fileID: 5807742900864226373}
+  m_Layer: 0
+  m_Name: trigger_voiceline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5807742900864226372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807742900864226374}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.51, y: 0, z: 10.77}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5807742900864226375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807742900864226374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8c6eb786834c9488a9fba64f9424a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  lookAtPoint: {fileID: 0}
+  isQuest: 1
+  nextQuest: {fileID: 0}
+  nextQuestText: 
+  questActive: {r: 0.754717, g: 0.6118634, b: 0, a: 1}
+  questDone: {r: 0.1701765, g: 1, b: 0, a: 1}
+  deleteOtherObjectAfterCutscene: 0
+  deleteObject: {fileID: 0}
+  shouldSwapDoors: 0
+  doorIndex: 0
+  tpToIndex: 0
+  playVoice: 1
+  speaker1: 1
+  speaker1startIndex: 43
+  s1AmountOfVoicelines: 2
+  isTwoSpeakers: 0
+  speaker1isTalkingFirst: 0
+  speaker2: 2
+  speaker2startIndex: 3
+  s2AmountOfVoicelines: 3
+--- !u!65 &5807742900864226373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807742900864226374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.6775856, y: 2.3703604, z: 0.67726135}
+  m_Center: {x: -0.13372993, y: 0.36544514, z: 0.22743988}

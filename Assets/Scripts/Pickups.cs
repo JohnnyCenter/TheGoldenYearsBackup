@@ -11,8 +11,10 @@ public class Pickups : MonoBehaviour
     {
         //ADD ALL PICKUPS HERE
         painting_d1,
-        key_d2,
-        coffeeMug_d3
+        painting_d2,
+        coffeeMug_d3,
+        painting_d3,
+        painting_d4
     }
 
     public PickupType GetPickupType()
