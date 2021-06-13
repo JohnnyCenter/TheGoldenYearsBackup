@@ -12,7 +12,6 @@ TagManager:
   - CanBeDistorted
   - Music
   - Son
-  - Pause
   layers:
   - Default
   - TransparentFX

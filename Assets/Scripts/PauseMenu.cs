@@ -9,7 +9,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject Play, Options, OptionsMenu, Quit, soundSlider, musicSlider, fade;
     public GameObject mainMenu;
     public InputSystemUIInputModule input;
-    public PlayerLook p_look;
     public AudioMixer Mixer;
     public Image fadetoblack;
     private float start = 0;
@@ -26,7 +25,6 @@ public class PauseMenu : MonoBehaviour
         Mixer.SetFloat("SoundVolume", PlayerPrefs.GetFloat("sound", newSound));
         soundSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("sound", newSound);
         musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("music", newMusic);
-        p_look = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLook>();
     }
     
     private void Update()
@@ -68,7 +66,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        p_look.TurnOnMouseControls();
         mainMenu.SetActive(false);
     }
     public void PauseGame()
@@ -76,7 +73,6 @@ public class PauseMenu : MonoBehaviour
         
         if (Time.timeScale == 1)
         {
-            p_look.TurnOffMouseControls();
             Time.timeScale = 0;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;

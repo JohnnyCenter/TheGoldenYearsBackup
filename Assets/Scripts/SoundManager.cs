@@ -10,7 +10,6 @@ public static class SoundManager
     private static GameObject oneShotObject;
     private static AudioSource oneShotAudioSource;
     private static float clipLength;
-    private static int sfxIndex;
     public enum Sound
     {
         SFX_FootstepsParquet,
@@ -91,7 +90,7 @@ public static class SoundManager
                 soundGameObject = new GameObject("3D Sound");
                 soundGameObject.transform.position = position;
                 soundAudioSource = soundGameObject.AddComponent<AudioSource>();
-                soundAudioSource.maxDistance = 1000;
+                soundAudioSource.maxDistance = 100;
                 soundAudioSource.spatialBlend = 1;
                 soundAudioSource.rolloffMode = AudioRolloffMode.Linear;
                 soundAudioSource.dopplerLevel = 0;
@@ -172,7 +171,7 @@ public static class SoundManager
         {
             if (soundAudioClip.sound == sound)
             {
-                sfxIndex = Random.Range(0, soundAudioClip.audioClips.Length - 1);
+                int sfxIndex = Random.Range(0, soundAudioClip.audioClips.Length - 1);
                 return soundAudioClip.audioClips[sfxIndex];
             }
         }
@@ -197,17 +196,6 @@ public static class SoundManager
             if (VoiceClip.sound == sound)
             {
                 clipLength = VoiceClip.audioClips[index].length;
-            }
-        }
-        return clipLength;
-    }
-    public static float GetSoundDuration(Sound sound)
-    {
-        foreach (GameAssets.SoundAudioClip soundAudioClip in GameAssets.i.soundAudioClips)
-        {
-            if (soundAudioClip.sound == sound)
-            {
-                clipLength = soundAudioClip.audioClips[sfxIndex].length;
             }
         }
         return clipLength;

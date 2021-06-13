@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public DoorManager doorManager;
     public ObjectDistorter objectDistorter;
     public PostProcessVolume postProcessVolume;
-    public RecordPlayer recordPlayer;
     [SerializeField]
     public PostProcessProfile[] profiles;
 
@@ -46,7 +45,6 @@ public class GameManager : MonoBehaviour
         //currentDay = 0;
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
         objectDistorter = GameObject.Find("ObjectDistorter").GetComponent<ObjectDistorter>();
-        recordPlayer = GameObject.FindGameObjectWithTag("Music").GetComponent<RecordPlayer>();
         GeneralStartDay();
     }
 
@@ -62,17 +60,14 @@ public class GameManager : MonoBehaviour
         //KALLES NÅR MAN STÅR OPP FRA SENGA
         questTextReference.color = questActive;
         doorManager.ResetDoors();
-        recordPlayer.recordPlayerActive = false;
-        recordPlayer.audioSource.Stop();
-        recordPlayer.currentClip = 0;
+
         UpdateDay();
     }
 
     private void UpdateDay()
     {
         currentDay++;
-        recordPlayer.recordPlayerActive = true;
-        recordPlayer.PlayMusic();
+
         if (currentDay == 1)
         {
             //JONATHAN SKRIV DIN KODE HER
