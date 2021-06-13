@@ -249,7 +249,7 @@ public class PlayerRaycast : MonoBehaviour
             isInspectObject = false;
             pickup_obj.transform.position = pickupOriginalPos;
             pickup_obj.transform.rotation = pickupOriginalRot;
-            pickup_obj.transform.SetParent(null);
+            //pickup_obj.transform.SetParent(null);
             canAddToInventory = false;
             p_inventory.RemovePickup();
             pickup_obj.tag = "Untagged";
