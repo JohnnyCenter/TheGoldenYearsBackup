@@ -73,19 +73,26 @@ public class PauseMenu : MonoBehaviour
     }
     public void PauseGame()
     {
+        if (gameObject.activeSelf == false)
+        {
+            return;
+        }
+        else
+        {
+            if (Time.timeScale == 1)
+            {
+                p_look.TurnOffMouseControls();
+                Time.timeScale = 0;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                mainMenu.SetActive(true);
+            }
+            else if (!newOptionMenu)
+            {
+                ResumeGame();
+            }
+        }
         
-        if (Time.timeScale == 1)
-        {
-            p_look.TurnOffMouseControls();
-            Time.timeScale = 0;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            mainMenu.SetActive(true);
-        }
-        else if (!newOptionMenu)
-        {
-            ResumeGame();
-        }
         
     }
 

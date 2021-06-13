@@ -71,40 +71,48 @@ public class GameManager : MonoBehaviour
     private void UpdateDay()
     {
         currentDay++;
-        recordPlayer.recordPlayerActive = true;
-        recordPlayer.PlayMusic();
+        
         if (currentDay == 1)
         {
-            //JONATHAN SKRIV DIN KODE HER
-            //EGIL SKRIV DIN KODE HER
+            player.transform.position = day1StartPos.position;
             postProcessVolume.profile = profiles[0];
             questTextReference.text = day1Quest;
             day1QuestObj.SetActive(true);
-            player.transform.position = day1StartPos.position;
+            recordPlayer.recordPlayerActive = true;
+            recordPlayer.PlayMusic();
+
         }
         if (currentDay == 2)
         {
+            player.transform.position = day2StartPos.position;
             postProcessVolume.profile = profiles[1];
             objectDistorter.IncreaseDistortion(25f);
             questTextReference.text = day2Quest;
             day2QuestObj.SetActive(true);
-            player.transform.position = day2StartPos.position;
+            recordPlayer.recordPlayerActive = true;
+            recordPlayer.PlayMusic();
+
         }
         if (currentDay == 3)
         {
+            player.transform.position = day3StartPos.position;
             postProcessVolume.profile = profiles[2];
             objectDistorter.IncreaseDistortion(50f);
             questTextReference.text = day3Quest;
             day3QuestObj.SetActive(true);
-            player.transform.position = day3StartPos.position;
+            recordPlayer.recordPlayerActive = true;
+            recordPlayer.PlayMusic();
+
         }
         if (currentDay == 4)
         {
+            player.transform.position = day4StartPos.position;
             postProcessVolume.profile = profiles[3];
             objectDistorter.IncreaseDistortion(100f);
             questTextReference.text = day4Quest;
             day4QuestObj.SetActive(true);
-            player.transform.position = day4StartPos.position;
+            recordPlayer.recordPlayerActive = true;
+            recordPlayer.PlayMusic();
 
             //special stuff
             doorManager.SwapDoors(7, 2);
@@ -113,10 +121,13 @@ public class GameManager : MonoBehaviour
         }
         if (currentDay == 5)
         {
+            player.transform.position = day5StartPos.position;
             postProcessVolume.profile = profiles[4];
             questTextReference.text = day5Quest;
             day5QuestObj.SetActive(true);
-            player.transform.position = day5StartPos.position;
+            recordPlayer.recordPlayerActive = true;
+            recordPlayer.PlayMusic();
+
         }
     }
 }

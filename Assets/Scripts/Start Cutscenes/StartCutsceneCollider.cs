@@ -124,7 +124,10 @@ public class StartCutsceneCollider : MonoBehaviour
             questTextReference.color = questActive;
             questTextReference.text = nextQuestText;
         }
+        if (nextQuest != null)
+        {
             nextQuest.SetActive(true);
+        }
 
         if (deleteOtherObjectAfterCutscene)
         {

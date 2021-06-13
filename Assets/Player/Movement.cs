@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     {
         Vector3 horizontalVel = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
         cont.Move(horizontalVel * Time.deltaTime);
-        if(horizontalInput != null)
+        if (!Mathf.Approximately(cont.velocity.magnitude, 0))
         {
             SoundManager.PlaySFX(SoundManager.Sound.SFX_FootstepsParquet, transform.position);
         }

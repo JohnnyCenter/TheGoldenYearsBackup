@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7625096691427387295
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
+  m_Name: Grain
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  colored:
+    overrideState: 0
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0.25
+  size:
+    overrideState: 1
+    value: 1.25
+  lumContrib:
+    overrideState: 1
+    value: 0
 --- !u!114 &-3500364101502850677
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1328,6 +1356,7 @@ MonoBehaviour:
   - {fileID: 776296224607466133}
   - {fileID: 4879496501341707368}
   - {fileID: 2742725196896416274}
+  - {fileID: -7625096691427387295}
 --- !u!114 &776296224607466133
 MonoBehaviour:
   m_ObjectHideFlags: 3

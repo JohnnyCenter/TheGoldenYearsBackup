@@ -333,7 +333,7 @@ public class PlayerRaycast : MonoBehaviour
         
         blackscreen_anim.SetBool("Fade", false);
         //MAYBE TEMPORARY THIS UNDER:
-
+        yield return new WaitForSeconds(.1f);
         playerManager.EnablePlayerAll();
         yield return null;
     }

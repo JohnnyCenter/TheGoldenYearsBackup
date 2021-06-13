@@ -1326,19 +1326,19 @@ MonoBehaviour:
   active: 1
   enabled:
     overrideState: 1
-    value: 1
+    value: 0
   colored:
     overrideState: 0
     value: 1
   intensity:
-    overrideState: 0
-    value: 0
-  size:
-    overrideState: 0
+    overrideState: 1
     value: 1
+  size:
+    overrideState: 1
+    value: 3
   lumContrib:
-    overrideState: 0
-    value: 0.8
+    overrideState: 1
+    value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

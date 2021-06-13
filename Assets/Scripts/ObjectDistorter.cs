@@ -37,10 +37,6 @@ public class ObjectDistorter : MonoBehaviour
         }
         InitializeLists();
     }
-    private void Start()
-    {
-        ResetShapeKeys();
-    }
 
     private void Update()
     {
@@ -57,10 +53,13 @@ public class ObjectDistorter : MonoBehaviour
         {
             foreach (SkinnedMeshRenderer renderer in meshRenderers)
             {
-                float currentDistortion = renderer.GetBlendShapeWeight(0); //Gets the current level of distortion
-                float newDistortion = currentDistortion + _value; //Adds the new distortion to the current level
-                Mathf.Clamp(newDistortion, 0, 100); //Clamps the values
-                renderer.SetBlendShapeWeight(0, newDistortion); //Sets the distortion to the new clamped value
+                if (renderer != null)
+                {
+                    float currentDistortion = renderer.GetBlendShapeWeight(0); //Gets the current level of distortion
+                    float newDistortion = currentDistortion + _value; //Adds the new distortion to the current level
+                    Mathf.Clamp(newDistortion, 0, 100); //Clamps the values
+                    renderer.SetBlendShapeWeight(0, newDistortion); //Sets the distortion to the new clamped value
+                }
             }
         }
     }
@@ -97,7 +96,10 @@ public class ObjectDistorter : MonoBehaviour
     {
         foreach(SkinnedMeshRenderer renderer in meshRenderers)
         {
-            renderer.SetBlendShapeWeight(0, 0);
+            if (renderer != null)
+            {
+                renderer.SetBlendShapeWeight(0, 0);
+            }
         }
     }
     #endregion
