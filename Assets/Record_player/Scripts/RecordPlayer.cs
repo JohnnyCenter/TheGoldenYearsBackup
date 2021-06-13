@@ -10,11 +10,13 @@ public class RecordPlayer : MonoBehaviour {
 
     GameObject disc;
     GameObject arm;
+    GameManager gameManager;
     public AudioSource audioSource;
     public AudioClip[] audioClips1;
     public AudioClip[] audioClips2;
     public AudioClip[] audioClips3;
-    int currentClip = 0;
+    public AudioClip[] audioClips4;
+    public int currentClip = 0;
 
     int mode;
     float armAngle;
@@ -28,6 +30,7 @@ void Awake()
 {
     disc = gameObject.transform.Find("teller").gameObject;
     arm = gameObject.transform.Find("arm").gameObject;
+    gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
@@ -123,23 +126,26 @@ void Update()
     //--------------------------------------------------------------------------------------------
     public void PlayMusic()
     {
-        /*if (GameManager.currentDay == 1)
+        if (gameManager.currentDay == 1)
         {
             audioSource.spatialBlend = 0.7f;
             audioSource.clip = audioClips1[currentClip];
         }
-        if (GameManager.currentDay == 2)
+        if (gameManager.currentDay == 2)
         {
+            audioSource.spatialBlend = 0.7f;
             audioSource.clip = audioClips2[currentClip];
-            audioSource.spatialBlend = 0.5f;
         }
-        if (GameManager.currentDay == 3)
+        if (gameManager.currentDay == 3)
         {
             audioSource.clip = audioClips3[currentClip];
+            audioSource.spatialBlend = 0.5f;
+        }
+        if (gameManager.currentDay == 4)
+        {
+            audioSource.clip = audioClips4[currentClip];
             audioSource.spatialBlend = 0.3f;
-        }*/
-        audioSource.spatialBlend = 0.3f;
-        audioSource.clip = audioClips3[currentClip];
+        }
         audioSource.Play();
     }
 }

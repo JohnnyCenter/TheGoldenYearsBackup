@@ -14,7 +14,9 @@ public static class SoundManager
     {
         SFX_FootstepsParquet,
         SFX_FootstepsCarpet,
+        SFX_FootstepsPlaster,
         SFX_DoorOpen,
+        SFX_DoorHandle,
         SFX_DoorClose,
         SFX_Inspect,
         SFX_Place,
@@ -29,7 +31,10 @@ public static class SoundManager
         UI_PauseQuit,
         VO_Helga,
         VO_Benjamin,
-        VO_Robert
+        VO_Robert,
+        STING_Stage1,
+        STING_Stage2,
+        STING_Stage3
     }
     /// <summary>
     /// 3D audio sound from position.

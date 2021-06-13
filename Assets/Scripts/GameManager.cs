@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering.PostProcessing;
 
 public class GameManager : MonoBehaviour
 {
     [Header("References")]
     public GameObject player;
     public DoorManager doorManager;
+    public ObjectDistorter objectDistorter;
+    public PostProcessVolume postProcessVolume;
+    [SerializeField]
+    public PostProcessProfile[] profiles;
 
     [Header("FOR PLAYTESTING ONLY - MUST BE AT 0")]
     public int currentDay;
@@ -39,6 +44,7 @@ public class GameManager : MonoBehaviour
     {
         //currentDay = 0;
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
+        objectDistorter = GameObject.Find("ObjectDistorter").GetComponent<ObjectDistorter>();
         GeneralStartDay();
     }
 
@@ -63,27 +69,34 @@ public class GameManager : MonoBehaviour
         currentDay++;
 
         if (currentDay == 1)
-        { 
+        {
             //JONATHAN SKRIV DIN KODE HER
             //EGIL SKRIV DIN KODE HER
+            postProcessVolume.profile = profiles[0];
             questTextReference.text = day1Quest;
             day1QuestObj.SetActive(true);
             player.transform.position = day1StartPos.position;
         }
         if (currentDay == 2)
         {
+            postProcessVolume.profile = profiles[1];
+            objectDistorter.IncreaseDistortion(25f);
             questTextReference.text = day2Quest;
             day2QuestObj.SetActive(true);
             player.transform.position = day2StartPos.position;
         }
         if (currentDay == 3)
         {
+            postProcessVolume.profile = profiles[2];
+            objectDistorter.IncreaseDistortion(50f);
             questTextReference.text = day3Quest;
             day3QuestObj.SetActive(true);
             player.transform.position = day3StartPos.position;
         }
         if (currentDay == 4)
         {
+            postProcessVolume.profile = profiles[3];
+            objectDistorter.IncreaseDistortion(100f);
             questTextReference.text = day4Quest;
             day4QuestObj.SetActive(true);
             player.transform.position = day4StartPos.position;
@@ -95,6 +108,7 @@ public class GameManager : MonoBehaviour
         }
         if (currentDay == 5)
         {
+            postProcessVolume.profile = profiles[4];
             questTextReference.text = day5Quest;
             day5QuestObj.SetActive(true);
             player.transform.position = day5StartPos.position;
