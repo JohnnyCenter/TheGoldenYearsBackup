@@ -13,7 +13,9 @@ public class StartCutsceneCollider : MonoBehaviour
     GameObject player;
     PlayerRaycast p_ray;
     [SerializeField] GameObject target;
+    [SerializeField] GameObject doorTarget;
     [SerializeField] Transform lookAtPoint;
+    GameObject pauseMenu;
     Animator targetAnimator;
     float cutsceneLenght;
     //[SerializeField] PlayableDirector timeline;
@@ -51,6 +53,7 @@ public class StartCutsceneCollider : MonoBehaviour
         p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
         p_ray = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerRaycast>();
         questTextReference = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
+        pauseMenu = GameObject.FindGameObjectWithTag("Pause");
         //p_manager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagerTemporary>();
 
         if(s1AmountOfVoicelines < 2.5f && s1AmountOfVoicelines > .5f)
@@ -69,6 +72,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
     private IEnumerator PlayEvent()
     {
+        pauseMenu.SetActive(false);
         p_manager.DisablePlayerAll();
         if (isQuest)
         {
@@ -110,6 +114,7 @@ public class StartCutsceneCollider : MonoBehaviour
 
     void ContinueGame()
     {
+        pauseMenu.SetActive(true);
         if (!p_ray.doorAnimPlay && !p_ray.doorWalkThrough)
         {
             p_manager.EnablePlayerAll();
@@ -154,7 +159,7 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] bool playVoice;
 
     [Header("Speaker 1")]
-    [Range(1, 3)]
+    [Range(1, 4)]
     [Tooltip("Helga = 1, Benjamin = 2, Robert = 3")]
     [SerializeField] int speaker1 = 1;
     [Tooltip("Set index they are starting with, AmountOfVoiceLines will say how many to continue for")]
@@ -167,7 +172,7 @@ public class StartCutsceneCollider : MonoBehaviour
     [SerializeField] bool speaker1isTalkingFirst;
     [Header("Speaker 2")]
     [Tooltip("None = 0, Helga = 1, Benjamin = 2, Robert = 3")]
-    [Range(0, 3)]
+    [Range(0, 4)]
     [SerializeField] int speaker2 = 0;
     [SerializeField] int speaker2startIndex = 0;    
     [SerializeField] int s2AmountOfVoicelines = 0;
@@ -207,6 +212,11 @@ public class StartCutsceneCollider : MonoBehaviour
                             SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker1startIndex);
                             currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker1startIndex);
                         }
+                        if (speaker1 == 4)
+                        {
+                            SoundManager.PlayVoice(SoundManager.Sound.SFX_DoorClose, target.transform.position, speaker1startIndex);
+                            currentVoicelineTime = SoundManager.GetSoundDuration(SoundManager.Sound.SFX_DoorClose);
+                        }
 
                         StartCoroutine(WaitForSecondsCoroutine());
                     }
@@ -220,30 +230,38 @@ public class StartCutsceneCollider : MonoBehaviour
 
                     if (internalS2Played <= s2AmountOfVoicelines)
                     {
-                        if (speaker2 == 1)
-                        {
-                            SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker2startIndex);
-                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, speaker2startIndex);
-                        }
-                        if (speaker2 == 2)
-                        {
-                            SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker2startIndex);
-                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Benjamin, speaker2startIndex);
-                        }
-                        if (speaker2 == 3)
-                        {
-                            SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker2startIndex);
-                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker2startIndex);
-                        }
-
                         if (target.GetComponent<Animator>() != null)
                         {
                             targetAnimator.SetBool("isTalking", true);
                         }
 
-                        StartCoroutine(WaitForSecondsCoroutine());
-                    }
+                        if (speaker2 == 1)
+                        {
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker2startIndex);
+                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, speaker2startIndex);
+                            StartCoroutine(WaitForSecondsCoroutine());
+                        }
+                        if (speaker2 == 2)
+                        {
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker2startIndex);
+                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Benjamin, speaker2startIndex);
+                            StartCoroutine(WaitForSecondsCoroutine());
+                        }
+                        if (speaker2 == 3)
+                        {
+                            SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker2startIndex);
+                            currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker2startIndex);
+                            StartCoroutine(WaitForSecondsCoroutine());
+                        }
 
+                        if (speaker2 == 4)
+                        {
+                            SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorClose, target.transform.position);
+                            currentVoicelineTime = SoundManager.GetSoundDuration(SoundManager.Sound.SFX_DoorClose);
+                            StartCoroutine(PlayWhoCouldThatBe());
+                            ContinueGame();
+                        }
+                    }
                 }
             }
 
@@ -260,19 +278,25 @@ public class StartCutsceneCollider : MonoBehaviour
                     { 
                         SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);
                         currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, speaker1startIndex);
+                        StartCoroutine(WaitForSecondsCoroutine());
                     }
                     if (speaker1 == 2)
                     {
                         SoundManager.PlayVoice(SoundManager.Sound.VO_Benjamin, target.transform.position, speaker1startIndex); 
                         currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Benjamin, speaker1startIndex);
+                        StartCoroutine(WaitForSecondsCoroutine());
                     }
                     if (speaker1 == 3)
                     { 
                         SoundManager.PlayVoice(SoundManager.Sound.VO_Robert, target.transform.position, speaker1startIndex);
                         currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker1startIndex);
+                        StartCoroutine(WaitForSecondsCoroutine());
                     }
-
-                    StartCoroutine(WaitForSecondsCoroutine());
+                    if (speaker1 == 4)
+                    {
+                        SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorClose, target.transform.position);
+                        StartCoroutine(PlayWhoCouldThatBe());
+                    }
                 }
 
             }
@@ -303,6 +327,14 @@ public class StartCutsceneCollider : MonoBehaviour
             
         }
 
+        IEnumerator PlayWhoCouldThatBe()
+        {
+            yield return new WaitForSeconds(currentVoicelineTime);
+            SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, 9);
+            yield return new WaitForSeconds(SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, 9));
+            ContinueGame();
+        }
+
         IEnumerator WaitForSecondsCoroutine()
         {
             yield return new WaitForSeconds(currentVoicelineTime);
@@ -321,7 +353,7 @@ public class StartCutsceneCollider : MonoBehaviour
             yield return new WaitForSeconds(.7f);
             PlayVoiceLines();
 
-            yield return null;
+            yield return new WaitForSeconds(currentVoicelineTime);
         }
     }
 
