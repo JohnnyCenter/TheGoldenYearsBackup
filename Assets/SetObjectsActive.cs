@@ -9,12 +9,12 @@ public class SetObjectsActive : MonoBehaviour
     private void Awake()
     {
         object1.SetActive(true);
-        object1.SetActive(true);
+        object2.SetActive(true);
         //Destroy(gameObject);
     }
     private void OnEnable()
     {
         object1.SetActive(true);
-        object1.SetActive(true);
+        object2.SetActive(true);
     }
 }
