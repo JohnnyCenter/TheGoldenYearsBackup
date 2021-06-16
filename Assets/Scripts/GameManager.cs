@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -121,12 +122,7 @@ public class GameManager : MonoBehaviour
         }
         if (currentDay == 5)
         {
-            player.transform.position = day5StartPos.position;
-            postProcessVolume.profile = profiles[4];
-            questTextReference.text = day5Quest;
-            day5QuestObj.SetActive(true);
-            recordPlayer.recordPlayerActive = true;
-            recordPlayer.PlayMusic();
+            SceneManager.LoadScene(2);
 
         }
     }

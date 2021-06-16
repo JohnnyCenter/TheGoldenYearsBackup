@@ -54,6 +54,7 @@ void Update()
             {
                 currentClip = 0;
                 recordPlayerActive = false;
+                
                 audioSource.Pause();
             }
             else
@@ -83,7 +84,8 @@ void Update()
             discSpeed += Time.deltaTime * 80.0f;
         }
         else
-                audioSource.Pause();
+            
+            audioSource.Pause();
             mode = 3;
     }
     //-- Mode 2: running
@@ -92,7 +94,8 @@ void Update()
         if(recordPlayerActive == true)
             discAngle += Time.deltaTime * discSpeed;
         else
-                audioSource.Pause();
+            
+            audioSource.Pause();
             mode = 3;
     }
     //-- Mode 3: stopping
@@ -100,6 +103,7 @@ void Update()
     {
         if(recordPlayerActive == false)
         {
+                SoundManager.PlaySFX(SoundManager.Sound.SFX_StopMusic, transform.position);
                 audioSource.Pause();
                 armAngle -= Time.deltaTime * 30.0f;
             if(armAngle <= 0.0f)
@@ -146,6 +150,7 @@ void Update()
             audioSource.clip = audioClips4[currentClip];
             audioSource.spatialBlend = 0.3f;
         }
+        SoundManager.PlaySFX(SoundManager.Sound.SFX_StartMusic, transform.position);
         audioSource.Play();
     }
 }

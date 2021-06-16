@@ -50,7 +50,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
     [SerializeField] int speaker2startIndex = 0;
     [SerializeField] int s2AmountOfExtraVoicelines = 0;
     int internalS1Played = 0, internalS2Played = 0;
-    bool talkSwitch;
+    bool talkSwitch = true;
     float currentVoicelineTime = 10;
     #endregion
 
@@ -65,6 +65,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
     public void StartCutscene()
     {
+        SoundManager.PlaySFX(SoundManager.Sound.SFX_Inspect, transform.position);
         StartCoroutine(PlayEvent());
     }
 
@@ -106,6 +107,7 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
     void ContinueGame()
     {
+        SoundManager.PlaySFX(SoundManager.Sound.SFX_Place, transform.position);
         p_ray.PutObjectBack();
         questTextReference.color = questActive;
         questTextReference.text = nextQuestText;
@@ -124,7 +126,6 @@ public class StartCutsceneOnPickup : MonoBehaviour
         {
             if (speaker2 > 0) //IF 2 SPEAKERS
             {
-                Debug.Log("2 People should be talking now");
                 if (talkSwitch)
                 {
                     if (internalS1Played > s1AmountOfExtraVoicelines && internalS2Played > s2AmountOfExtraVoicelines)
@@ -163,6 +164,11 @@ public class StartCutsceneOnPickup : MonoBehaviour
 
                     if (internalS2Played <= s2AmountOfExtraVoicelines)
                     {
+                        if (target.GetComponent<Animator>() != null)
+                        {
+                            targetAnimator.SetBool("isTalking", true);
+                        }
+
                         if (speaker2 == 1)
                         {
                             SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, speaker1startIndex);
@@ -179,10 +185,15 @@ public class StartCutsceneOnPickup : MonoBehaviour
                             currentVoicelineTime = SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Robert, speaker1startIndex);
                         }
 
-                        if (target.GetComponent<Animator>() != null)
+                        if (speaker2 == 4)
                         {
-                            targetAnimator.SetBool("isTalking", true);
+                            SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorClose, target.transform.position);
+                            currentVoicelineTime = SoundManager.GetSoundDuration(SoundManager.Sound.SFX_DoorClose);
+                            StartCoroutine(PlayWhoCouldThatBe());
+                            ContinueGame();
                         }
+
+                        
 
                         StartCoroutine(WaitForSecondsCoroutine());
                     }
@@ -244,7 +255,13 @@ public class StartCutsceneOnPickup : MonoBehaviour
             }
 
         }
-
+        IEnumerator PlayWhoCouldThatBe()
+        {
+            yield return new WaitForSeconds(currentVoicelineTime);
+            SoundManager.PlayVoice(SoundManager.Sound.VO_Helga, 9);
+            yield return new WaitForSeconds(SoundManager.GetVoiceDuration(SoundManager.Sound.VO_Helga, 9));
+            ContinueGame();
+        }
         IEnumerator WaitForSecondsCoroutine()
         {
             yield return new WaitForSeconds(currentVoicelineTime);

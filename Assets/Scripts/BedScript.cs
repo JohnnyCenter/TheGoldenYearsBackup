@@ -14,6 +14,7 @@ public class BedScript : MonoBehaviour
 
     public void GoToBed()
     {
+        SoundManager.PlaySFX(SoundManager.Sound.SFX_Bed);
         gm.EndDay();
     }
 }

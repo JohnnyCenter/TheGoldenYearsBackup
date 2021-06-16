@@ -378,8 +378,8 @@ namespace NOTLonely_Door
 
         void CloseSound()
         {
-            if (doorAnimation[AnimationNames.OpeningAnim].speed < 0 && doorSounds.close != null)
-                PlaySFX(doorSounds.close);
+            if (doorAnimation[AnimationNames.OpeningAnim].speed < 0)
+                SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorClose, transform.position);
         }
         #endregion
 
@@ -440,8 +440,7 @@ namespace NOTLonely_Door
             doorAnimation[AnimationNames.OpeningAnim].normalizedTime = doorAnimation[AnimationNames.OpeningAnim].normalizedTime;
             doorAnimation.Play(AnimationNames.OpeningAnim);
 
-            if (doorSounds.open != null)
-                PlaySFX(doorSounds.open);
+            SoundManager.PlaySFX(SoundManager.Sound.SFX_DoorOpen, transform.position);
 
             Opened = true;
             if (controls.openMethod == OpenStyle.BUTTON)

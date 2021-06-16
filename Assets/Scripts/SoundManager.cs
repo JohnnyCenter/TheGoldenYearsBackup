@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public static class SoundManager
 {
@@ -9,6 +10,7 @@ public static class SoundManager
     private static AudioSource soundAudioSource;
     private static GameObject oneShotObject;
     private static AudioSource oneShotAudioSource;
+    private static AudioMixer audioMixer;
     private static float clipLength;
     private static int sfxIndex;
     public enum Sound
@@ -51,7 +53,8 @@ public static class SoundManager
                 soundGameObject = new GameObject("3D Sound");
                 soundGameObject.transform.position = position;
                 soundAudioSource = soundGameObject.AddComponent<AudioSource>();
-                //soundAudioSource.outputAudioMixerGroup.audioMixer.FindMatchingGroups("Sound");
+                audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+                soundAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Sound")[0];
                 soundAudioSource.maxDistance = 100;
                 soundAudioSource.spatialBlend = 1;
                 soundAudioSource.rolloffMode = AudioRolloffMode.Linear;
@@ -60,6 +63,9 @@ public static class SoundManager
             else
             {
                 soundAudioSource.transform.position = position;
+                audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+                soundAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Sound")[0];
+                
             }
             soundAudioSource.PlayOneShot(GetAudioClip(sound));
         }
@@ -76,10 +82,13 @@ public static class SoundManager
             {
                 oneShotObject = new GameObject("2D Sound");
                 oneShotAudioSource = oneShotObject.AddComponent<AudioSource>();
+                audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+                oneShotAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Sound")[0];
             }
-        
-        
-        oneShotAudioSource.PlayOneShot(GetAudioClip(sound));
+
+            audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+            oneShotAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Sound")[0];
+            oneShotAudioSource.PlayOneShot(GetAudioClip(sound));
         }
     }
     public static void PlayVoice(Sound sound, Vector3 position, int index)
@@ -91,6 +100,8 @@ public static class SoundManager
                 soundGameObject = new GameObject("3D Sound");
                 soundGameObject.transform.position = position;
                 soundAudioSource = soundGameObject.AddComponent<AudioSource>();
+                audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+                soundAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Voice")[0];
                 soundAudioSource.maxDistance = 1000;
                 soundAudioSource.spatialBlend = 1;
                 soundAudioSource.rolloffMode = AudioRolloffMode.Linear;
@@ -99,6 +110,9 @@ public static class SoundManager
             else
             {
                 soundAudioSource.transform.position = position;
+                audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+                soundAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Voice")[0];
+                
             }
             soundAudioSource.PlayOneShot(GetVoiceClip(sound, index));
         }
@@ -111,7 +125,11 @@ public static class SoundManager
             {
                 oneShotObject = new GameObject("2D Sound");
                 oneShotAudioSource = oneShotObject.AddComponent<AudioSource>();
+                audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+                oneShotAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Voice")[0];
             }
+            audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+            oneShotAudioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Voice")[0];
             oneShotAudioSource.PlayOneShot(GetVoiceClip(sound, index));
         }
     }

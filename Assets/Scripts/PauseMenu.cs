@@ -6,7 +6,7 @@ using UnityEngine.InputSystem.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject Play, Options, OptionsMenu, Quit, soundSlider, musicSlider, fade;
+    public GameObject Play, Options, OptionsMenu, Quit, soundSlider, musicSlider, voiceSlider, fade;
     public GameObject mainMenu;
     public InputSystemUIInputModule input;
     public PlayerLook p_look;
@@ -18,14 +18,17 @@ public class PauseMenu : MonoBehaviour
     public bool pressed;
     public float newSound = -30f;
     public float newMusic = -30f;
+    public float newVoice = -30f;
 
     public void Start()
     {
         fadetoblack = fade.GetComponent<Image>();
         Mixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("music", newMusic));
         Mixer.SetFloat("SoundVolume", PlayerPrefs.GetFloat("sound", newSound));
+        Mixer.SetFloat("VoiceVolume", PlayerPrefs.GetFloat("voice", newSound));
         soundSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("sound", newSound);
         musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("music", newMusic);
+        voiceSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("voice", newVoice);
         p_look = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLook>();
     }
     
@@ -108,6 +111,12 @@ public class PauseMenu : MonoBehaviour
         Mixer.SetFloat("MusicVolume", soundlevel);
         newMusic = soundlevel;
         PlayerPrefs.SetFloat("music", soundlevel);
+    }
+    public void Voice(float soundlevel)
+    {
+        Mixer.SetFloat("VoiceVolume", soundlevel);
+        newVoice = soundlevel;
+        PlayerPrefs.SetFloat("voice", soundlevel);
     }
 }
 

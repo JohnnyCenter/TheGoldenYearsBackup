@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SimonTest.unity
     guid: 1e027b002cd8d94478a4f96d8c70af6d
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 65a30c6be52fbdc48a46b86619108cbb
+    guid: 0093c2546791c0e418b613266b550627
   - enabled: 1
     path: Assets/Scenes/MAIN SCENE.unity
     guid: 0fda9ca7cd50a3340a8aa9975662d4f1
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 73d4363389d2d454fb8e528f4ce09d0b
   m_configObjects: {}
